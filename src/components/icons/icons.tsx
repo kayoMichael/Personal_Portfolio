@@ -1,6 +1,6 @@
 import type { ComponentProps } from 'react';
 
-import { cn } from '@/utils/cn';
+import { cn } from '@/src/utils/cn';
 
 export const TypeScript = ({ className, ...rest }: ComponentProps<'svg'>) => (
   <svg

@@ -1,4 +1,4 @@
-import HeroPortfolio from '@/components/hero/heroPortfolio';
+import HeroPortfolio from '@/src/components/hero/heroPortfolio';
 
 export default function Home() {
   return (

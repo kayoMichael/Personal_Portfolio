@@ -16,14 +16,14 @@ import {
   TailwindCss,
   TypeScript,
   VueJs,
-} from '@/components/icons/icons';
+} from '@/src/components/icons/icons';
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from '@/components/ui/tooltip';
-import { cn } from '@/utils/cn';
+} from '@/src/components/ui/tooltip';
+import { cn } from '@/src/utils/cn';
 
 interface Stack {
   title: string;
