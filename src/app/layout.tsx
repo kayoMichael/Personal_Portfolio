@@ -21,8 +21,9 @@ export default function RootLayout({
     <html lang='en'>
       <body className={inter.className}>
         <NavigationBar />
-        <div className='h-[50rem] w-full dark:bg-black bg-white  dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2] relative flex items-center justify-center'></div>
-        {children}
+        <div className='h-[50rem] w-full dark:bg-black bg-white  dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2] relative'>
+          {children}
+        </div>
       </body>
     </html>
   );
