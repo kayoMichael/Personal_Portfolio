@@ -1,0 +1,8 @@
+.next
+next-end.d.ts 
+node_modules
+public
+package-lock.json
+**/node_modules
+*.ts
+*.js
