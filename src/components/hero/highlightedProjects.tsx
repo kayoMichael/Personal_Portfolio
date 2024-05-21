@@ -45,7 +45,7 @@ const HighlightedProjects = () => {
           </p>
         </motion.div>
       </motion.div>
-      <div className='grid lg:grid-cols-3'>
+      <div className='grid lg:grid-cols-2 lg:w-3/4 w-full md:justify-start'>
         {Projects.map((project) => (
           <div key={project.github}>
             <ProjectCard
