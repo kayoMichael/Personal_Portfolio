@@ -14,7 +14,7 @@ interface Props {
   image: string;
   url: string;
   githubLink: string;
-  techStack: Array<{ title: string; colorClass: string; icon: JSX.Element }>;
+  techStack: string[];
 }
 
 const ProjectCard = ({ name, description, image, url, githubLink }: Props) => {

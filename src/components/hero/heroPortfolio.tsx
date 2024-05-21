@@ -9,14 +9,18 @@ import { Button } from '../ui/button';
 import Skills from './skills';
 
 const HeroPortfolio = () => {
+  /** Base Profile Animation */
   const animation = {
     hide: { x: -32, opacity: 0 },
     show: { x: 0, opacity: 1 },
   };
+
+  /** Button Animation */
   const buttonAnimation = {
     hide: { x: -16, opacity: 0 },
     show: { x: 0, opacity: 1 },
   };
+
   return (
     <div className='bg-pattern py-16 lg:py-20'>
       <div>
