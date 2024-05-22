@@ -27,7 +27,7 @@ export const Projects: Project[] = [{
 }, {
     title: 'Game Display Website',
     description: "A Frontend Game Display Website built using the Rawg.IO API.",
-    techStack: ['ReactJS', 'TypeScript', "HTML5", "CSS3", "ChakraUI"],
+    techStack: ['React.js', 'TypeScript', "HTML5", "CSS3", "ChakraUI"],
     github: 'https://github.com/kayoMichael/Game-Page',
     url: 'https://game-page-mocha.vercel.app/',
     date: '2023',
