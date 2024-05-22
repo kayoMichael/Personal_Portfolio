@@ -23,7 +23,7 @@ const AboutPage = async () => {
         },
         next: { revalidate: 1800 },
       }
-    );
+    ).then(async (res) => await res.json());
     currentStats = await fetch(
       'https://wakatime.com/api/v1/users/current/stats',
       {
@@ -35,11 +35,10 @@ const AboutPage = async () => {
         },
         next: { revalidate: 1800 },
       }
-    );
+    ).then(async (res) => await res.json());
   } catch {
     redirect('/404');
   }
-  console.log(weeklyStats, currentStats);
   return (
     <>
       <PageHeader description='Personal Profile' title='About Me' />
@@ -155,8 +154,8 @@ const AboutPage = async () => {
             </p>
           </div>
         </div>
-        <CodingStatistic />
       </Container>
+      <CodingStatistic currentStats={currentStats} weeklyStats={weeklyStats} />
     </>
   );
 };
