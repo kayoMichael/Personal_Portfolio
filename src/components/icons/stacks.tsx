@@ -1,6 +1,8 @@
 import {
   Bootstrap,
   CSS3,
+  DaisyUI,
+  FramerMotion,
   Git,
   HTML5,
   JavaScript,
@@ -11,6 +13,7 @@ import {
   Prisma,
   ReactJs,
   Redis,
+  ShadcnUI,
   Spring,
   TailwindCss,
   TypeScript,
@@ -37,4 +40,7 @@ export const STACKS: StackProps = {
   Redis: <Redis className={cn('fill-[#DC382D]')} />,
   HTML5: <HTML5 className={cn('fill-[#E34F26]')} />,
   CSS3: <CSS3 className={cn('fill-[#1572B6]')} />,
+  'Shadcn-UI': <ShadcnUI />,
+  DaisyUI: <DaisyUI />,
+  FramerMotion: <FramerMotion />,
 };

@@ -13,7 +13,7 @@ import Link from 'next/link';
 import { CardBody, CardContainer, CardItem } from '../ui/3d-card';
 import { Tooltip } from '../ui/tooltip';
 
-import { STACKS } from '@/src/utils/stacks';
+import { STACKS } from '@/src/components/icons/stacks';
 
 interface Props {
   name: string;
@@ -58,7 +58,7 @@ const ProjectCard = ({
             width='1000'
           />
         </CardItem>
-        <div className='flex items-center mt-4 ml-3'>
+        <div className='flex items-center mt-6 ml-3'>
           <CardItem>
             <div className='flex items-center gap-2'>
               {techStack.map((tech) => (
