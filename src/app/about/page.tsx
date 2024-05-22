@@ -43,7 +43,7 @@ const AboutPage = async () => {
   return (
     <>
       <PageHeader description='Personal Profile' title='About Me' />
-      <Container>
+      <Container className='mt-10'>
         <div className='items-start space-y-2 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:space-y-0'>
           <div className='flex flex-col items-center xl:sticky xl:top-24'>
             <Image

@@ -1,6 +1,7 @@
 import {
   AWS,
   Bootstrap,
+  ChakraUI,
   CSS3,
   DaisyUI,
   FramerMotion,
@@ -42,5 +43,6 @@ export const STACKS: StackProps = {
   AWS: <AWS className={cn('fill-[#232F3E]')} />,
   'Shadcn-UI': <ShadcnUI />,
   DaisyUI: <DaisyUI />,
+  ChakraUI: <ChakraUI />,
   FramerMotion: <FramerMotion />,
 };

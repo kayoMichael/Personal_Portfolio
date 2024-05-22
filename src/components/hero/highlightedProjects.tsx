@@ -60,7 +60,7 @@ const HighlightedProjects = () => {
           initial={{ y: 40, opacity: 0 }}
           transition={{ duration: 0.3 }}
         >
-          {Projects.map((project) => (
+          {Projects.slice(0, 2).map((project) => (
             <div key={project.github}>
               <ProjectCard
                 date={project.date}
