@@ -5,9 +5,11 @@ import HeroPortfolio from '@/src/components/hero/heroPortfolio';
 
 export default function Home() {
   return (
-    <Container>
-      <HeroPortfolio />
-      <HighlightedProjects />
-    </Container>
+    <>
+      <Container>
+        <HeroPortfolio />
+        <HighlightedProjects />
+      </Container>
+    </>
   );
 }

@@ -12,8 +12,22 @@ import Container from '@/src/components/ui/container';
 import Progress from '@/src/components/ui/progress';
 
 interface Props {
-  weeklyStats: any;
-  currentStats: any;
+  weeklyStats: { data: { text?: string } };
+  currentStats: {
+    data: {
+      human_readable_daily_average_including_other_language?: string;
+      human_readable_total_including_other_language?: string;
+      best_day?: { date: string };
+      languages?: Array<{
+        name: string;
+        percent?: number;
+      }>;
+      editors?: Array<{
+        name: string;
+        percent?: number;
+      }>;
+    };
+  };
 }
 const CodingStatistic = ({ weeklyStats, currentStats }: Props) => {
   const dailyAverage =
@@ -81,14 +95,16 @@ const CodingStatistic = ({ weeklyStats, currentStats }: Props) => {
                       {activity.title}
                     </p>
                     <ul className='flex flex-col gap-1 px-4 py-3'>
-                      {activity.data.map((item: any) => (
-                        <li key={item.name}>
-                          <Progress
-                            className='bg-gradient-to-r from-pink-400 via-blue-500 to-purple-600'
-                            data={item}
-                          />
-                        </li>
-                      ))}
+                      {activity.data.map(
+                        (item: { name: string; percent?: number }) => (
+                          <li key={item.name}>
+                            <Progress
+                              className='bg-gradient-to-r from-pink-400 via-blue-500 to-purple-600'
+                              data={item}
+                            />
+                          </li>
+                        )
+                      )}
                     </ul>
                   </div>
                 </div>

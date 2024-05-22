@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { redirect } from 'next/navigation';
 
 import CodingStatistic from './codingStatistics';
+import TechStack from './techStack';
 
 import PageHeader from '@/src/components/typography/header';
 import Container from '@/src/components/ui/container';
@@ -152,6 +153,8 @@ const AboutPage = async () => {
               analytical and problem-solving skills that I can apply to my work
               in software development.
             </p>
+            <h2 className='font-cal text-2xl lg:text-3xl'>Tech Stack</h2>
+            <TechStack />
           </div>
         </div>
       </Container>
