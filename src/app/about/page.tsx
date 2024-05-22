@@ -2,11 +2,44 @@ import React from 'react';
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { redirect } from 'next/navigation';
+
+import CodingStatistic from './codingStatistics';
 
 import PageHeader from '@/src/components/typography/header';
 import Container from '@/src/components/ui/container';
 
-const AboutPage = () => {
+const AboutPage = async () => {
+  let weeklyStats, currentStats;
+  try {
+    weeklyStats = await fetch(
+      'https://wakatime.com/api/v1/users/current/all_time_since_today',
+      {
+        method: 'GET',
+        headers: {
+          Authorization: `Basic ${Buffer.from(
+            process.env.WAKATIME_API_KEY ?? ''
+          ).toString('base64')}`,
+        },
+        next: { revalidate: 1800 },
+      }
+    );
+    currentStats = await fetch(
+      'https://wakatime.com/api/v1/users/current/stats',
+      {
+        method: 'GET',
+        headers: {
+          Authorization: `Basic ${Buffer.from(
+            process.env.WAKATIME_API_KEY ?? ''
+          ).toString('base64')}`,
+        },
+        next: { revalidate: 1800 },
+      }
+    );
+  } catch {
+    redirect('/404');
+  }
+  console.log(weeklyStats, currentStats);
   return (
     <>
       <PageHeader description='Personal Profile' title='About Me' />
@@ -15,10 +48,8 @@ const AboutPage = () => {
           <div className='flex flex-col items-center xl:sticky xl:top-24'>
             <Image
               alt='Michael Li'
-              blurDataURL='/media/bonabrian/bonabrian-small.jpg'
               className='rounded-full object-cover xl:rounded-xl'
               height={256}
-              placeholder='blur'
               quality={100}
               src='/profile/profile.jpg'
               width={256}
@@ -124,6 +155,7 @@ const AboutPage = () => {
             </p>
           </div>
         </div>
+        <CodingStatistic />
       </Container>
     </>
   );
