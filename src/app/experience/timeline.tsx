@@ -7,6 +7,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { STACKS } from '@/src/components/icons/stacks';
+import { Button } from '@/src/components/ui/button';
 import {
   Tooltip,
   TooltipContent,
@@ -17,6 +18,13 @@ import { ExperienceList } from '@/src/utils/experiences';
 const TimeLine = () => {
   return (
     <>
+      <div className='mb-12 md:mb-16'>
+        <Button asChild className='gap-x-1 mt-10' variant='outline'>
+          <Link href='/resume/resume-Heyang.pdf' target='_blank'>
+            Download Resume
+          </Link>
+        </Button>
+      </div>
       <div className='prose max-w-none px-4 dark:prose-dark'>
         <ol className='list-none space-y-4 border-l border-border pl-10'>
           {ExperienceList.map(
@@ -50,14 +58,15 @@ const TimeLine = () => {
 
               return (
                 <li className='relative h-full' key={company.name}>
-                  <div className='absolute -left-[60px] bottom-0 mt-0 h-full'>
+                  <div className='absolute -left-[68px] bottom-0 mt-0 h-full'>
                     <div className='sticky top-20 flex items-start'>
                       <Image
                         alt={company.name}
-                        className='ml-0 rounded-full'
-                        height={40}
+                        className='rounded-full ml-0 bg-white shadow-sm object-cover h-14 w-14"'
+                        height={60}
                         src={company.logo}
-                        width={40}
+                        style={{ objectFit: 'contain' }}
+                        width={60}
                       />
                     </div>
                   </div>

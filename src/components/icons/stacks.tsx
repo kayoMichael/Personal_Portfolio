@@ -1,6 +1,5 @@
 import {
   AngularJS,
-  AWS,
   Bootstrap,
   ChakraUI,
   CSS3,
@@ -12,8 +11,11 @@ import {
   Jest,
   MySQL,
   NextJs,
+  NodeJS,
   PlanetScale,
+  PostMan,
   Prisma,
+  Python,
   ReactJs,
   Redis,
   Ruby,
@@ -23,6 +25,8 @@ import {
   TailwindCss,
   TypeScript,
   VueJs,
+  AWSColor,
+  AWSAurora,
 } from '@/src/components/icons/icons';
 import { cn } from '@/src/utils/cn';
 
@@ -44,7 +48,7 @@ export const STACKS: StackProps = {
   Redis: <Redis className={cn('fill-[#DC382D]')} />,
   HTML5: <HTML5 className={cn('fill-[#E34F26]')} />,
   CSS3: <CSS3 className={cn('fill-[#1572B6]')} />,
-  AWS: <AWS className={cn('fill-[#232F3E]')} />,
+  AWS: <AWSColor />,
   'Shadcn-UI': <ShadcnUI />,
   DaisyUI: <DaisyUI />,
   ChakraUI: <ChakraUI />,
@@ -53,4 +57,8 @@ export const STACKS: StackProps = {
   Ruby: <Ruby />,
   'Angular.js': <AngularJS />,
   MySQL: <MySQL />,
+  'Node.js': <NodeJS />,
+  Postman: <PostMan />,
+  Python: <Python className={cn('fill-[#3776AB]')} />,
+  'AWS Aurora DB': <AWSAurora />,
 };
