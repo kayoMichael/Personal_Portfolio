@@ -458,3 +458,345 @@ export const ChakraUI = ({ className, ...rest }: ComponentProps<'svg'>) => (
     <path d='M24,4C12.954,4,4,12.954,4,24s8.954,20,20,20s20-8.954,20-20S35.046,4,24,4z M17.279,36.159l7.126-10.265	C24.52,25.727,24.401,25.5,24.2,25.5h-9.34c-0.224,0-0.335-0.271-0.175-0.428l14.2-13.974c0.053-0.052,0.114-0.074,0.173-0.074	c0.168,0,0.321,0.18,0.225,0.367l-5.03,9.745c-0.086,0.166,0.035,0.365,0.222,0.365h8.882c0.228,0,0.337,0.28,0.169,0.434	l-15.873,14.55c-0.052,0.048-0.111,0.069-0.167,0.069C17.307,36.554,17.149,36.345,17.279,36.159z' />
   </svg>
 );
+
+export const Ruby = ({ className, ...rest }: ComponentProps<'svg'>) => (
+  <svg
+    className={cn('h-6 w-6', className)}
+    viewBox='0 0 32 32'
+    xmlns='http://www.w3.org/2000/svg'
+    {...rest}
+  >
+    <title>Ruby</title>
+    <defs>
+      <linearGradient
+        gradientTransform='matrix(202.935 0 0 -202.78 47910.461 -62541.16)'
+        gradientUnits='userSpaceOnUse'
+        id='vscodeIconsFileTypeRuby0'
+        x1='-235.957'
+        x2='-235.986'
+        y1='-308.579'
+        y2='-308.527'
+      >
+        <stop offset='0' stopColor='#fb7655' />
+        <stop offset='.41' stopColor='#e42b1e' />
+        <stop offset='.99' stopColor='#900' />
+        <stop offset='1' stopColor='#900' />
+      </linearGradient>
+      <linearGradient
+        gradientTransform='matrix(60.308 0 0 -111.778 14236.351 -34525.395)'
+        gradientUnits='userSpaceOnUse'
+        id='vscodeIconsFileTypeRuby1'
+        x1='-235.571'
+        x2='-235.697'
+        y1='-309.087'
+        y2='-309.041'
+      >
+        <stop offset='0' stopColor='#871101' />
+        <stop offset='.99' stopColor='#911209' />
+        <stop offset='1' stopColor='#911209' />
+      </linearGradient>
+      <linearGradient
+        gradientTransform='matrix(188.32 0 0 -21.986 44447.302 -6856.882)'
+        href='#vscodeIconsFileTypeRuby1'
+        id='vscodeIconsFileTypeRuby2'
+        x1='-235.896'
+        x2='-235.937'
+        y1='-313.362'
+        y2='-313.129'
+      />
+      <linearGradient
+        gradientTransform='matrix(65.222 0 0 -97.1 15237.802 -29991.814)'
+        gradientUnits='userSpaceOnUse'
+        id='vscodeIconsFileTypeRuby3'
+        x1='-233.515'
+        x2='-233.497'
+        y1='-309.082'
+        y2='-309.161'
+      >
+        <stop offset='0' stopColor='#fff' />
+        <stop offset='.23' stopColor='#e57252' />
+        <stop offset='.46' stopColor='#de3b20' />
+        <stop offset='.99' stopColor='#a60003' />
+        <stop offset='1' stopColor='#a60003' />
+      </linearGradient>
+      <linearGradient
+        gradientTransform='matrix(105.32 0 0 -106.825 24798.925 -33053.152)'
+        gradientUnits='userSpaceOnUse'
+        id='vscodeIconsFileTypeRuby4'
+        x1='-235.314'
+        x2='-235.31'
+        y1='-309.534'
+        y2='-309.607'
+      >
+        <stop offset='0' stopColor='#fff' />
+        <stop offset='.23' stopColor='#e4714e' />
+        <stop offset='.56' stopColor='#be1a0d' />
+        <stop offset='.99' stopColor='#a80d00' />
+        <stop offset='1' stopColor='#a80d00' />
+      </linearGradient>
+      <linearGradient
+        gradientTransform='matrix(94.321 0 0 -66.418 22271.499 -20707.004)'
+        gradientUnits='userSpaceOnUse'
+        id='vscodeIconsFileTypeRuby5'
+        x1='-235.882'
+        x2='-235.869'
+        y1='-311.851'
+        y2='-311.935'
+      >
+        <stop offset='0' stopColor='#fff' />
+        <stop offset='.18' stopColor='#e46342' />
+        <stop offset='.4' stopColor='#c82410' />
+        <stop offset='.99' stopColor='#a80d00' />
+        <stop offset='1' stopColor='#a80d00' />
+      </linearGradient>
+      <linearGradient
+        gradientTransform='matrix(70.767 0 0 -24.301 16678.116 -7798.647)'
+        gradientUnits='userSpaceOnUse'
+        id='vscodeIconsFileTypeRuby6'
+        x1='-235.412'
+        x2='-235.333'
+        y1='-321.074'
+        y2='-320.958'
+      >
+        <stop offset='0' stopColor='#fff' />
+        <stop offset='.54' stopColor='#c81f11' />
+        <stop offset='.99' stopColor='#bf0905' />
+        <stop offset='1' stopColor='#bf0905' />
+      </linearGradient>
+      <linearGradient
+        gradientTransform='matrix(18.177 0 0 -72.645 4071.017 -22510.233)'
+        gradientUnits='userSpaceOnUse'
+        id='vscodeIconsFileTypeRuby7'
+        x1='-223.821'
+        x2='-223.796'
+        y1='-310.116'
+        y2='-310.18'
+      >
+        <stop offset='0' stopColor='#fff' />
+        <stop offset='.31' stopColor='#de4024' />
+        <stop offset='.99' stopColor='#bf190b' />
+        <stop offset='1' stopColor='#bf190b' />
+      </linearGradient>
+      <linearGradient
+        gradientTransform='matrix(158.162 0 0 -157.937 37256.313 -48819.382)'
+        gradientUnits='userSpaceOnUse'
+        id='vscodeIconsFileTypeRuby8'
+        x1='-235.561'
+        x2='-235.424'
+        y1='-309.258'
+        y2='-309.116'
+      >
+        <stop offset='0' stopColor='#bd0012' />
+        <stop offset='.07' stopColor='#fff' />
+        <stop offset='.17' stopColor='#fff' />
+        <stop offset='.27' stopColor='#c82f1c' />
+        <stop offset='.33' stopColor='#820c01' />
+        <stop offset='.46' stopColor='#a31601' />
+        <stop offset='.72' stopColor='#b31301' />
+        <stop offset='.99' stopColor='#e82609' />
+        <stop offset='1' stopColor='#e82609' />
+      </linearGradient>
+      <linearGradient
+        gradientTransform='matrix(127.074 0 0 -97.409 29932.229 -30086.947)'
+        gradientUnits='userSpaceOnUse'
+        id='vscodeIconsFileTypeRuby9'
+        x1='-235.424'
+        x2='-235.476'
+        y1='-309.143'
+        y2='-309.126'
+      >
+        <stop offset='0' stopColor='#8c0c01' />
+        <stop offset='.54' stopColor='#990c00' />
+        <stop offset='.99' stopColor='#a80d0e' />
+        <stop offset='1' stopColor='#a80d0e' />
+      </linearGradient>
+      <linearGradient
+        gradientTransform='matrix(94.011 0 0 -105.603 22198.743 -32676.856)'
+        gradientUnits='userSpaceOnUse'
+        id='vscodeIconsFileTypeRubya'
+        x1='-235.839'
+        x2='-235.901'
+        y1='-309.604'
+        y2='-309.555'
+      >
+        <stop offset='0' stopColor='#7e110b' />
+        <stop offset='.99' stopColor='#9e0c00' />
+        <stop offset='1' stopColor='#9e0c00' />
+      </linearGradient>
+      <linearGradient
+        gradientTransform='matrix(79.702 0 0 -81.791 18827.397 -25447.905)'
+        gradientUnits='userSpaceOnUse'
+        id='vscodeIconsFileTypeRubyb'
+        x1='-235.854'
+        x2='-235.891'
+        y1='-311.24'
+        y2='-311.202'
+      >
+        <stop offset='0' stopColor='#79130d' />
+        <stop offset='.99' stopColor='#9e120b' />
+        <stop offset='1' stopColor='#9e120b' />
+      </linearGradient>
+      <linearGradient
+        gradientTransform='matrix(40.137 0 0 -81.143 9286.998 -25078.589)'
+        gradientUnits='userSpaceOnUse'
+        id='vscodeIconsFileTypeRubyc'
+        x1='-231.241'
+        x2='-231.299'
+        y1='-309.435'
+        y2='-309.337'
+      >
+        <stop offset='0' stopColor='#8b2114' />
+        <stop offset='.43' stopColor='#9e100a' />
+        <stop offset='.99' stopColor='#b3100c' />
+        <stop offset='1' stopColor='#b3100c' />
+      </linearGradient>
+      <linearGradient
+        gradientTransform='matrix(78.099 0 0 -32.624 18447.361 -10353.553)'
+        gradientUnits='userSpaceOnUse'
+        id='vscodeIconsFileTypeRubyd'
+        x1='-235.898'
+        x2='-235.831'
+        y1='-317.466'
+        y2='-317.537'
+      >
+        <stop offset='0' stopColor='#b31000' />
+        <stop offset='.44' stopColor='#910f08' />
+        <stop offset='.99' stopColor='#791c12' />
+        <stop offset='1' stopColor='#791c12' />
+      </linearGradient>
+      <radialGradient
+        cx='-235.882'
+        cy='-312.543'
+        gradientTransform='matrix(93.113 0 0 -48.655 21986.073 -15193.61)'
+        gradientUnits='userSpaceOnUse'
+        id='vscodeIconsFileTypeRubye'
+        r='.076'
+      >
+        <stop offset='0' stopColor='#a80d00' />
+        <stop offset='.99' stopColor='#7e0e08' />
+        <stop offset='1' stopColor='#7e0e08' />
+      </radialGradient>
+      <radialGradient
+        cx='-235.282'
+        cy='-309.704'
+        gradientTransform='matrix(97.434 0 0 -75.848 22937.057 -23467.84)'
+        gradientUnits='userSpaceOnUse'
+        id='vscodeIconsFileTypeRubyf'
+        r='.097'
+      >
+        <stop offset='0' stopColor='#a30c00' />
+        <stop offset='.99' stopColor='#800e08' />
+        <stop offset='1' stopColor='#800e08' />
+      </radialGradient>
+    </defs>
+    <path
+      d='M23.693 20.469L7.707 29.961l20.7-1.4L30 7.685Z'
+      fill='url(#vscodeIconsFileTypeRuby0)'
+    />
+    <path
+      d='m28.44 28.542l-1.779-12.279l-4.846 6.4Z'
+      fill='url(#vscodeIconsFileTypeRuby1)'
+    />
+    <path
+      d='M28.464 28.542L15.43 27.519l-7.654 2.415Z'
+      fill='url(#vscodeIconsFileTypeRuby2)'
+    />
+    <path
+      d='M7.794 29.937L11.05 19.27L3.885 20.8Z'
+      fill='url(#vscodeIconsFileTypeRuby3)'
+    />
+    <path
+      d='m21.813 22.7l-3-11.735L10.243 19Z'
+      fill='url(#vscodeIconsFileTypeRuby4)'
+    />
+    <path
+      d='m29.32 11.127l-8.1-6.619l-2.257 7.3Z'
+      fill='url(#vscodeIconsFileTypeRuby5)'
+    />
+    <path
+      d='m25.53 2.148l-4.767 2.634l-3.007-2.67Z'
+      fill='url(#vscodeIconsFileTypeRuby6)'
+    />
+    <path
+      d='m2 24.38l2-3.642L2.382 16.4Z'
+      fill='url(#vscodeIconsFileTypeRuby7)'
+    />
+    <path
+      d='m2.274 16.263l1.626 4.61l7.062-1.584l8.062-7.489L21.3 4.569l-3.583-2.53l-6.091 2.28C9.706 6.1 5.982 9.635 5.848 9.7s-2.459 4.464-3.574 6.562Z'
+      fill='#fff'
+    />
+    <path
+      d='M7.981 7.981C12.14 3.858 17.5 1.421 19.559 3.5s-.124 7.121-4.283 11.244s-9.455 6.69-11.511 4.614s.057-7.258 4.216-11.377'
+      fill='url(#vscodeIconsFileTypeRuby8)'
+    />
+    <path
+      d='m7.794 29.933l3.231-10.7l10.729 3.447c-3.879 3.638-8.194 6.713-13.96 7.254Z'
+      fill='url(#vscodeIconsFileTypeRuby9)'
+    />
+    <path
+      d='m19.038 11.774l2.754 10.91c3.24-3.407 6.149-7.07 7.573-11.6z'
+      fill='url(#vscodeIconsFileTypeRubya)'
+    />
+    <path
+      d='M29.337 11.139c1.1-3.327 1.357-8.1-3.841-8.985l-4.265 2.355z'
+      fill='url(#vscodeIconsFileTypeRubyb)'
+    />
+    <path
+      d='M2 24.332c.153 5.49 4.114 5.572 5.8 5.62l-3.9-9.1z'
+      fill='#9e1209'
+    />
+    <path
+      d='M19.053 11.791c2.49 1.531 7.509 4.6 7.61 4.661a17.6 17.6 0 0 0 2.619-5.343z'
+      fill='url(#vscodeIconsFileTypeRubye)'
+    />
+    <path
+      d='m11.021 19.232l4.319 8.332a28 28 0 0 0 6.385-4.88l-10.7-3.452Z'
+      fill='url(#vscodeIconsFileTypeRubyf)'
+    />
+    <path
+      d='m3.887 20.861l-.612 7.287c1.155 1.577 2.743 1.714 4.409 1.591c-1.205-3-3.614-9-3.8-8.878Z'
+      fill='url(#vscodeIconsFileTypeRubyc)'
+    />
+    <path
+      d='m21.206 4.528l8.58 1.2c-.458-1.94-1.864-3.192-4.261-3.584l-4.319 2.38Z'
+      fill='url(#vscodeIconsFileTypeRubyd)'
+    />
+  </svg>
+);
+
+export const RubyOnRails = ({ className, ...rest }: ComponentProps<'svg'>) => (
+  <svg
+    className={cn('h-7 w-7', className)}
+    viewBox='0 0 24 24'
+    xmlns='http://www.w3.org/2000/svg'
+    {...rest}
+  >
+    <path
+      d='M19.8 16.7s1.8-.2 1.8-2.4s-2.1-2.5-2.1-2.5h-3.8V19h1.9v-1.7l1.7 1.7H22zm-.8-1.4h-1.5v-1.6H19s.4.2.4.8c.1.6-.4.8-.4.8m2.3-7.1v.2C13.2 6.1 10 13.2 10.6 18.7H4.3c.7-5.4 7.5-16.1 17-10.5m-.8-1.3c-.7-.3-1.4-.6-2.1-.8l.1-1.3l2.1.8zm-2 1.8q1.05 0 2.1.3l-.1 1.2l-1.8-.2zm-4.6-2.9l-.4-1.2l2.1-.2l.4 1.3c-.2 0-1.9.1-2.1.1m1.3 3.7c.4-.2 1.1-.5 2-.7l.4 1.2l-1.8.7zm-3.4-3c-.6.3-1.2.6-1.8 1l-.8-1.3l1.8-1zm2.5 3.6l.8 1.2l-1.1 1.3l-1.1-1c.3-.6.8-1.1 1.4-1.5M11.6 15c.1-.8.3-1.5.6-2.3l1.2 1l-.3 1.9zM7.9 9.3c-.5.5-1 1.1-1.4 1.6L5.2 9.8l1.5-1.6zm-3.1 4.4c-.4.8-.7 1.6-1 2.3L2 15.3l.9-2.3zm6.7 2.6l1.8.6l.3 2l-2-.5c0-.2-.1-.9-.1-2.1'
+      fill='#cc0000'
+    />
+    <title>Ruby on Rails</title>
+  </svg>
+);
+
+export const AngularJS = ({ className, ...rest }: ComponentProps<'svg'>) => (
+  <svg
+    className={cn('h-7 w-7', className)}
+    viewBox='0 0 256 256'
+    xmlns='http://www.w3.org/2000/svg'
+    {...rest}
+  >
+    <g fill='none'>
+      <rect fill='#f4f2ed' height='256' rx='60' width='256' />
+      <path
+        d='M34.25 61.125L127.325 28l95.525 32.612L207.412 183.7L127.325 228l-78.787-43.725z'
+        fill='#e23237'
+      />
+      <path d='M222.85 60.613L127.325 28v200l80.087-44.3z' fill='#b52e31' />
+      <path
+        d='m127.469 51.375l-58 129l21.644-.438l11.687-29.149h51.875l12.7 29.375l20.637.437zm.143 41.412l19.625 40.982H110.5l17.169-40.982z'
+        fill='#fff'
+      />
+    </g>
+  </svg>
+);
