@@ -53,7 +53,7 @@ const GitHubInsights = ({ data }: Props) => {
             @kayoMichael
           </Link>
         }
-        description='A Quick Look at Followers, Stars, and Contributions Activity from last year.'
+        description='A Quick Look at Followers, Repositories, and Contributions Activity from last year.'
         icon={<GitHub className='h-5 w-5' />}
         title='GitHub Insights'
       >

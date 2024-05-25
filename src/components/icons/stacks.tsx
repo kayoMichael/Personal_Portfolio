@@ -32,6 +32,7 @@ import {
   GraphQL,
   ExpressJS,
   Firebase,
+  Serverless,
 } from '@/src/components/icons/icons';
 import { cn } from '@/src/utils/cn';
 
@@ -72,4 +73,5 @@ export const STACKS: StackProps = {
   ExpressJS: <ExpressJS />,
   Firebase: <Firebase />,
   ShadcnUI: <ShadcnUI />,
+  'Serverless Framework': <Serverless />,
 };

@@ -31,8 +31,8 @@ export const ExperienceList: Experience[] = [
         jobType: 'Internship',
         },
         role: 'Software Engineer Intern',
-        startDate: '2021-06',
-        endDate: '2021-10',
+        startDate: '2022-06',
+        endDate: '2022-10',
         accomplishments: [
             "Spearheaded the development of a user-friendly portal site for an Internet Exchange Service as a Software Engineer Intern, enhancing user experience and accessibility.",
             "Managed Migration Files and executed CRUD (Create, Read, Update, Delete) operations using Active Record and MySQL, ensuring seamless data management and integrity.",
@@ -80,7 +80,7 @@ export const ExperienceList: Experience[] = [
             jobType: 'Freelance',
         },
         role: 'Backend Engineer',
-        startDate: '2021-11',
+        startDate: '2022-11',
         endDate: null,
         accomplishments: [
             "Part of the Development team as a backend engineer for a Serverless SaaS Mobile Application, outsourced from Kao Inc., one of the largest cosmetic companies in Japan.",
@@ -96,6 +96,9 @@ export const ExperienceList: Experience[] = [
             },
             {
                 name: 'AWS',
+            },
+            {
+                name: "Serverless Framework"
             },
             {
                 name: "Amazon Aurora"
@@ -128,8 +131,8 @@ export const ExperienceList: Experience[] = [
             jobType: 'Internship',
         },
         role: 'Software Engineer Intern',
-        startDate: '2022-06',
-        endDate: '2022-10',
+        startDate: '2023-06',
+        endDate: '2023-10',
         accomplishments: [
             "Contributed to the development of the company's payment portal, utilizing React.js, Node.js and Express to craft a seamless and intuitive payment interface for customers.",
             "Implemented GraphQl models and queries to fetch and display data dynamically, enhancing user experiences with real-time updates and responsive web applications.",

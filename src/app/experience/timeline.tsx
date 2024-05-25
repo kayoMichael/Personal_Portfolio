@@ -20,7 +20,7 @@ const TimeLine = () => {
     <>
       <div className='mb-12 md:mb-16'>
         <Button asChild className='gap-x-1 mt-10' variant='outline'>
-          <Link href='/resume/resume-Heyang.pdf' target='_blank'>
+          <Link href='/resume/Michael_(Heyang)_Li_Resume.pdf' target='_blank'>
             Download Resume
           </Link>
         </Button>
