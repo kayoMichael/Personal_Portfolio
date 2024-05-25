@@ -1,7 +1,21 @@
-# Personal Portfolio
+# Michael Li's Personal Portfolio
 
-https://michael-li.vercel.app/
+Welcome to my personal portfolio, where creativity meets code! Here, you can explore my projects, delve into my tech stack, and get to know me a little better.
 
-# Tech Stack
+## Check out my Portfolio
 
-NextJS, TypeScript, ShadcnUI, Framer Motion
+[Visit Portfolio](https://michael-li.vercel.app/)
+
+## Tech Stack
+- **Next.js**
+- **TypeScript**
+- **ShadcnUI**
+- **Framer Motion**
+
+## Contact Information
+
+Let's connect and discuss exciting opportunities or collaborate on innovative projects:
+
+- 📧 [Email Me](michaelxkayo@hotmail.com)
+- 🌐 [LinkedIn](https://www.linkedin.com/in/michael-kayo-li-72115222b/)
+
