@@ -1,7 +1,6 @@
 'use client';
 import React from 'react';
 
-import { TooltipProvider } from '@radix-ui/react-tooltip';
 import { differenceInMonths, differenceInYears, format } from 'date-fns';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -9,6 +8,7 @@ import Link from 'next/link';
 import { STACKS } from '@/src/components/icons/stacks';
 import { Button } from '@/src/components/ui/button';
 import {
+  TooltipProvider,
   Tooltip,
   TooltipContent,
   TooltipTrigger,

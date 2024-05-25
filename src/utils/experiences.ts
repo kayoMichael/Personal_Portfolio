@@ -4,7 +4,7 @@ interface Company {
   url: string
   location: string
   workplaceType: 'Remote' | 'On-Site'
-  jobType: 'Internship' | 'Freelance' | 'Internship -> Freelance'
+  jobType: 'Internship' | 'Freelance' | 'Internship (4 month) -> Freelance'
 }
 
 interface Stack {
@@ -98,7 +98,7 @@ export const ExperienceList: Experience[] = [
                 name: 'AWS',
             },
             {
-                name: "AWS Aurora DB"
+                name: "Amazon Aurora"
             },
             {
                 name: 'Postman',
@@ -131,25 +131,47 @@ export const ExperienceList: Experience[] = [
         startDate: '2022-06',
         endDate: '2022-10',
         accomplishments: [
-            "Contributed to the development of the company's payment portal, leveraging React.js and Bootstrap to create a user-friendly and efficient payment experience for customers.",
-            "Proficiently leveraged asynchronous API calls to fetch and process data, dynamically presenting information on the frontend, enhancing user experiences with real-time updates and responsive web applications",
-            "Collaborated closely with cross-functional teams, including designers, product managers, and stakeholders to ensure seamless integration and implementation of new features.",
-            "Conducted thorough testing and debugging to identify and resolve issues, ensuring optimal functionality and user experience.",
-            
+            "Contributed to the development of the company's payment portal, utilizing React.js, Node.js and Express to craft a seamless and intuitive payment interface for customers.",
+            "Implemented GraphQl models and queries to fetch and display data dynamically, enhancing user experiences with real-time updates and responsive web applications.",
+            "Worked closely with multidisciplinary teams, collaborating with designers, product managers, and software developers to seamlessly integrate and deploy new features.",
+            "Conducted comprehensive testing and debugging procedures using Cypress and Storybook, identifying and rectifying issues promptly to ensure optimal performance and user satisfaction.",
+            "Implemented performance optimizations to enhance the speed and efficiency of the payment portal, resulting in improved user experience and customer satisfaction.",
+            "Participated in regular code reviews, knowledge-sharing sessions and scrum sessions, fostering a collaborative environment and facilitating continuous learning and growth among team members."
         ],
         stacks: [
             {
-                name: 'Ruby',
+                name: 'React.js',
             },
             {
-                name: 'Ruby on Rails',
+                name: 'Node.js',
             },
             {
-                name: 'Postman',
+                name: 'ExpressJS',
             },
             {
-                name: 'MySQL',
-            }
+                name: 'TypeScript',
+            },
+            {
+                name: 'JavaScript',
+            },
+            {
+                name: "HTML5",
+            },
+            {
+                name: "CSS3"
+            },
+            {
+                name: 'Bootstrap',
+            },
+            {
+                name: 'GraphQL',
+            },
+            {
+                name: 'Cypress',
+            },
+            {
+                name: 'Storybook',
+            },
         ]
 
     },
@@ -160,27 +182,46 @@ export const ExperienceList: Experience[] = [
             url: 'https://enju-corporate.studio.site/',
             location: 'Tokyo, Japan',
             workplaceType: 'On-Site',
-            jobType: 'Internship -> Freelance',
+            jobType: 'Internship (4 month) -> Freelance',
         },
         role: 'Software Engineer Intern -> Freelance Software Engineer',
         startDate: '2024-02',
         endDate: null,
         accomplishments: [
-            "Contributed to the development of the company's payment portal, leveraging Vue.js and Bootstrap to create a user-friendly and efficient payment experience for customers.",
-            "Proficiently leveraged asynchronous API calls to fetch and process data, dynamically presenting information on the frontend, enhancing user experiences with real-time updates and responsive web applications",
-        ],
+            "Developing a Full Stack Website Tag Translation SaaS Application, leveraging Next.js App Router, React.js, TypeScript, and Firebase.",
+            "Utilized Firebase Authentication and Firestore to manage user authentication and data storage, ensuring data security and integrity.",
+            "Designed Firestore Document types to ensure typesafety and data integrity for a schema-less database.",
+            "Implemented a Layers Architecture Approach to separate concerns and ensure code maintainability and scalability.",
+            "Utilised Next.JS Server Actions to handle mutations on the Server and utilized React 19 useOptimistic and useTransition hook to optimistically update the UI.",
+            "Adhered to an agile methodology for the software development process due to the constraint of budget, time and personel.",
+            "Maintained and updated documentation for the software development process using JSDoc format.",],
         stacks: [
             {
-                name: 'Ruby',
+                name: 'Next.js',
             },
             {
-                name: 'Ruby on Rails',
+                name: 'React.js',
             },
             {
-                name: 'Postman',
+                name: 'TypeScript',
             },
             {
-                name: 'MySQL',
+                name: 'JavaScript',
+            },
+            {
+                name: "Firebase",
+            },
+            {
+                name: "TailwindCSS"
+            },
+            {
+                name: 'HTML5',
+            },
+            {
+                name: 'CSS3',
+            },
+            {
+                name: "ShadcnUI"
             }
         ]
 

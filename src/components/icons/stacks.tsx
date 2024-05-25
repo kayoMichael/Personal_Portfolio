@@ -27,6 +27,11 @@ import {
   VueJs,
   AWSColor,
   AWSAurora,
+  Cypress,
+  StoryBook,
+  GraphQL,
+  ExpressJS,
+  Firebase,
 } from '@/src/components/icons/icons';
 import { cn } from '@/src/utils/cn';
 
@@ -60,5 +65,11 @@ export const STACKS: StackProps = {
   'Node.js': <NodeJS />,
   Postman: <PostMan />,
   Python: <Python className={cn('fill-[#3776AB]')} />,
-  'AWS Aurora DB': <AWSAurora />,
+  'Amazon Aurora': <AWSAurora />,
+  Cypress: <Cypress />,
+  Storybook: <StoryBook />,
+  GraphQL: <GraphQL />,
+  ExpressJS: <ExpressJS />,
+  Firebase: <Firebase />,
+  ShadcnUI: <ShadcnUI />,
 };
