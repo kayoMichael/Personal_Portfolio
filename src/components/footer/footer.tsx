@@ -36,6 +36,7 @@ const Footer = () => (
               className={`text-muted-foreground transition-colors duration-200 ease-out ${className}`}
               href={url}
               key={title}
+              target='_blank'
               title={title}
             >
               {icon}
