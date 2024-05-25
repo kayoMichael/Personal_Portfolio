@@ -1,6 +1,6 @@
 # Michael Li's Personal Portfolio
 
-Welcome to my personal portfolio, where creativity meets code! Here, you can explore my projects, delve into my tech stack, and get to know me a little better.
+Welcome to my personal portfolio where all of my information about myself is present. 
 
 ## Check out my Portfolio
 
