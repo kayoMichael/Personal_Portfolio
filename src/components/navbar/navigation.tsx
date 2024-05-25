@@ -32,12 +32,6 @@ const NavigationBar = () => {
               >
                 Experience
               </Link>
-              <Link
-                className='relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:after:w-full dark:after:bg-gray-50'
-                href='#'
-              >
-                Blog
-              </Link>
             </nav>
           </div>
         </Container>
