@@ -55,7 +55,7 @@ const CodingStatistic = ({ weeklyStats, currentStats }: Props) => {
   return (
     <>
       <PageHeader title='My Coding Statistics' />
-      <Container>
+      <Container className='mt-10'>
         <Section
           appendix={
             <Link
@@ -95,16 +95,16 @@ const CodingStatistic = ({ weeklyStats, currentStats }: Props) => {
                       {activity.title}
                     </p>
                     <ul className='flex flex-col gap-1 px-4 py-3'>
-                      {activity.data.map(
-                        (item: { name: string; percent?: number }) => (
+                      {activity.data
+                        .slice(0, 6)
+                        .map((item: { name: string; percent?: number }) => (
                           <li key={item.name}>
                             <Progress
                               className='bg-gradient-to-r from-pink-400 via-blue-500 to-purple-600'
                               data={item}
                             />
                           </li>
-                        )
-                      )}
+                        ))}
                     </ul>
                   </div>
                 </div>
