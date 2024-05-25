@@ -10,7 +10,7 @@ const NavigationBar = () => {
       <div className='fixed top-0 z-50 w-full bg-white shadow-sm dark:bg-gray-950'>
         <Container>
           <div className='flex h-16 items-center justify-between'>
-            <Link className='flex items-center gap-2' href='#'>
+            <Link className='flex items-center gap-2' href='/'>
               <span className='text-lg font-semibold'>Personal Portfolio</span>
             </Link>
             <nav className='hidden gap-6 text-sm font-medium md:flex'>
@@ -28,7 +28,7 @@ const NavigationBar = () => {
               </Link>
               <Link
                 className='relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:after:w-full dark:after:bg-gray-50'
-                href='#'
+                href='/experience'
               >
                 Experience
               </Link>

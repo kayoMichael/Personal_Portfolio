@@ -96,6 +96,102 @@ const config = {
         'marquee-left': 'marquee-left var(--duration, 50s) linear infinite',
         'marquee-up': 'marquee-up var(--duration, 50s) linear infinite',
       },
+      typography: (theme: (value: string) => void) => ({
+        DEFAULT: {
+          css: {
+            color: 'hsl(var(--foreground))',
+            a: {
+              textDecoration: 'none',
+              color: 'hsl(var(--primary))',
+              '&:hover': {
+                textDecoration: 'underline',
+                color: 'hsl(var(--primary))',
+              },
+              code: { color: 'hsl(var(--primary))' },
+            },
+            'h2, h3, h4, h5, h6': {
+              position: 'relative',
+              color: 'hsl(var(--foreground))',
+            },
+            img: {
+              margin: '0 auto',
+            },
+            'code, pre code': {
+              fontFamily: 'var(--font-fira-code)',
+            },
+            'code[data-theme*=" "], code[data-theme*=" "] span': {
+              color: 'var(--shiki-light)',
+              backgroundColor: 'var(--shiki-light-bg)',
+            },
+            '[data-rehype-pretty-code-figure]': {
+              position: 'relative',
+            },
+            ':not(pre) > code': {
+              padding: '0.12em 0.25em',
+              borderRadius: '0.375rem',
+              display: 'inline-flex',
+              lineHeight: '1.2',
+              background: 'hsl(var(--accent))',
+              color: 'hsl(var(--accent-foreground))',
+              border: '1px solid hsl(var(--border))',
+              '&::before, &::after': {
+                content: 'none',
+              },
+            },
+            pre: {
+              background: 'hsl(var(--code))',
+              padding: '1.5rem 0',
+              lineHeight: 2,
+              '[data-line-numbers]': {
+                '[data-line]::before': {
+                  counterIncrement: 'lineNumber',
+                  content: 'counter(lineNumber)',
+                  display: 'inline-block',
+                  width: '1rem',
+                  marginRight: '1rem',
+                  textAlign: 'right',
+                  color: 'hsl(var(--muted-foreground) / 0.6)',
+                },
+              },
+              '> code': {
+                display: 'grid',
+                counterReset: 'lineNumber',
+                '> [data-line]': {
+                  padding: '0 2.5rem 0 1.5rem',
+                  borderLeft: '2px solid transparent',
+                },
+                '> [data-highlighted-line]': {
+                  borderLeftColor: theme('colors.red.300'),
+                  background: 'hsl(var(--primary) / 0.2)',
+                },
+              },
+            },
+            blockquote: {
+              color: 'hsl(var(--foreground))',
+              borderLeftColor: 'hsl(var(--accent))',
+            },
+            'p strong': {
+              color: 'hsl(var(--foreground))',
+            },
+          },
+        },
+        dark: {
+          css: {
+            'code[data-theme*=" "], code[data-theme*=" "] span': {
+              color: 'var(--shiki-dark)',
+              backgroundColor: 'var(--shiki-dark-bg)',
+            },
+            pre: {
+              border: '1px solid hsl(var(--border))',
+              '> code': {
+                '> [data-highlighted-line]': {
+                  background: 'hsl(var(--primary) / 0.1)',
+                },
+              },
+            },
+          },
+        },
+      }),
     },
   },
   plugins: [require("tailwindcss-animate"), require('@tailwindcss/typography'),  addVariablesForColors, function ({ matchUtilities, theme }: any) {
