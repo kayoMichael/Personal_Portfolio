@@ -32,5 +32,13 @@ export const Projects: Project[] = [{
     url: 'https://game-page-mocha.vercel.app/',
     date: '2023',
     image: '/projects/game-page.png',
+}, {
+    title: "Gym Landing Page",
+    description: "A Gym Landing Page built with only vanilla CSS and HTML for educational purposes",
+    techStack: ["HTML5", "CSS3"],
+    github: 'https://github.com/kayoMichael/Workout-Land-page',
+    url: "https://vanilla-workout.vercel.app/",
+    date: '2022',
+    image: '/projects/gym-landing.png'
 }]
 
