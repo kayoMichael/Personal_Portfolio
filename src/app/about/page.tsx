@@ -4,14 +4,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
 
+import { getContributions, getGitHubUser } from './actions';
 import CodingStatistic from './codingStatistics';
+import GitHubInsights from './githubStatistics';
 import TechStack from './techStack';
 
 import PageHeader from '@/src/components/typography/header';
 import Container from '@/src/components/ui/container';
 
 const AboutPage = async () => {
-  let weeklyStats, currentStats;
+  let weeklyStats, currentStats, githubData;
   try {
     weeklyStats = await fetch(
       'https://wakatime.com/api/v1/users/current/all_time_since_today',
@@ -37,6 +39,13 @@ const AboutPage = async () => {
         next: { revalidate: 1800 },
       }
     ).then(async (res) => await res.json());
+
+    githubData = await Promise.all([getGitHubUser(), getContributions()]).then(
+      ([user, contributions]) => ({
+        user,
+        contributions,
+      })
+    );
   } catch {
     redirect('/404');
   }
@@ -159,6 +168,7 @@ const AboutPage = async () => {
         </div>
       </Container>
       <CodingStatistic currentStats={currentStats} weeklyStats={weeklyStats} />
+      <GitHubInsights data={githubData} />
     </>
   );
 };
