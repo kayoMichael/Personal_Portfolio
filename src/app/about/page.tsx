@@ -123,7 +123,7 @@ const AboutPage = async () => {
               <Link href='https://expressjs.com/' target='_blank'>
                 ExpressJS
               </Link>
-              , and
+              , and{' '}
               <Link href='https://www.serverless.com/' target='_blank'>
                 Serverless Framework
               </Link>{' '}
