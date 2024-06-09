@@ -20,7 +20,7 @@ const PageHeader = forwardRef<HTMLDivElement, PageHeaderProps>(
     };
 
     return (
-      <div className='bg-pattern pt-10 lg:pt-14' ref={ref} {...props}>
+      <div className='bg-pattern pt-10 mt-10 lg:pt-14' ref={ref} {...props}>
         <Container
           className={`pointer-events-none select-none overflow-hidden ${centered && 'text-center'}`}
         >
