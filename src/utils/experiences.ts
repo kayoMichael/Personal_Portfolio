@@ -3,7 +3,7 @@ interface Company {
   logo: string
   url: string
   location: string
-  workplaceType: 'Remote' | 'On-Site'
+  workplaceType: 'Remote' | 'On-Site' | 'Hybrid'
   jobType: 'Internship' | 'Freelance' | 'Internship (4 month) -> Freelance'
 }
 
@@ -79,7 +79,7 @@ export const ExperienceList: Experience[] = [
             workplaceType: 'Remote',
             jobType: 'Freelance',
         },
-        role: 'Backend Engineer',
+        role: 'Full Stack Engineer',
         startDate: '2022-11',
         endDate: null,
         accomplishments: [
@@ -88,7 +88,9 @@ export const ExperienceList: Experience[] = [
             "Currently spearheading the development of a multi-step form processing system leveraging AWS Step Functions and Amazon Aurora. This system is designed to manage user information, extract valuable insights, and store data in a relational database.",
             "Built scalable infrastructure for real-time data processing and analysis, ensuring seamless integration with existing systems and optimizing performance.",
             "Implemented robust security measures and compliance standards, safeguarding sensitive user data and ensuring regulatory compliance with industry standards.",
-            "Actively participated in code reviews, providing valuable feedback and ensuring adherence to coding standards, best practices, and quality assurance."
+            "Actively participated in code reviews, providing valuable feedback and ensuring adherence to coding standards, best practices, and quality assurance.",
+            "Developing a Full Stack Application utilizing Nuxt.JS in the frontend and Java Spring in the backend",
+            "Replacing Existing AWS Lambda Applications to Java Spring Applications to improve flexibility and a more robust backend system."
         ],
         stacks: [
             {
@@ -117,6 +119,21 @@ export const ExperienceList: Experience[] = [
             },
             {
                 name: "Jest"
+            },
+            {
+                name: "Spring"
+            },
+            {
+                name: "Vue.js"
+            },
+            {
+                name: "NuxtJS"
+            },
+            {
+                name: "HTML5"
+            },
+            {
+                name: "CSS3"
             }
         ]
 
@@ -185,11 +202,11 @@ export const ExperienceList: Experience[] = [
             url: 'https://enju-corporate.studio.site/',
             location: 'Tokyo, Japan',
             workplaceType: 'On-Site',
-            jobType: 'Internship (4 month) -> Freelance',
+            jobType: 'Internship',
         },
-        role: 'Software Engineer Intern -> Freelance Software Engineer',
+        role: 'Software Engineer Intern',
         startDate: '2024-02',
-        endDate: null,
+        endDate: '2024-08',
         accomplishments: [
             "Developing a Full Stack Website Tag Translation SaaS Application, leveraging Next.js App Router, React.js, TypeScript, and Firebase.",
             "Utilized Firebase Authentication and Firestore to manage user authentication and data storage, ensuring data security and integrity.",
@@ -228,5 +245,47 @@ export const ExperienceList: Experience[] = [
             }
         ]
 
+    }, {
+        company: {
+            name: 'Ontario Ministry of Education',
+            logo: "/logo/ministry_of_education.jpg",
+            url: 'https://www.ontario.ca/page/ministry-education',
+            location: 'Toronto, Canada',
+            workplaceType: 'Hybrid',
+            jobType: 'Internship',
+        },
+        role: '.Net Developer',
+        startDate: '2024-09',
+        endDate: null,
+        accomplishments: [
+            "Developed E2E Test automation scripts using Selenium for Various web applications of the Ministry of Education, ensuring the quality and reliability of the software products.",
+            "Identify important areas to be tested and Developed unit tests using Nunit and C# to ensure that the product was functioning as intended.",
+            "Developed tools using python, HTML and CSS to streamline the process of finding information of Common Vulnerabilities and Exposures (CVE) utilizing Gemini AI and NIST NVD API.",
+            "Throughly manually tested software products from the user perspective to identify pootential issues and cyber security vulnerabilities.",
+
+        ],
+        stacks: [
+            {
+                name: '.Net',
+            },
+            {
+                name: 'C#',
+            },
+            {
+                name: 'Selenium',
+            },
+            {
+                name: 'Python',
+            },
+            {
+                name: 'HTML5',
+            },
+            {
+                name: 'CSS3',
+            },
+            {
+                name: 'Nunit',
+            }
+        ]
     }
 ]

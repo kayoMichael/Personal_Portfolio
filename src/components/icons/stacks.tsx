@@ -33,6 +33,13 @@ import {
   ExpressJS,
   Firebase,
   Serverless,
+  Dotnet,
+  CSharp,
+  Selenium,
+  Nunit,
+  Flask,
+  Lambda,
+  NuxtJS,
 } from '@/src/components/icons/icons';
 import { cn } from '@/src/utils/cn';
 
@@ -74,4 +81,11 @@ export const STACKS: StackProps = {
   Firebase: <Firebase />,
   ShadcnUI: <ShadcnUI />,
   'Serverless Framework': <Serverless />,
+  '.Net': <Dotnet />,
+  'C#': <CSharp />,
+  Selenium: <Selenium />,
+  Nunit: <Nunit />,
+  Flask: <Flask />,
+  'AWS Lambda': <Lambda />,
+  NuxtJS: <NuxtJS />,
 };

@@ -69,6 +69,7 @@ const TimeLine = () => {
                         <Link
                           className='text-muted-foreground underline hover:text-foreground'
                           href={company.url}
+                          target='_blank'
                         >
                           {company.name}
                         </Link>

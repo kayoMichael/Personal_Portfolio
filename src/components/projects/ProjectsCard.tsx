@@ -20,7 +20,7 @@ interface Props {
   description: string;
   date: string;
   image: string;
-  url: string;
+  url?: string;
   githubLink: string;
   techStack: string[];
 }
@@ -82,15 +82,17 @@ const ProjectCard = ({
           >
             Code →
           </CardItem>
-          <CardItem
-            as={Link}
-            className='px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold'
-            href={url}
-            target='__blank'
-            translateZ={20}
-          >
-            Preview Page
-          </CardItem>
+          {url && (
+            <CardItem
+              as={Link}
+              className='px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold'
+              href={url}
+              target='__blank'
+              translateZ={20}
+            >
+              Preview Page
+            </CardItem>
+          )}
         </div>
       </CardBody>
     </CardContainer>

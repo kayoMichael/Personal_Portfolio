@@ -22,7 +22,7 @@ const HeroPortfolio = () => {
   };
 
   return (
-    <div className='bg-pattern py-16 lg:py-20'>
+    <div className='bg-pattern py-24 lg:py-28'>
       <div>
         <div className='relative font-cal'>
           <motion.h1

@@ -60,7 +60,7 @@ const AboutPage = async () => {
               className='rounded-full object-cover xl:rounded-xl'
               height={256}
               quality={100}
-              src='/profile/profile.jpg'
+              src='/profile/portfolio.jpg'
               width={256}
             />
             <div className='flex flex-col items-center py-2'>
@@ -136,13 +136,13 @@ const AboutPage = async () => {
                 NextJS
               </Link>
               , allows me to deliver efficient and effective software solutions
-              that meet the unique needs of organizatioNes.
+              that meet the unique needs of organizations.
             </p>
             <p>
               Outside of School, I am currently freelancing as a Software
-              Enginner in 2 seperate Companies and working on a side project
-              that I am interested in. Since I am in the Co-op Program, I have 3
-              past internships in the Software Development field and from those
+              Enginner for a private Company and working on side projects that I
+              am interested in. Since I am in the Co-op Program, I have 3 past
+              internships in the Software Development field and from those
               experiences I feel like I have grown as a Software Engineer.
             </p>
             <p>
