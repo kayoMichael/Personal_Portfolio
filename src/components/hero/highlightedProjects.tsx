@@ -4,16 +4,21 @@ import React, { useRef } from 'react';
 import { useInView, motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import ProjectCard from '../projects/ProjectsCard';
 import { Button } from '../ui/button';
 
 import { Projects } from '@/src/utils/projects';
 
-const HighlightedProjects = () => {
+interface Props {
+  locale: string;
+}
+const HighlightedProjects = ({ locale }: Props) => {
   /** Projects Card Animation */
   const projectsRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(projectsRef, { once: true, margin: '-100px' });
+  const t = useTranslations('HomePage');
   const variants = {
     initial: {
       y: 40,
@@ -40,17 +45,15 @@ const HighlightedProjects = () => {
           initial={{ y: 30, opacity: 0 }}
           transition={{ duration: 0.3 }}
         >
-          <h2 className='font-cal font-bold text-primary'>
-            Highlighted Projects
-          </h2>
+          <h2 className='font-cal font-bold text-primary'>{t('highlight')}</h2>
           <p className='font-cal text-xl text-secondary-foreground md:text-2xl'>
-            What I&apos;ve been working on
+            {t('secondTitle')}
           </p>
         </motion.div>
         <div className='my-4 flex items-center justify-start'>
-          <Link href='/projects'>
+          <Link href={`/${locale}/projects`}>
             <Button variant='outline'>
-              See All Projects {<ChevronRight className='h-4 w-4' />}
+              {t('seeAllProjects')} {<ChevronRight className='h-4 w-4' />}
             </Button>
           </Link>
         </div>

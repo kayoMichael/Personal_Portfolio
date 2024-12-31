@@ -3,12 +3,18 @@ import React from 'react';
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { Button } from '../ui/button';
 
 import Skills from './skills';
 
-const HeroPortfolio = () => {
+interface Props {
+  locale: string;
+}
+
+const HeroPortfolio = ({ locale }: Props) => {
+  const t = useTranslations();
   /** Base Profile Animation */
   const animation = {
     hide: { x: -32, opacity: 0 },
@@ -32,9 +38,10 @@ const HeroPortfolio = () => {
             transition={{ delay: 0.1 }}
           >
             <span>
-              Hi, My name is <span className='text-primary'>Michael Li</span>
+              {t('HomePage.title')}{' '}
+              <span className='text-primary'>{t('HomePage.name')}</span>
             </span>
-            <span>Software Engineer</span>
+            <span>{t('HomePage.softwareEngineer')}</span>
           </motion.h1>
           <motion.p
             animate={animation.show}
@@ -42,7 +49,7 @@ const HeroPortfolio = () => {
             initial={animation.hide}
             transition={{ delay: 0.2 }}
           >
-            I like to build things for the web.
+            {t('HomePage.subtitle')}
           </motion.p>
         </div>
       </div>
@@ -53,8 +60,8 @@ const HeroPortfolio = () => {
           initial={buttonAnimation.hide}
           transition={{ delay: 0.3 }}
         >
-          <Link href='/about'>
-            <Button variant='outline'>Explore More</Button>
+          <Link href={`/${locale}/about`}>
+            <Button variant='outline'>{t('HomePage.ExploreMore')}</Button>
           </Link>
         </motion.div>
         <Skills />
