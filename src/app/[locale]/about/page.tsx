@@ -3,6 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { getContributions, getGitHubUser } from './actions';
 import CodingStatistic from './codingStatistics';
@@ -11,8 +12,15 @@ import TechStack from './techStack';
 
 import PageHeader from '@/src/components/typography/header';
 import Container from '@/src/components/ui/container';
+import { TECH_LINKS } from '@/src/utils/link';
 
-const AboutPage = async () => {
+const AboutPage = async ({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) => {
+  setRequestLocale(locale);
+  const t = await getTranslations('');
   let weeklyStats, currentStats, githubData;
   try {
     weeklyStats = await fetch(
@@ -49,9 +57,61 @@ const AboutPage = async () => {
   } catch {
     redirect('/404');
   }
+
+  const linkComponents = {
+    python: (chunks: string) => (
+      <Link href={TECH_LINKS.python} target='_blank'>
+        {chunks}
+      </Link>
+    ),
+    javascript: (chunks: string) => (
+      <Link href={TECH_LINKS.javascript} target='_blank'>
+        {chunks}
+      </Link>
+    ),
+    typescript: (chunks: string) => (
+      <Link href={TECH_LINKS.typescript} target='_blank'>
+        {chunks}
+      </Link>
+    ),
+    java: (chunks: string) => (
+      <Link href={TECH_LINKS.java} target='_blank'>
+        {chunks}
+      </Link>
+    ),
+    nodejs: (chunks: string) => (
+      <Link href={TECH_LINKS.nodejs} target='_blank'>
+        {chunks}
+      </Link>
+    ),
+    express: (chunks: string) => (
+      <Link href={TECH_LINKS.express} target='_blank'>
+        {chunks}
+      </Link>
+    ),
+    serverless: (chunks: string) => (
+      <Link href={TECH_LINKS.serverless} target='_blank'>
+        {chunks}
+      </Link>
+    ),
+    react: (chunks: string) => (
+      <Link href={TECH_LINKS.react} target='_blank'>
+        {chunks}
+      </Link>
+    ),
+    nextjs: (chunks: string) => (
+      <Link href={TECH_LINKS.nextjs} target='_blank'>
+        {chunks}
+      </Link>
+    ),
+  };
+  console.log(linkComponents);
   return (
     <>
-      <PageHeader description='Personal Profile' title='About Me' />
+      <PageHeader
+        description={t('AboutMe.bio.subtitle')}
+        title={t('AboutMe.bio.title')}
+      />
       <Container className='mt-10'>
         <div className='items-start space-y-2 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:space-y-0'>
           <div className='flex flex-col items-center xl:sticky xl:top-24'>
@@ -64,7 +124,7 @@ const AboutPage = async () => {
               width={256}
             />
             <div className='flex flex-col items-center py-2'>
-              <h3 className='font-cal text-xl'>Michael Li</h3>
+              <h3 className='font-cal text-xl'>{t('General.name')}</h3>
               <h4 className='font-cal text-muted-foreground'>
                 Software Engineer
               </h4>

@@ -3,29 +3,31 @@ import React, { useState } from 'react';
 
 import { Menu as MenuIcon } from 'lucide-react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { Button } from '../ui/button';
 import Container from '../ui/container';
 
 import { Sheet, SheetContent, SheetTrigger } from '@/src/components/ui/sheet';
 
-const items = [
-  {
-    label: 'About Me',
-    href: '/about',
-  },
-  {
-    label: 'Experience',
-    href: '/experience',
-  },
-  {
-    label: 'Projects',
-    href: '/projects',
-  },
-];
-
-const NavigationBar = () => {
+const NavigationBar = ({ locale }: { locale: string }) => {
   const [open, setOpen] = useState(false);
+  const t = useTranslations('General');
+
+  const items = [
+    {
+      label: t('aboutMe'),
+      href: `/${locale}/about`,
+    },
+    {
+      label: t('experience'),
+      href: `/${locale}/experience`,
+    },
+    {
+      label: t('projects'),
+      href: `/${locale}/projects`,
+    },
+  ];
   return (
     <>
       <Sheet onOpenChange={setOpen} open={open}>
@@ -54,7 +56,7 @@ const NavigationBar = () => {
                   <MenuIcon />
                 </Button>
               </SheetTrigger>
-              <Link className='flex items-center gap-2' href='/'>
+              <Link className='flex items-center gap-2' href={`/${locale}`}>
                 <span className='text-lg font-semibold'>
                   Personal Portfolio
                 </span>
@@ -62,21 +64,21 @@ const NavigationBar = () => {
               <nav className='hidden gap-6 text-sm font-medium md:flex'>
                 <Link
                   className='relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:after:w-full dark:after:bg-gray-50'
-                  href='/about'
+                  href={`/${locale}/about`}
                 >
-                  About Me
+                  {t('aboutMe')}
                 </Link>
                 <Link
                   className='relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:after:w-full dark:after:bg-gray-50'
-                  href='/experience'
+                  href={`/${locale}/experience`}
                 >
-                  Experience
+                  {t('experience')}
                 </Link>
                 <Link
                   className='relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:after:w-full dark:after:bg-gray-50'
-                  href='/projects'
+                  href={`/${locale}/projects`}
                 >
-                  Projects
+                  {t('projects')}
                 </Link>
               </nav>
             </div>

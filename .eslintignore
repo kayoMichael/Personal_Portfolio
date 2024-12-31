@@ -1,3 +1,4 @@
 **/*.js
 tailwind.config.ts
 components/ui/*
+next.config.mjs

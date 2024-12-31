@@ -1,0 +1,135 @@
+{
+    "General": {
+        "name": "Michael Li",
+        "title": "Software Engineer",
+        "aboutMe": "About Me",
+        "experience": "Experience",
+        "projects": "Projects",
+        "Header": "Personal Portfolio"
+    },
+    "HomePage": {
+        "title": "Hi, My name is",
+        "name": "Michael Li",
+        "subtitle": "I like to build things for the web.",
+        "softwareEngineer": "Software Engineer",
+        "highlight": "Highlighted Projects",
+        "TechStack": "Tech Stack and Tools",
+        "secondTitle": "What I've been working on",
+        "seeAllProjects": "See All Projects",
+        "ExploreMore": "Explore More"
+    },
+    "AboutMe": {
+        "bio": {
+            "title": "About Me",
+            "subtitle": "Personal Profile",
+            "ParagraphHeader": "Personal Information",
+            "profile": "Student: (2021 ~ 2026)",
+            "Paragraph1": "I am currently pursuing a Bachelor of Mathematics and a Computing Minor (co-op) at the University of Waterloo Faculty of Mathematics, where I am honing my skills in software development and computer science. I am passionate about technology and software development, and I am always looking for new opportunities to learn and grow in this field.",
+            "Paragraph2": "Throughout years, I have gained valuable experiences in crafting scalable software systems that meet both technical and business requirements, utilizing a range of programming languages such as {python}, {javascript}, {typescript}, and {java}. Leveraging my proficiency in backend frameworks like {nodejs}, {express}, and {serverless} coupled with expertise in frontend frameworks such as {react} and {nextjs}, allows me to deliver efficient and effective software solutions that meet the unique needs of organizations.",
+            "Paragraph3": "Outside of School, I am currently freelancing as a Software Enginner for a private Company and working on side projects that I am interested in. Since I am in the Co-op Program, I have 3 past internships in the Software Development field and from those experiences I feel like I have grown as a Software Engineer.",
+            "Paragraph4": "I consider myself a curious and inquisitive person, always eager to learn and improve my skills. In my free time, I enjoy working on personal side projects, as it provides me with an opportunity to explore new technologies and further my knowledge and expertise. I am also a continuous learner, and I actively seek out new learning opportunities in order to stay up-to-date with the latest industry advancements.",
+            "Paragraph5": "Besides software development, I also have a strong appreciation for mathematics and problem-solving. I enjoy tackling complex problems and finding creative solutions to them, and I believe that my background in mathematics has helped me develop strong analytical and problem-solving skills that I can apply to my work in software development."
+        },
+        "stat": {
+            "title": "Coding Statistics",
+            "subtitle": "Weekly Coding Activities",
+            "wakatime": "My WalaTime last 7 days stats",
+            "average": "Daily Coding Average",
+            "weekTime": "This Week Coding Time",
+            "bestTime": "Best Day Coding Time",
+            "allTime": "All Time Since Today",
+            "languages": "Languages",
+            "editor": "Editors",
+            "github": "Github Insights",
+            "Subtitle2": "A Quick Look at Followers, Repositories and Contribution Activity from last year",
+            "PublicRepos": "Public Repositories",
+            "Total": "Total",
+            "ThisWeeks": "This Week",
+            "Contributions": "Contributions",
+            "BestDay": "Best Day"
+        }
+    },
+    "WorkExperience": {
+        "DownloadResume": "Download Resume",
+        "title": "Work Experience",
+        "subtitle": "A brief of my professional journey and career milestones",
+        "SoftwareEnginnerIntern": "Software Engineer Intern",
+        "Internship": "Internship",
+        "FirstData": "May 2022 - Sep 2022",
+        "FirstLocation": "Tokyo, Japan·On-Site",
+        "FullStackEngineer": "Full Stack Engineer",
+        "Freelance": "Freelance",
+        "SecondDate": "Oct 2022 - Present",
+        "SecondLocation": "Tokyo, Japan·Remote",
+        "ThirdDate": "May 2023 - Sep 2023",
+        "FourthDate": "Jan 2024 - July 2024",
+        "FifthDate": "Sep 2024 - Dec 2024",
+        "FifthLocation": "Toronto, Canada·Hybrid"
+    },
+    "WorkDescription": {
+        "weseek": {
+            "firstPoint": "Spearheaded the development of a user-friendly portal site for an Internet Exchange Service as a Software Engineer Intern, enhancing user experience and accessibility.",
+            "secondPoint": "Managed Migration Files and executed CRUD (Create, Read, Update, Delete) operations using Active Record and MySQL, ensuring seamless data management and integrity.",
+            "thirdPoint": "Leveraged MVC (Model-View-Controller) principles and Ruby on Rails framework to architect a robust backend system, prioritizing code maintainability and scalability for future iterations.",
+            "fourthPoint": "Contributed to frontend development using, AngularJS, Typescript, and Bootstrap to craft Responsive front-end pages, incorporating caching mechanisms for efficient rendering and a seamless user interaction experience.",
+            "fifthPoint": "Ensured optimal performance by adopting a no-refresh rendering approach, enhancing the overall usability of the portal site."
+        },
+        "everforth": {
+            "firstPoint": "Part of the Development team as a backend engineer for a Serverless SaaS Mobile Application, outsourced from Kao Inc., one of the largest cosmetic companies in Japan.",
+            "secondPoint": "Developed multiple RESTful API endpoints utilizing AWS Lambda, Python, and Node.js to efficiently manage data manipulation and storage tasks.",
+            "thirdPoint": "Currently spearheading the development of a multi-step form processing system leveraging AWS Step Functions and Amazon Aurora. This system is designed to manage user information, extract valuable insights, and store data in a relational database.",
+            "fourthPoint": "Built scalable infrastructure for real-time data processing and analysis, ensuring seamless integration with existing systems and optimizing performance.", 
+            "fifthPoint": "Implemented robust security measures and compliance standards, safeguarding sensitive user data and ensuring regulatory compliance with industry standards.",
+            "sixthPoint": "Actively participated in code reviews, providing valuable feedback and ensuring adherence to coding standards, best practices, and quality assurance.",
+            "seventhPoint": "Developing a Full Stack Application utilizing Nuxt.JS in the frontend and Java Spring in the backend",
+            "eighthPoint": "Replacing Existing AWS Lambda Applications to Java Spring Applications to improve flexibility and a more robust backend system."
+        },
+        "kaima": {
+            "firstPoint": "Contributed to the development of the company's payment portal, utilizing React.js, Node.js and Express to craft a seamless and intuitive payment interface for customers.",
+            "secondPoint": "Implemented GraphQl models and queries to fetch and display data dynamically, enhancing user experiences with real-time updates and responsive web applications.",
+            "thirdPoint": "Worked closely with multidisciplinary teams, collaborating with designers, product managers, and software developers to seamlessly integrate and deploy new features.",
+            "fourthPoint": "Conducted comprehensive testing and debugging procedures using Cypress and Storybook, identifying and rectifying issues promptly to ensure optimal performance and user satisfaction.",
+            "fifthPoint": "Implemented performance optimizations to enhance the speed and efficiency of the payment portal, resulting in improved user experience and customer satisfaction.",
+            "sixthPoint": "Participated in regular code reviews, knowledge-sharing sessions and scrum sessions, fostering a collaborative environment and facilitating continuous learning and growth among team members."
+        },
+        "enju": {
+            "firstPoint": "Developing a Full Stack Website Tag Translation SaaS Application, leveraging Next.js App Router, React.js, TypeScript, and Firebase.",
+            "secondPoint": "Utilized Firebase Authentication and Firestore to manage user authentication and data storage, ensuring data security and integrity.",
+            "thirdPoint": "Designed Firestore Document types to ensure typesafety and data integrity for a schema-less database.",
+            "fourthPoint": "Implemented a Layers Architecture Approach to separate concerns and ensure code maintainability and scalability.",
+            "fifthPoint": "Utilised Next.JS Server Actions to handle mutations on the Server and utilized React 19 useOptimistic and useTransition hook to optimistically update the UI.",
+            "sixthPoint": "Adhered to an agile methodology for the software development process due to the constraint of budget, time and personel.",
+            "seventhPoint": "Maintained and updated documentation for the software development process using JSDoc format."
+        },
+        "education": {
+            "firstPoint": "Developed E2E Test automation scripts using Selenium for Various web applications of the Ministry of Education, ensuring the quality and reliability of the software products.",
+            "secondPoint": "Identify important areas to be tested and Developed unit tests using Nunit and C# to ensure that the product was functioning as intended.",
+            "thirdPoint": "Developed tools using python, HTML and CSS to streamline the process of finding information of Common Vulnerabilities and Exposures (CVE) utilizing Gemini AI and NIST NVD API.",
+            "fourthPoint": "Throughly manually tested software products from the user perspective to identify pootential issues and cyber security vulnerabilities."
+        }
+    },
+    "Projects": {
+        "title": "Projects",
+        "subtitle": "A collection of my personal and professional projects",
+        "taskManagement": {
+            "title": "Task Management App",
+            "Description": "A Full Stack Task Management App with CRUD operations, authentication, and authorization."
+        },
+        "premierLeague": {
+            "title": "Premier League API Python Package",
+            "Description": "A Python Package that provides a comprehensive API for the Premier League, allowing users to access data on teams, players, fixtures, and more."
+        },
+        "Portfolio": {
+            "title": "Portfolio Website",
+            "Description": "A Portfolio Website built with Next.js, Tailwind CSS, and Framer Motion."
+        },
+        "Game": {
+            "title": "Frontend Game Store",
+            "Description": "A Frontend Game Store built with React.js, TypeScript, and Tailwind CSS."
+        },
+        "Gym": {
+            "title": "Responsive Gym Landing Page",
+            "Description": "A Gym Landing Page built with only vanilla CSS and HTML for educational purposes"
+        }
+    }
+}

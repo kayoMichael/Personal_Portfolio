@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 import {
   AWS,
@@ -100,6 +101,7 @@ const stacks: Stack[] = [
 ];
 
 const Skills = () => {
+  const t = useTranslations('HomePage');
   const animation = {
     hide: { x: -8, opacity: 0 },
     show: { x: 0, opacity: 1 },
@@ -113,7 +115,7 @@ const Skills = () => {
         initial={animation.hide}
         transition={{ delay: 0.4 }}
       >
-        Tech Stack and Tools
+        {t('TechStack')}
       </motion.p>
       <motion.div
         animate='show'
