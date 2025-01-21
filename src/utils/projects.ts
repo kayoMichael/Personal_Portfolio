@@ -9,6 +9,14 @@ export interface Project {
 }
 
 export const Projects: Project[] = [{
+    title: 'Generative AI Image Store',
+    description: 'An Open Marketplace for AI Generated Images built with the MERN stack and Deployed on Google Cloud.',
+    techStack: ['React.js', 'Node.js', 'ExpressJS', 'MongoDB', 'Docker', 'TailwindCSS', 'TypeScript', 'HTML5', 'CSS3', 'Shadcn-UI'],
+    github: 'https://github.com/kayoMichael/AI-JPG-Store',
+    url: 'https://violet-store-979936343537.northamerica-northeast2.run.app',
+    image: '/projects/MERNApp.png',
+    date: '2025',
+}, {
     title: 'Task Management App',
     description: 'A Full Stack Task Management App with CRUD operations, authentication, and authorization.',
     techStack: ['Next.js', 'React.js', 'TailwindCSS', 'TypeScript', "PlanetScale", "Prisma", "HTML5", "CSS3", "Shadcn-UI", "DaisyUI"],
@@ -18,12 +26,20 @@ export const Projects: Project[] = [{
     date: '2023',
 }, {
     title: "Premier League Web Scrapper and API",
-    description: "A web scrapper that scrapes the premier league website for data and serves it as an API.",
+    description: "A Python Package web scrapper that scrapes the premier league website for data and serves it as an API.",
     techStack: ["Python", "Flask", "Serverless Framework", "AWS", "AWS Lambda"],
     github: 'https://github.com/kayoMichael/premier_league',
     date: '2024',
     image: '/projects/premier-league.avif',
 },{
+    title: 'Full Stack AI CVE Analysis APP',
+    description: 'An AI Powered CVE Analysis that allows users to bulk search and analyze CVEs without gettting rate limited.',
+    techStack: ['JavaScript', 'Python', 'TailwindCSS', "HTML5"],
+    github: 'https://github.com/kayoMichael/CVE',
+    image: '/projects/CVE-analysis.png',
+    date: '2024',
+},
+{
     title: 'Portfolio Website',
     description: 'A responsive portfolio website built with Next.js and TailwindCSS.',
     techStack: ['Next.js', 'React.js', 'TailwindCSS', 'TypeScript', "HTML5", "CSS3", "Shadcn-UI", "FramerMotion"],

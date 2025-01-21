@@ -124,8 +124,8 @@ const TimeLine = () => {
         <div className='mt-12'>
           <p className='text-muted-foreground'>
             Last updated at{' '}
-            <time className='font-cal' dateTime='2024-10-22'>
-              2024-10-22
+            <time className='font-cal' dateTime='2025-01-21'>
+              2025-01-21
             </time>
           </p>
         </div>

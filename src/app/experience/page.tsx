@@ -19,7 +19,7 @@ const ExperiencePage = () => {
       <Container>
         <div className='mb-12 md:mb-16'>
           <Button asChild className='gap-x-1 mt-10' variant='outline'>
-            <Link href='/resume/Michael_Li-Resume.pdf' target='_blank'>
+            <Link href='/resume/Michael-Li-Resume.pdf' target='_blank'>
               <FileText />
               Download Resume
             </Link>

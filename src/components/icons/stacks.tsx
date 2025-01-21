@@ -40,6 +40,8 @@ import {
   Flask,
   Lambda,
   NuxtJS,
+  Docker,
+  MongoDB,
 } from '@/src/components/icons/icons';
 import { cn } from '@/src/utils/cn';
 
@@ -88,4 +90,6 @@ export const STACKS: StackProps = {
   Flask: <Flask />,
   'AWS Lambda': <Lambda />,
   NuxtJS: <NuxtJS />,
+  Docker: <Docker />,
+  MongoDB: <MongoDB />,
 };
