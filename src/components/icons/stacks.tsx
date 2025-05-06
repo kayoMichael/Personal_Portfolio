@@ -42,6 +42,8 @@ import {
   NuxtJS,
   Docker,
   MongoDB,
+  R,
+  GitLab,
 } from '@/src/components/icons/icons';
 import { cn } from '@/src/utils/cn';
 
@@ -92,4 +94,6 @@ export const STACKS: StackProps = {
   NuxtJS: <NuxtJS />,
   Docker: <Docker />,
   MongoDB: <MongoDB />,
+  R: <R />,
+  GitLab: <GitLab />,
 };

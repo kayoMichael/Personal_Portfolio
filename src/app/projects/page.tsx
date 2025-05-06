@@ -18,12 +18,12 @@ const ProjectsPage = () => {
       <Container>
         <motion.div
           animate={{ y: 0, opacity: 1 }}
-          className='my-8 grid w-full auto-cols-fr grid-cols-1 gap-24 md:my-12 md:grid-cols-2'
+          className='my-8 grid w-full grid-cols-1 md:grid-cols-2 gap-16'
           initial={{ y: 40, opacity: 0 }}
           transition={{ duration: 0.3 }}
         >
           {Projects.map((project) => (
-            <div key={project.github}>
+            <div className='flex justify-center' key={project.github}>
               <ProjectCard
                 date={project.date}
                 description={project.description}

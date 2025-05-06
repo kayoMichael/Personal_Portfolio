@@ -81,7 +81,7 @@ export const ExperienceList: Experience[] = [
         },
         role: 'Full Stack Engineer',
         startDate: '2022-11',
-        endDate: null,
+        endDate: '2025-05',
         accomplishments: [
             "Part of the Development team as a backend engineer for a Serverless SaaS Mobile Application, outsourced from Kao Inc., one of the largest cosmetic companies in Japan.",
             "Developed multiple RESTful API endpoints utilizing AWS Lambda, Python, and Node.js to efficiently manage data manipulation and storage tasks.",
@@ -294,5 +294,39 @@ export const ExperienceList: Experience[] = [
                 name: 'TailwindCSS',
             },
         ]
+    }, {
+        company: {
+            name: 'Musashi Seimitsu Industries Co., Ltd. (Musashi AI)',
+            logo: '/logo/musashi_ai.jpg',
+            url: 'https://musashiai.com/',
+            location: 'Waterloo, Canada',
+            workplaceType: 'On-Site',
+            jobType: 'Internship',
+        },
+        role: 'Full Stack Developer Intern (AI Software Developer Team)',
+        startDate: '2025-06',
+        endDate: null,
+        accomplishments: [
+        ],
+        stacks: [
+            {
+                name: 'JavaScript',
+            },
+            {
+                name: 'Vue.js',
+            },
+            {
+                name: 'Python'
+            },
+            {
+                name: 'CSS3',
+            },
+            {
+                name: 'HTML5',
+            },
+            {
+                name: 'GitLab',
+            }
+        ],
     }
 ]
