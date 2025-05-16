@@ -303,17 +303,26 @@ export const ExperienceList: Experience[] = [
             workplaceType: 'On-Site',
             jobType: 'Internship',
         },
-        role: 'Full Stack Developer Intern (AI Software Developer Team)',
+        role: 'Full Stack Developer Intern',
         startDate: '2025-06',
         endDate: null,
         accomplishments: [
         ],
         stacks: [
             {
+                name: 'Vue.js',
+            },
+            {
                 name: 'JavaScript',
             },
             {
-                name: 'Vue.js',
+                name: 'TypeScript',
+            },
+            {
+                name: 'Storybook',
+            },
+            {
+                name: 'Jest',
             },
             {
                 name: 'Python'
@@ -326,6 +335,9 @@ export const ExperienceList: Experience[] = [
             },
             {
                 name: 'GitLab',
+            },
+            {
+                name: 'Docker'
             }
         ],
     }

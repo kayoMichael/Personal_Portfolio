@@ -32,6 +32,14 @@ export const Projects: Project[] = [{
     date: '2024',
 },
 {
+    title: 'Neural Network to predict outcomes of professional Soccer Matches',
+    description: "A Neural Network built with Pytorch to classify professional soccer matches",
+    techStack: ["Python", "Pytorch", "Numpy", "Scikit-Learn"],
+    github: 'https://github.com/kayoMichael/Premier_League_Predictions',
+    image: '/projects/NeuralNetwork.jpg',
+    date: '2025',
+},
+{
     title: 'Multiple Linear Regression Model',
     description: "A complete multiple linear regression analysis of teen gambling behavior in Britain, using the teengamb dataset",
     techStack: ["R"],

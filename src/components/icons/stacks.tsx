@@ -44,6 +44,9 @@ import {
   MongoDB,
   R,
   GitLab,
+  Pytorch,
+  Numpy,
+  ScikitLearn,
 } from '@/src/components/icons/icons';
 import { cn } from '@/src/utils/cn';
 
@@ -96,4 +99,7 @@ export const STACKS: StackProps = {
   MongoDB: <MongoDB />,
   R: <R />,
   GitLab: <GitLab />,
+  Pytorch: <Pytorch />,
+  Numpy: <Numpy />,
+  'Scikit-Learn': <ScikitLearn />,
 };
