@@ -297,7 +297,7 @@ export const ExperienceList: Experience[] = [
     }, {
         company: {
             name: 'Musashi',
-            logo: '/logo/musashi_ai.jpg',
+            logo: '/logo/musashi-logo.png',
             url: 'https://musashiamericas.com/ai-project/',
             location: 'Waterloo, Canada',
             workplaceType: 'On-Site',
@@ -305,16 +305,16 @@ export const ExperienceList: Experience[] = [
         },
         role: 'Full Stack Developer Intern',
         startDate: '2025-06',
-        endDate: null,
+        endDate: '2025-09',
         accomplishments: [
-            "Developing software for managing and monitoring the Cendiant Quality Insights, an AI inspection system for visual inspection of vehicle components such as the camshaft.",
+            "Developed software for managing and monitoring the Cendiant Quality Insights, an AI inspection system for visual inspection of vehicle components such as the camshaft.",
             "Created workflows to fetch images from AWS S3 and invoke AI models for visual inspections and analysis.",
-            "Built a full stack analytics page using VueJS, TypeScript, Python, and FastAPI.",
+            "Developed a full stack analytics page using VueJS, TypeScript, Python, and FastAPI.",
             "Analyzed AI results to accurately output predictions, confidence levels, acceptance thresholds, and relevant metrics.",
             "Implemented Base CRUD Routers to streamline new API development and enhance the overall efficiency of the software.",
             "Collaborated with cross-functional teams to ensure seamless integration of software components and adherence to project timelines.",
             "Followed Agile methodologies to manage project tasks and deliverables, ensuring timely completion of milestones.",
-            "Implemented Integration tests using Postman and directly integrated the tests into the CI/CD pipeline using Newman CLI."
+            "Implemented Integration tests using Postman and directly integrated the tests into the CI/CD pipeline using Newman CLI.",
         ],
         stacks: [
             {
@@ -349,7 +349,51 @@ export const ExperienceList: Experience[] = [
             },
             {
                 name: 'Postman',
+            },
+            {
+                name: 'Cypress'
             }
+        ],
+    }, {
+        company: {
+            name: 'Opslevel',
+            logo: '/logo/opslevel.jpg',
+            url: 'https://www.opslevel.com/',
+            location: 'Toronto, Canada',
+            workplaceType: 'Hybrid',
+            jobType: 'Internship',
+        },
+        role: 'Software Developer Intern',
+        startDate: '2025-10',
+        endDate: null,
+        accomplishments: [
+            "Developing the Opslevel product, which is an Developer portal for managing Infrastructures."
+        ],
+        stacks: [
+            {
+                name: 'Vue.js',
+            },
+            {
+                name: 'JavaScript',
+            },
+            {
+                name: 'TypeScript',
+            },
+            {
+                name: 'Graphql',
+            },
+            {
+                name: 'CSS3',
+            },
+            {
+                name: 'HTML5',
+            },
+            {
+                name: 'GitLab',
+            },
+            {
+                name: 'Docker'
+            },
         ],
     }
 ]

@@ -21,6 +21,7 @@ export const Projects: Project[] = [{
     description: "A Python Package that allows users to fetch advanced soccer statistics and data and expose it as an API or create Machine Learning Datasets.",
     techStack: ["Python", "Flask", "Serverless Framework", "AWS", "AWS Lambda"],
     github: 'https://github.com/kayoMichael/premier_league',
+    url: 'https://pypi.org/project/premier-league/',
     date: '2024',
     image: '/projects/premier-league.avif',
 },{

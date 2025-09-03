@@ -141,7 +141,7 @@ const AboutPage = async () => {
             <p>
               Outside of School, I am currently freelancing as a Software
               Enginner for a private Company and working on side projects that I
-              am interested in. Since I am in the Co-op Program, I have 3 past
+              am interested in. Since I am in the Co-op Program, I have 5 past
               internships in the Software Development field and from those
               experiences I feel like I have grown as a Software Engineer.
             </p>
