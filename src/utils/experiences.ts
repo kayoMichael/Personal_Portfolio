@@ -89,7 +89,7 @@ export const ExperienceList: Experience[] = [
             "Built scalable infrastructure for real-time data processing and analysis, ensuring seamless integration with existing systems and optimizing performance.",
             "Implemented robust security measures and compliance standards, safeguarding sensitive user data and ensuring regulatory compliance with industry standards.",
             "Actively participated in code reviews, providing valuable feedback and ensuring adherence to coding standards, best practices, and quality assurance.",
-            "Developing a Full Stack Application utilizing Nuxt.JS in the frontend and Java Spring in the backend",
+            "Developed a Full Stack Application utilizing Nuxt.JS in the frontend and Java Spring in the backend",
             "Replacing Existing AWS Lambda Applications to Java Spring Applications to improve flexibility and a more robust backend system."
         ],
         stacks: [
@@ -208,7 +208,7 @@ export const ExperienceList: Experience[] = [
         startDate: '2024-02',
         endDate: '2024-08',
         accomplishments: [
-            "Developing a Full Stack Website Tag Translation SaaS Application, leveraging Next.js App Router, React.js, TypeScript, and Firebase.",
+            "Developed a Full Stack Website Tag Translation SaaS Application, leveraging Next.js App Router, React.js, TypeScript, and Firebase.",
             "Utilized Firebase Authentication and Firestore to manage user authentication and data storage, ensuring data security and integrity.",
             "Designed Firestore Document types to ensure typesafety and data integrity for a schema-less database.",
             "Implemented a Layers Architecture Approach to separate concerns and ensure code maintainability and scalability.",
@@ -254,7 +254,7 @@ export const ExperienceList: Experience[] = [
             workplaceType: 'Hybrid',
             jobType: 'Internship',
         },
-        role: '.Net Developer',
+        role: 'Software Developer',
         startDate: '2024-09',
         endDate: '2024-12',
         accomplishments: [
@@ -309,7 +309,7 @@ export const ExperienceList: Experience[] = [
         accomplishments: [
             "Developed software for managing and monitoring the Cendiant Quality Insights, an AI inspection system for visual inspection of vehicle components such as the camshaft.",
             "Created workflows to fetch images from AWS S3 and invoke AI models for visual inspections and analysis.",
-            "Developed a full stack analytics page using VueJS, TypeScript, Python, and FastAPI.",
+            "Contributed to a full stack analytics page using VueJS, TypeScript, Python, Docker, and FastAPI.",
             "Analyzed AI results to accurately output predictions, confidence levels, acceptance thresholds, and relevant metrics.",
             "Implemented Base CRUD Routers to streamline new API development and enhance the overall efficiency of the software.",
             "Collaborated with cross-functional teams to ensure seamless integration of software components and adherence to project timelines.",
@@ -367,7 +367,8 @@ export const ExperienceList: Experience[] = [
         startDate: '2025-10',
         endDate: null,
         accomplishments: [
-            "Developing the Opslevel product, which is an Developer portal for managing Infrastructures."
+            "Developing the Opslevel product, which is an Developer portal for managing Infrastructures.",
+            "Current TechStack: Vuejs, Javascript in the frontend, Ruby on Rails, And GraphQL in the backend"
         ],
         stacks: [
             {
@@ -377,10 +378,13 @@ export const ExperienceList: Experience[] = [
                 name: 'JavaScript',
             },
             {
-                name: 'TypeScript',
+                name: 'Ruby',
             },
             {
-                name: 'Graphql',
+                name: 'Ruby on Rails'
+            },
+            {
+                name: 'GraphQL',
             },
             {
                 name: 'CSS3',
