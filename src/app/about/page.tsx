@@ -79,7 +79,7 @@ const AboutPage = async () => {
               Personal Information
             </h2>
             <p>
-              Hello, My name is Michael (Heyang) Li, a Student at the{' '}
+              Hello, My name is Michael Li, a Student at the{' '}
               <Link
                 href='https://en.wikipedia.org/wiki/University_of_Waterloo_Faculty_of_Mathematics'
                 target='_blank'
@@ -89,8 +89,8 @@ const AboutPage = async () => {
               and an aspiring Software Engineer.
             </p>
             <p>
-              I am currently pursuing a Bachelor of Mathematics and a Computer
-              Science Minor (co-op) at the University of Waterloo Faculty of
+              I am currently pursuing a Bachelor of Mathematics and a Computing
+              Minor (co-op) at the University of Waterloo Faculty of
               Mathematics, where I am honing my skills in software development
               and computer science. I am passionate about technology and
               software development, and I am always looking for new
@@ -139,20 +139,19 @@ const AboutPage = async () => {
               that meet the unique needs of organizations.
             </p>
             <p>
-              Outside of School, I am currently freelancing as a Software
-              Enginner for a private Company and working on side projects that I
-              am interested in. Since I am in the Co-op Program, I have 5 past
-              internships in the Software Development field and from those
-              experiences I feel like I have grown as a Software Engineer.
+              Outside of School, I freelanced as a Part-time Software Enginner
+              for around 2 years and worked on side projects topics that I was
+              interested in. Since I am in the Co-op Program, I have 5
+              internship experience in the Software Development field with a
+              sith which I am completing right now, that has allowed me to gain
+              important industry experience and adaptibility.
             </p>
             <p>
-              I consider myself a curious and inquisitive person, always eager
-              to learn and improve my skills. In my free time, I enjoy working
-              on personal side projects, as it provides me with an opportunity
-              to explore new technologies and further my knowledge and
-              expertise. I am also a continuous learner, and I actively seek out
-              new learning opportunities in order to stay up-to-date with the
-              latest industry advancements.
+              In my free time, I enjoy working on personal side projects, as it
+              provides me with an opportunity to explore new technologies and
+              further my knowledge and expertise. I am also a continuous
+              learner, and I actively seek out new learning opportunities in
+              order to stay up-to-date with the latest industry advancements.
             </p>
             <p>
               Besides software development, I also have a strong appreciation
