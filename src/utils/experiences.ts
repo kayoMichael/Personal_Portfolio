@@ -34,7 +34,7 @@ export const ExperienceList: Experience[] = [
         startDate: '2022-06',
         endDate: '2022-10',
         accomplishments: [
-            "Spearheaded the development of a user-friendly portal site for an Internet Exchange Service as a Software Engineer Intern, enhancing user experience and accessibility.",
+            "Contributed to the development of a user-friendly portal site for an Internet Exchange Service as a Software Engineer Intern, enhancing user experience and accessibility.",
             "Managed Migration Files and executed CRUD (Create, Read, Update, Delete) operations using Active Record and MySQL, ensuring seamless data management and integrity.",
             "Leveraged MVC (Model-View-Controller) principles and Ruby on Rails framework to architect a robust backend system, prioritizing code maintainability and scalability for future iterations.",
             "Contributed to frontend development using, AngularJS, Typescript, and Bootstrap to craft Responsive front-end pages, incorporating caching mechanisms for efficient rendering and a seamless user interaction experience.",
@@ -85,7 +85,7 @@ export const ExperienceList: Experience[] = [
         accomplishments: [
             "Part of the Development team as a backend engineer for a Serverless SaaS Mobile Application, outsourced from Kao Inc., one of the largest cosmetic companies in Japan.",
             "Developed multiple RESTful API endpoints utilizing AWS Lambda, Python, and Node.js to efficiently manage data manipulation and storage tasks.",
-            "Currently spearheading the development of a multi-step form processing system leveraging AWS Step Functions and Amazon Aurora. This system is designed to manage user information, extract valuable insights, and store data in a relational database.",
+            "Developed a multi-step form processing system leveraging AWS Step Functions and Amazon Aurora. This system is designed to manage user information, extract valuable insights, and store data in a relational database.",
             "Built scalable infrastructure for real-time data processing and analysis, ensuring seamless integration with existing systems and optimizing performance.",
             "Implemented robust security measures and compliance standards, safeguarding sensitive user data and ensuring regulatory compliance with industry standards.",
             "Actively participated in code reviews, providing valuable feedback and ensuring adherence to coding standards, best practices, and quality assurance.",
@@ -199,7 +199,7 @@ export const ExperienceList: Experience[] = [
         company: {
             name: 'Enju Inc.',
             logo: '/logo/enju_inc.png',
-            url: 'https://enju-corporate.studio.site/',
+            url: 'https://autolingual.io/',
             location: 'Tokyo, Japan',
             workplaceType: 'On-Site',
             jobType: 'Internship',
@@ -367,8 +367,15 @@ export const ExperienceList: Experience[] = [
         startDate: '2025-10',
         endDate: null,
         accomplishments: [
-            "Developing the Opslevel product, which is an Developer portal for managing Infrastructures.",
-            "Current TechStack: Vuejs, Javascript in the frontend, Ruby on Rails, And GraphQL in the backend"
+            "Contributing to the development of OpsLevel, a developer portal that enables engineering teams to manage and streamline infrastructure.",
+            "Building user interfaces with Vue.js and JavaScript on the frontend.",
+            "Developing backend features using Ruby on Rails and GraphQL APIs.",
+            "Working with Docker for containerization and MySQL for data persistence.",
+            "Collaborating in an Agile environment with daily standups, code reviews, and sprint planning.",
+            "Writing maintainable, testable code and participating in peer reviews to ensure quality.",
+            "Partnering with cross-functional teammates to design, implement, and ship new product features.",
+            "Adding unit tests using Jest (frontend) and RSpec (backend) to ensure code reliability and prevent regressions.",
+            "Receiving customer feedback and resolving reported issues in the application in a timely and effective manner."
         ],
         stacks: [
             {
