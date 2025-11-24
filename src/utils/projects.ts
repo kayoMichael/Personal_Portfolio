@@ -33,6 +33,14 @@ export const Projects: Project[] = [{
     date: '2024',
 },
 {
+    title: 'Baseball Card Classification MCP Server',
+    description: 'MCP Server to give Claude AI access to important tools to classify and find information about bowman propsect cards.',
+    techStack: ['Python'],
+    github: 'https://github.com/kayoMichael/bowman-prospects-mcp',
+    image: '/projects/baseball-mcp.png',
+    date: '2025'
+},
+{
     title: 'Neural Network to predict outcomes of professional Soccer Matches',
     description: "A Neural Network built with Pytorch to classify professional soccer matches",
     techStack: ["Python", "Pytorch", "Numpy", "Scikit-Learn"],
