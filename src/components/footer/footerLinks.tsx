@@ -83,7 +83,7 @@ export const FOOTER_ICON_LINKS: FooterIconLink[] = [
   },
   {
     title: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/michael-kayo-li-72115222b/',
+    url: 'https://www.linkedin.com/in/michael-li-72115222b/',
     icon: <LinkedIn />,
     className: 'hover:text-[#0A66C2]',
   },

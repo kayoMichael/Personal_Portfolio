@@ -63,6 +63,9 @@ export const ExperienceList: Experience[] = [
             name: 'Ruby',
         },
         {
+            name: 'RSpec',
+        },
+        {
             name: 'Ruby on Rails',
         },
         {
@@ -262,8 +265,8 @@ export const ExperienceList: Experience[] = [
             "Identified important areas to be tested and Developed unit tests using Nunit and C# to ensure that the product was functioning as intended.",
             "Researched potential AI integrations and automation workflows in current products used by the Operations team at the Ministry of Education.",
             "Developed a Full Stack AI powered CVE Analysis Tool using Python, Javascript, HTML and Tailwind CSS to streamline the process of finding information of Common Vulnerabilities and Exposures (CVE) utilizing llama 3.1-70b for AI Suggestions and Scrapping NIST NVD/CVE Mitre for bulk information retrieval without being rate limited.",
-            "Throughly manually tested software products from the user perspective to identify pootential issues and cyber security vulnerabilities.",
-            "Developed Power Automate Workflows to automate Role Based User Access Management for the Ministry of Education.",
+            "Manually tested software products from the user perspective to identify pootential issues and cyber security vulnerabilities.",
+            "Built serverless automation using Azure AD app registrations and Microsoft Graph API to provision role-based SharePoint Document permissions via OAuth2 client credentials, enabling automated onboardingand access management.",
         ],
         stacks: [
             {
@@ -308,7 +311,7 @@ export const ExperienceList: Experience[] = [
         endDate: '2025-09',
         accomplishments: [
             "Developed software for managing and monitoring the Cendiant Quality Insights, an AI inspection system for visual inspection of vehicle components such as the camshaft.",
-            "Created workflows to fetch images from AWS S3 and invoke AI models for visual inspections and analysis.",
+            "Implemented event-driven, real-time updates using WebSockets and MongoDB Change Streams,enabling instant defect notifications and live visual feedback during inspections.",
             "Contributed to a full stack analytics page using VueJS, TypeScript, Python, Docker, and FastAPI.",
             "Analyzed AI results to accurately output predictions, confidence levels, acceptance thresholds, and relevant metrics.",
             "Implemented Base CRUD Routers to streamline new API development and enhance the overall efficiency of the software.",
@@ -365,17 +368,15 @@ export const ExperienceList: Experience[] = [
         },
         role: 'Software Developer Intern',
         startDate: '2025-10',
-        endDate: null,
+        endDate: '2026-01',
         accomplishments: [
-            "Contributing to the development of OpsLevel, a developer portal that enables engineering teams to manage and streamline infrastructure.",
-            "Building user interfaces with Vue.js and JavaScript on the frontend.",
-            "Developing backend features using Ruby on Rails and GraphQL APIs.",
-            "Working with Docker for containerization and MySQL for data persistence.",
-            "Collaborating in an Agile environment with daily standups, code reviews, and sprint planning.",
-            "Writing maintainable, testable code and participating in peer reviews to ensure quality.",
-            "Partnering with cross-functional teammates to design, implement, and ship new product features.",
-            "Adding unit tests using Jest (frontend) and RSpec (backend) to ensure code reliability and prevent regressions.",
-            "Receiving customer feedback and resolving reported issues in the application in a timely and effective manner."
+            "Contributed to the development of OpsLevel, a developer portal that enables engineering teams to manage and streamline their coding infrastructure.",
+            "Built and maintained frontend features using Vue.js and JavaScript, improving usability and responsiveness of core product workflows",
+            "Implemented backend functionality in Ruby on Rails, designing and consuming GraphQL APIs to support new product features.",
+            "Developed features for the new flagship AI Maintenance Agent, enabling automated repository maintenance through AI-driven workflows",
+            "Worked with Third-party integrations (GitHub, GitLab, Bitbucket) to support AI-driven repository maintenance and improve user onboarding workflows.",
+            "Investigated and hotfixed production issues reported by customers, prioritizing fixes to maintain platform stability",
+            "Collaborated in an Agile environment, participating in daily standups, code reviews, and sprint planning with cross-functional teams."
         ],
         stacks: [
             {
@@ -400,7 +401,16 @@ export const ExperienceList: Experience[] = [
                 name: 'HTML5',
             },
             {
+                name: "Jest",
+            },
+            {
+                name: "RSpec",
+            },
+            {
                 name: 'GitLab',
+            },
+            {
+                name: "MySQL",
             },
             {
                 name: 'Docker'

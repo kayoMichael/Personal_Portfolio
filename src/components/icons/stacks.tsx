@@ -47,6 +47,7 @@ import {
   Pytorch,
   Numpy,
   ScikitLearn,
+  RSpec,
 } from '@/src/components/icons/icons';
 import { cn } from '@/src/utils/cn';
 
@@ -102,4 +103,5 @@ export const STACKS: StackProps = {
   Pytorch: <Pytorch />,
   Numpy: <Numpy />,
   'Scikit-Learn': <ScikitLearn />,
+  RSpec: <RSpec />,
 };
