@@ -79,87 +79,27 @@ const AboutPage = async () => {
               Personal Information
             </h2>
             <p>
-              Hello, My name is Michael Li, a Student at the{' '}
+              Hello, my name is Michael Li, a student at the{' '}
               <Link
                 href='https://en.wikipedia.org/wiki/University_of_Waterloo_Faculty_of_Mathematics'
                 target='_blank'
               >
                 University of Waterloo
               </Link>{' '}
-              and an aspiring Software Engineer.
+              studying Mathematics with a Computing minor, focused on software
+              engineering.
             </p>
             <p>
-              I am currently pursuing a Bachelor of Mathematics and a Computing
-              Minor (co-op) at the University of Waterloo Faculty of
-              Mathematics, where I am honing my skills in software development
-              and computer science. I am passionate about technology and
-              software development, and I am always looking for new
-              opportunities to learn and grow in this field.
+              My coursework includes algorithms, data structures, linear
+              algebra, object-oriented programming, computer systems,
+              distributed systems, statistics, numerical computation, and
+              databases.
             </p>
             <p>
-              Throughout years, I have gained valuable experiences in crafting
-              scalable software systems that meet both technical and business
-              requirements, utilizing a range of programming languages such as{' '}
-              <Link href='https://www.python.org/' target='_blank'>
-                Python
-              </Link>
-              ,{' '}
-              <Link href='https://www.javascript.com/' target='_blank'>
-                JavaScript
-              </Link>
-              , and{' '}
-              <Link href='https://www.typescriptlang.org/' target='_blank'>
-                TypeScript
-              </Link>
-              ,
-              <Link href='https://www.java.com/ja/' target='_blank'>
-                Java
-              </Link>
-              , Leveraging my proficiency in backend frameworks like{' '}
-              <Link href='https://nodejs.org/en' target='_blank'>
-                NodeJS
-              </Link>
-              ,{' '}
-              <Link href='https://expressjs.com/' target='_blank'>
-                ExpressJS
-              </Link>
-              , and{' '}
-              <Link href='https://www.serverless.com/' target='_blank'>
-                Serverless Framework
-              </Link>{' '}
-              coupled with expertise in frontend frameworks such as{' '}
-              <Link href='https://reactjs.org/' target='_blank'>
-                React
-              </Link>{' '}
-              and{' '}
-              <Link href='https://nextjs.org/' target='_blank'>
-                NextJS
-              </Link>
-              , allows me to deliver efficient and effective software solutions
-              that meet the unique needs of organizations.
-            </p>
-            <p>
-              Outside of School, I freelanced as a Part-time Software Enginner
-              for around 2 years and worked on side projects topics that I was
-              interested in. Since I am in the Co-op Program, I have 5
-              internship experience in the Software Development field with a
-              sith which I am completing right now, that has allowed me to gain
-              important industry experience and adaptibility.
-            </p>
-            <p>
-              In my free time, I enjoy working on personal side projects, as it
-              provides me with an opportunity to explore new technologies and
-              further my knowledge and expertise. I am also a continuous
-              learner, and I actively seek out new learning opportunities in
-              order to stay up-to-date with the latest industry advancements.
-            </p>
-            <p>
-              Besides software development, I also have a strong appreciation
-              for mathematics and problem-solving. I enjoy tackling complex
-              problems and finding creative solutions to them, and I believe
-              that my background in mathematics has helped me develop strong
-              analytical and problem-solving skills that I can apply to my work
-              in software development.
+              I have completed six internships and nearly two years of part-time
+              software development work across industries including developer
+              platforms, government, SaaS, payment systems, and infrastructure
+              tooling.
             </p>
             <h2 className='font-cal text-2xl lg:text-3xl'>Tech Stack</h2>
             <TechStack />
