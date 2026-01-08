@@ -20,7 +20,13 @@ const TechStack = () => {
     const stackSliders = [...shuffledStacks].sort(() => Math.random() - 0.5);
 
     return (
-      <Marquee fade key={index} pauseOnHover reverse={index === 1}>
+      <Marquee
+        duration={120}
+        fade
+        key={index}
+        pauseOnHover
+        reverse={index === 1}
+      >
         {stackSliders.map(([title, icon], index) => (
           <div
             className={

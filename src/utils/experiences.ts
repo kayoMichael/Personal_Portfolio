@@ -259,14 +259,14 @@ export const ExperienceList: Experience[] = [
         },
         role: 'Software Developer Intern',
         startDate: '2024-09',
-        endDate: '2024-12',
+        endDate: '2025-01',
         accomplishments: [
             "Developed E2E Test automation scripts using Selenium for Various web applications of the Ministry of Education, ensuring the quality and reliability of the software products.",
             "Identified important areas to be tested and Developed unit tests using Nunit and C# to ensure that the product was functioning as intended.",
             "Researched potential AI integrations and automation workflows in current products used by the Operations team at the Ministry of Education.",
             "Developed a Full Stack AI powered CVE Analysis Tool using Python, Javascript, HTML and Tailwind CSS to streamline the process of finding information of Common Vulnerabilities and Exposures (CVE) utilizing llama 3.1-70b for AI Suggestions and Scrapping NIST NVD/CVE Mitre for bulk information retrieval without being rate limited.",
             "Manually tested software products from the user perspective to identify pootential issues and cyber security vulnerabilities.",
-            "Built serverless automation using Azure AD app registrations and Microsoft Graph API to provision role-based SharePoint Document permissions via OAuth2 client credentials, enabling automated onboardingand access management.",
+            "Built serverless automation using Azure AD app registrations and Microsoft Graph API to provision role-based SharePoint Document permissions via OAuth2 client credentials, enabling automated onboarding and access management.",
         ],
         stacks: [
             {

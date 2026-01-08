@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 import OverviewCard from './overviewCard';
 import Section from './section';
+import TechStack from './techStack';
 
 import { WakaTime } from '@/src/components/icons/icons';
 import PageHeader from '@/src/components/typography/header';
@@ -56,6 +57,9 @@ const CodingStatistic = ({ weeklyStats, currentStats }: Props) => {
     <>
       <PageHeader title='My Coding Statistics' />
       <Container className='mt-10'>
+        <div className='mb-10'>
+          <TechStack />
+        </div>
         <Section
           appendix={
             <Link
@@ -63,10 +67,10 @@ const CodingStatistic = ({ weeklyStats, currentStats }: Props) => {
               href='https://wakatime.com/@kayoMichael'
               passHref
             >
-              Last modified: 5 minutes ago
+              Last updated: 5 minutes ago
             </Link>
           }
-          description='My WakaTime last 7 days stats.'
+          description='Coding Stats from Last 7 Days.'
           icon={<WakaTime className='h-5 w-5' />}
           title='Weekly Coding Activities'
         >

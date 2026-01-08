@@ -11,16 +11,16 @@ import { Sheet, SheetContent, SheetTrigger } from '@/src/components/ui/sheet';
 
 const items = [
   {
-    label: 'About Me',
-    href: '/about',
-  },
-  {
     label: 'Experience',
     href: '/experience',
   },
   {
     label: 'Projects',
     href: '/projects',
+  },
+  {
+    label: 'Coding Stats',
+    href: '/coding',
   },
 ];
 
@@ -62,12 +62,6 @@ const NavigationBar = () => {
               <nav className='hidden gap-6 text-sm font-medium md:flex'>
                 <Link
                   className='relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:after:w-full dark:after:bg-gray-50'
-                  href='/about'
-                >
-                  About Me
-                </Link>
-                <Link
-                  className='relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:after:w-full dark:after:bg-gray-50'
                   href='/experience'
                 >
                   Experience
@@ -77,6 +71,12 @@ const NavigationBar = () => {
                   href='/projects'
                 >
                   Projects
+                </Link>
+                <Link
+                  className='relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:after:w-full dark:after:bg-gray-50'
+                  href='/coding'
+                >
+                  Coding Stats
                 </Link>
               </nav>
             </div>

@@ -24,7 +24,7 @@ interface FooterIconLink {
 export const ROUTES = {
   projects: '/projects',
   experience: '/experience',
-  about: '/about',
+  code: '/coding',
   dashboard: '/',
 };
 
@@ -45,8 +45,8 @@ export const NAV_LINKS: NavLink[] = [
     icon: <BookOpenText className='size-5' />,
   },
   {
-    path: ROUTES.about,
-    label: 'About',
+    path: ROUTES.code,
+    label: 'Coding Stats',
     icon: <AtSign className='size-5' />,
   },
 ];
@@ -54,8 +54,8 @@ export const NAV_LINKS: NavLink[] = [
 export const FOOTER_LINKS = [
   [
     {
-      title: 'About Me',
-      url: ROUTES.about,
+      title: 'Coding Stats',
+      url: ROUTES.code,
     },
     {
       title: 'Home',

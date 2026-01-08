@@ -8,6 +8,7 @@ interface MarqueeProps {
   fade?: boolean;
   className?: string;
   loopSize?: number;
+  duration?: number;
 }
 
 const Marquee = ({
@@ -18,10 +19,23 @@ const Marquee = ({
   fade = false,
   className,
   loopSize = 2,
+  duration = 50,
 }: MarqueeProps) => {
   const linearGradientDirectionClass =
     direction === 'left' ? 'to right' : 'to bottom';
+  interface CustomCSSProperties extends React.CSSProperties {
+    '--duration'?: string;
+  }
 
+  const marqueeStyle: CustomCSSProperties = {
+    '--duration': `${duration}s`,
+    maskImage: fade
+      ? `linear-gradient(${linearGradientDirectionClass}, transparent 0%, rgba(0, 0, 0, 1.0) 10%, rgba(0, 0, 0, 1.0) 90%, transparent 100%)`
+      : undefined,
+    WebkitMaskImage: fade
+      ? `linear-gradient(${linearGradientDirectionClass}, transparent 0%, rgba(0, 0, 0, 1.0) 10%, rgba(0, 0, 0, 1.0) 90%, transparent 100%)`
+      : undefined,
+  };
   return (
     <div
       className={cn(
@@ -29,14 +43,7 @@ const Marquee = ({
         direction === 'left' ? 'flex-row' : 'flex-col',
         className
       )}
-      style={{
-        maskImage: fade
-          ? `linear-gradient(${linearGradientDirectionClass}, transparent 0%, rgba(0, 0, 0, 1.0) 10%, rgba(0, 0, 0, 1.0) 90%, transparent 100%)`
-          : undefined,
-        WebkitMaskImage: fade
-          ? `linear-gradient(${linearGradientDirectionClass}, transparent 0%, rgba(0, 0, 0, 1.0) 10%, rgba(0, 0, 0, 1.0) 90%, transparent 100%)`
-          : undefined,
-      }}
+      style={marqueeStyle}
     >
       {Array.from({ length: loopSize }, (_, index) => (
         <div

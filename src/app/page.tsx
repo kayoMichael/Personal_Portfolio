@@ -8,7 +8,8 @@ export default function Home() {
     <>
       <Container>
         <HeroPortfolio />
-        <HighlightedProjects />
+        <HighlightedProjects project={false} />
+        <HighlightedProjects project={true} />
       </Container>
     </>
   );
