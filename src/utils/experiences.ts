@@ -34,11 +34,11 @@ export const ExperienceList: Experience[] = [
         startDate: '2022-06',
         endDate: '2022-10',
         accomplishments: [
-            "Contributed to the development of a user-friendly portal site for an Internet Exchange Service as a Software Engineer Intern, enhancing user experience and accessibility.",
-            "Managed Migration Files and executed CRUD (Create, Read, Update, Delete) operations using Active Record and MySQL, ensuring seamless data management and integrity.",
-            "Leveraged MVC (Model-View-Controller) principles and Ruby on Rails framework to architect a robust backend system, prioritizing code maintainability and scalability for future iterations.",
-            "Contributed to frontend development using, AngularJS, Typescript, and Bootstrap to craft Responsive front-end pages, incorporating caching mechanisms for efficient rendering and a seamless user interaction experience.",
-            "Ensured optimal performance by adopting a no-refresh rendering approach, enhancing the overall usability of the portal site."
+            "Built and improved a user-facing portal for JPNAP, the largest Internet Exchange Service in Japan, enhancing usability and accessibility for end users.",
+            "Implemented and maintained database migrations and CRUD functionality using Ruby on Rails (ActiveRecord) and MySQL, ensuring reliable data integrity.",
+            "Designed backend features following MVC principles, improving code maintainability and supporting future feature expansion.",
+            "Developed responsive frontend components using AngularJS, TypeScript, and Bootstrap, delivering a smooth and intuitive user experience.",
+            "Improved application performance and responsiveness by contributing to a Single Page Application (SPA) architecture and frontend caching strategies."
         ],
         stacks: [
         {
@@ -86,14 +86,12 @@ export const ExperienceList: Experience[] = [
         startDate: '2022-11',
         endDate: '2025-05',
         accomplishments: [
-            "Part of the Development team as a backend engineer for a Serverless SaaS Mobile Application, outsourced from Kao Inc., one of the largest cosmetic companies in Japan.",
-            "Developed multiple RESTful API endpoints utilizing AWS Lambda, Python, and Node.js to efficiently manage data manipulation and storage tasks.",
-            "Developed a multi-step form processing system leveraging AWS Step Functions and Amazon Aurora. This system is designed to manage user information, extract valuable insights, and store data in a relational database.",
-            "Built scalable infrastructure for real-time data processing and analysis, ensuring seamless integration with existing systems and optimizing performance.",
-            "Implemented robust security measures and compliance standards, safeguarding sensitive user data and ensuring regulatory compliance with industry standards.",
-            "Actively participated in code reviews, providing valuable feedback and ensuring adherence to coding standards, best practices, and quality assurance.",
-            "Developed a Full Stack Application utilizing Nuxt.JS in the frontend and Java Spring in the backend",
-            "Replacing Existing AWS Lambda Applications to Java Spring Applications to improve flexibility and a more robust backend system."
+            "Contributed to a full-stack enterprise application for standardizing employee health workflows, using Nuxt.js, Vue.js, and TypeScript on the frontend and Java Spring Boot on the backend.",
+            "Developed serverless REST API endpoints using AWS Lambda, Python, and Node.js to handle data ingestion, transformation, and persistence.",
+            "Architected and implemented a serverless reporting pipeline using AWS Step Functions and Python, transforming user-submitted data into individualized PDF reports with dynamic charts and scoring logic.",
+            "Implemented dynamic PDF layout logic using ReportLab, calculating spacing and pagination to support variable-length sections, comments, and category counts across customers.",
+            "Contributed to backend infrastructure supporting real-time data processing, integrating with existing systems to improve reliability and performance.",
+            "Participated in peer code reviews, providing feedback to maintain code quality, consistency, and engineering best practices.",
         ],
         stacks: [
             {
@@ -154,12 +152,13 @@ export const ExperienceList: Experience[] = [
         startDate: '2023-06',
         endDate: '2023-10',
         accomplishments: [
-            "Contributed to the development of the company's payment portal, utilizing React.js, Node.js and Express to craft a seamless and intuitive payment interface for customers.",
-            "Implemented GraphQl models and queries to fetch and display data dynamically, enhancing user experiences with real-time updates and responsive web applications.",
-            "Worked closely with multidisciplinary teams, collaborating with designers, product managers, and software developers to seamlessly integrate and deploy new features.",
-            "Conducted comprehensive testing and debugging procedures using Cypress and Storybook, identifying and rectifying issues promptly to ensure optimal performance and user satisfaction.",
-            "Implemented performance optimizations to enhance the speed and efficiency of the payment portal, resulting in improved user experience and customer satisfaction.",
-            "Participated in regular code reviews, knowledge-sharing sessions and scrum sessions, fostering a collaborative environment and facilitating continuous learning and growth among team members."
+            "Contributed to the development of a customer-facing payment portal using React.js, Node.js, and Express, supporting payment flows across Stripe, Alipay, WeChat Pay, Weibo Pay, and PayPay.",
+            "Implemented GraphQL schemas and queries to fetch and render data dynamically, enabling responsive UI updates across the application.",
+            "Collaborated with designers, product managers, and engineers to integrate and deploy new features within an agile development process.",
+            "Wrote and maintained end-to-end and component tests using Cypress and Storybook, identifying and resolving issues to improve reliability and user experience.",
+            "Improved interaction responsiveness by implementing optimistic UI updates using React Query, reducing perceived latency by 35%.",
+            "Reduced page load times by 20% introducing aggressive client-side caching with React Query, minimizing redundant network requests.",
+            "Participated in code reviews, sprint ceremonies, and knowledge-sharing sessions, contributing to team alignment and code quality."
         ],
         stacks: [
             {
@@ -211,13 +210,17 @@ export const ExperienceList: Experience[] = [
         startDate: '2024-02',
         endDate: '2024-05',
         accomplishments: [
-            "Developed a Full Stack Website Tag Translation SaaS Application, leveraging Next.js App Router, React.js, TypeScript, and Firebase.",
-            "Utilized Firebase Authentication and Firestore to manage user authentication and data storage, ensuring data security and integrity.",
-            "Designed Firestore Document types to ensure typesafety and data integrity for a schema-less database.",
-            "Implemented a Layered Architecture Approach to separate concerns and ensure code maintainability and scalability.",
-            "Utilised Next.JS Server Actions to handle mutations on the Server and utilized React 19 useOptimistic and useTransition hook to optimistically update the UI.",
-            "Adhered to an agile methodology for the software development process due to the constraint of budget, time and personel.",
-            "Maintained and updated documentation for the software development process using JSDoc format.",],
+            "Developed a full-stack, AI website translation application using Next.js (App Router), React, TypeScript, Gemini API and Firebase.",
+            "Improved page load times by 25% by separating static and dynamic content, leveraging Static Site Generation alongside server-side rendering for faster initial loads.",
+            "Implemented user authentication and data storage using Firebase Authentication and Firestore, supporting secure access and reliable data persistence.",
+            "Designed strongly typed Firestore document models to enforce type safety and data consistency within a schema-less database.",
+            "Contributed to the development of an embeddable, CDN-hosted client script that scrapes page content, invokes AI-based translation services, and dynamically injects translated content back into customer websites.",
+            "Cached translated content in Firestore to reduce repeated AI translation calls, lowering API costs and improving content load times.",
+            "Integrated AI-driven translation using Google Gemini to support automated, on-demand website localization.",
+            "Architected the application using a layered approach to separate concerns across presentation, business logic, and data access, improving maintainability and scalability.",
+            "Collaborated with a senior engineer to design, build, and launch the MVP from scratch within a four-month term, rapidly shipping features using a single Next.js codebase with shared server and client logic.", 
+            "Leveraged serverless tooling including Next.js App Router, NextAuth, Firebase, and Firestore to enable rapid development and deployment.", 
+            "Maintained technical documentation using JSDoc to support onboarding, code clarity, and long-term maintainability."],
         stacks: [
             {
                 name: 'Next.js',
@@ -261,12 +264,12 @@ export const ExperienceList: Experience[] = [
         startDate: '2024-09',
         endDate: '2025-01',
         accomplishments: [
-            "Developed E2E Test automation scripts using Selenium for Various web applications of the Ministry of Education, ensuring the quality and reliability of the software products.",
-            "Identified important areas to be tested and Developed unit tests using Nunit and C# to ensure that the product was functioning as intended.",
-            "Researched potential AI integrations and automation workflows in current products used by the Operations team at the Ministry of Education.",
-            "Developed a Full Stack AI powered CVE Analysis Tool using Python, Javascript, HTML and Tailwind CSS to streamline the process of finding information of Common Vulnerabilities and Exposures (CVE) utilizing llama 3.1-70b for AI Suggestions and Scrapping NIST NVD/CVE Mitre for bulk information retrieval without being rate limited.",
-            "Manually tested software products from the user perspective to identify pootential issues and cyber security vulnerabilities.",
-            "Built serverless automation using Azure AD app registrations and Microsoft Graph API to provision role-based SharePoint Document permissions via OAuth2 client credentials, enabling automated onboarding and access management.",
+            "Developed a full-stack, AI-powered CVE analysis tool using Python, JavaScript, HTML, and Tailwind CSS to streamline vulnerability research, generating AI-assisted summaries and remediation suggestions using LLaMA 3.1–70B.",
+            "Implemented bulk CVE data ingestion by scraping and aggregating information from NIST NVD and CVE Mitre sources for faster retrieval and analysis.",
+            "Researched potential AI integrations and automation workflows for tools used by the Operations team, identifying opportunities to improve efficiency and reduce manual work.",
+            "Built serverless automation using Azure AD app registrations and Microsoft Graph API to provision role-based SharePoint document permissions via OAuth 2.0 client credentials, enabling automated onboarding and access management.",
+            "Performed manual testing from an end-user perspective to identify functional issues and potential cybersecurity vulnerabilities.",
+            "Designed and implemented unit tests using C# (.NET Core, NUnit) and E2E tests using Selenium to validatecore workflows and improve reliability on important government websites.",
         ],
         stacks: [
             {
@@ -310,14 +313,14 @@ export const ExperienceList: Experience[] = [
         startDate: '2025-06',
         endDate: '2025-09',
         accomplishments: [
-            "Developed software for managing and monitoring the Cendiant Quality Insights, an AI inspection system for visual inspection of vehicle components such as the camshaft.",
-            "Implemented event-driven, real-time updates using WebSockets and MongoDB Change Streams,enabling instant defect notifications and live visual feedback during inspections.",
-            "Contributed to a full stack analytics page using VueJS, TypeScript, Python, Docker, and FastAPI.",
-            "Analyzed AI results to accurately output predictions, confidence levels, acceptance thresholds, and relevant metrics.",
-            "Implemented Base CRUD Routers to streamline new API development and enhance the overall efficiency of the software.",
-            "Collaborated with cross-functional teams to ensure seamless integration of software components and adherence to project timelines.",
-            "Followed Agile methodologies to manage project tasks and deliverables, ensuring timely completion of milestones.",
-            "Implemented Integration tests using Postman and directly integrated the tests into the CI/CD pipeline using Newman CLI.",
+            "Contributed to the development of an AI-driven visual inspection system for vehicle components, supporting defect detection and quality assurance.",
+            "Implemented event-driven, real-time updates using WebSockets and MongoDB Change Streams, enabling instant defect notifications and live visual feedback during inspections.",
+            "Developed a full-stack analytics application using Vue.js, TypeScript, Python, FastAPI, and Docker to monitor inspection results, system performance, and historical accuracy metrics.",
+            "Processed and analyzed AI inspection outputs to surface predictions, confidence scores, acceptance thresholds, and relevant quality metrics.",
+            "Implemented reusable base CRUD routers to standardize API development and improve backend development efficiency.",
+            "Collaborated with cross-functional teams to integrate software components and meet project timelines.",
+            "Worked within an agile development process to manage tasks, iterate on features, and deliver milestones on schedule.",
+            "Implemented integration tests using Postman and integrated them into the CI/CD pipeline using Newman CLI to improve release reliability.",
         ],
         stacks: [
             {
@@ -373,13 +376,14 @@ export const ExperienceList: Experience[] = [
         startDate: '2025-10',
         endDate: '2026-01',
         accomplishments: [
-            "Contributed to the development of OpsLevel, a developer portal that enables engineering teams to manage and streamline their coding infrastructure.",
-            "Built and maintained frontend features using Vue.js and JavaScript, improving usability and responsiveness of core product workflows",
+            "Contributed to the development of OpsLevel, a internal developer portal that enables engineering teams to manage and streamline their service and infrastructures.",
+            "Built and maintained frontend features using Vue.js and JavaScript, improving usability and responsiveness across core product experiences.",
             "Implemented backend functionality in Ruby on Rails, designing and consuming GraphQL APIs to support new product features.",
-            "Developed features for the new flagship AI Maintenance Agent, enabling automated repository maintenance through AI-driven workflows",
-            "Worked with Third-party integrations (GitHub, GitLab, Bitbucket) to support AI-driven repository maintenance and improve user onboarding workflows.",
-            "Investigated and hotfixed production issues reported by customers, prioritizing fixes to maintain platform stability",
-            "Collaborated in an Agile environment, participating in daily standups, code reviews, and sprint planning with cross-functional teams."
+            "Developed features for the flagship AI Maintenance Agent, enabling automated repository maintenance through AI-driven workflows.",
+            "Integrated with third-party platforms including GitHub, GitLab, and Bitbucket to support AI-powered repository maintenance and improve onboarding flows.",
+            "Investigated and hotfixed production issues reported by customers, prioritizing fixes to maintain platform stability and reliability.",
+            "Wrote unit tests using RSpec and Jest to validate backend and frontend functionality and prevent regressions.",
+            "Collaborated in an agile environment, participating in daily standups, code reviews, and sprint planning with cross-functional teams."
         ],
         stacks: [
             {
