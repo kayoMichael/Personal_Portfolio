@@ -13,11 +13,14 @@ import Container from '@/src/components/ui/container';
 import Progress from '@/src/components/ui/progress';
 
 interface Props {
-  weeklyStats: { data: { text?: string } };
   currentStats: {
     data: {
       human_readable_daily_average_including_other_language?: string;
       human_readable_total_including_other_language?: string;
+      human_readable_total?: string;
+      human_readable_range?: string;
+      human_additions?: number;
+      human_deletions?: number;
       best_day?: { date: string };
       languages?: Array<{
         name: string;
@@ -30,15 +33,11 @@ interface Props {
     };
   };
 }
-const CodingStatistic = ({ weeklyStats, currentStats }: Props) => {
+const CodingStatistic = ({ currentStats }: Props) => {
   const dailyAverage =
     currentStats.data?.human_readable_daily_average_including_other_language ??
     'N/A';
-  const thisWeekTotal =
-    currentStats.data?.human_readable_total_including_other_language ?? 'N/A';
-  const bestDayDate = currentStats.data?.best_day?.date;
-  const bestDay = bestDayDate ?? 'N/A';
-  const allTimeSinceToday = weeklyStats.data?.text ?? 'N/A';
+  const allTimeSinceToday = currentStats.data?.human_readable_total ?? 'N/A';
   const languages = currentStats.data?.languages ?? [];
   const editors = currentStats.data?.editors ?? [];
   const activities = [
@@ -70,7 +69,7 @@ const CodingStatistic = ({ weeklyStats, currentStats }: Props) => {
               Last updated: 5 minutes ago
             </Link>
           }
-          description='Coding Stats from Last 7 Days.'
+          description={`All Time Coding Stats (${currentStats.data?.human_readable_range})`}
           icon={<WakaTime className='h-5 w-5' />}
           title='Weekly Coding Activities'
         >
@@ -78,13 +77,16 @@ const CodingStatistic = ({ weeklyStats, currentStats }: Props) => {
             <div className='mb-1 grid gap-3 py-2 md:grid-cols-2'>
               <OverviewCard label='Daily Coding Average' value={dailyAverage} />
               <OverviewCard
-                label='This Week Coding Time'
-                value={thisWeekTotal}
-              />
-              <OverviewCard label='Best Day Coding Time' value={bestDay} />
-              <OverviewCard
                 label='All Time Since Today'
                 value={allTimeSinceToday}
+              />
+              <OverviewCard
+                label='Characters Typed'
+                value={String(currentStats.data?.human_additions)}
+              />
+              <OverviewCard
+                label='Characters Deleted'
+                value={String(currentStats.data?.human_deletions)}
               />
             </div>
 

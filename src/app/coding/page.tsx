@@ -7,20 +7,8 @@ import CodingStatistic from './codingStatistics';
 import GitHubInsights from './githubStatistics';
 
 const CodingPage = async () => {
-  let weeklyStats, currentStats, githubData;
+  let currentStats, githubData;
   try {
-    weeklyStats = await fetch(
-      'https://wakatime.com/api/v1/users/current/all_time_since_today',
-      {
-        method: 'GET',
-        headers: {
-          Authorization: `Basic ${Buffer.from(
-            process.env.WAKATIME_API_KEY ?? ''
-          ).toString('base64')}`,
-        },
-        next: { revalidate: 1800 },
-      }
-    ).then(async (res) => await res.json());
     currentStats = await fetch(
       'https://wakatime.com/api/v1/users/current/stats',
       {
@@ -45,7 +33,7 @@ const CodingPage = async () => {
   }
   return (
     <>
-      <CodingStatistic currentStats={currentStats} weeklyStats={weeklyStats} />
+      <CodingStatistic currentStats={currentStats} />
       <GitHubInsights data={githubData} />
     </>
   );
