@@ -330,6 +330,9 @@ export const ExperienceList: Experience[] = [
                 name: 'TypeScript',
             },
             {
+                name: 'MongoDB',
+            },
+            {
                 name: 'Storybook',
             },
             {

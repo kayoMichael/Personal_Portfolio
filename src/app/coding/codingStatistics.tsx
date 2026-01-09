@@ -64,7 +64,7 @@ const CodingStatistic = ({ weeklyStats, currentStats }: Props) => {
           appendix={
             <Link
               className='text-sm text-muted-foreground hover:underline'
-              href='https://wakatime.com/@kayoMichael'
+              href='https://wakatime.com/@ff7a628d-e3ce-4703-b2b1-90de73b20dca'
               passHref
             >
               Last updated: 5 minutes ago

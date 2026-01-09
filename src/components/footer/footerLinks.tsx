@@ -5,7 +5,12 @@ import {
   AtSign,
 } from 'lucide-react';
 
-import { GitHub, LinkedIn } from '@/src/components/icons/icons';
+import {
+  GitHub,
+  LeetCode,
+  LinkedIn,
+  WakaTime,
+} from '@/src/components/icons/icons';
 
 interface NavLink {
   path: string;
@@ -86,5 +91,17 @@ export const FOOTER_ICON_LINKS: FooterIconLink[] = [
     url: 'https://www.linkedin.com/in/michael-li-72115222b/',
     icon: <LinkedIn />,
     className: 'hover:text-[#0A66C2]',
+  },
+  {
+    title: 'LeetCode',
+    url: 'https://leetcode.com/u/kayoMichael/',
+    icon: <LeetCode />,
+    className: 'group text-gray-400',
+  },
+  {
+    title: 'WakaTime',
+    url: 'https://wakatime.com/@ff7a628d-e3ce-4703-b2b1-90de73b20dca',
+    icon: <WakaTime />,
+    className: 'hover:text-black',
   },
 ];

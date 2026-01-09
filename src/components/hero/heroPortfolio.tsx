@@ -5,7 +5,15 @@ import { FileText } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { FOOTER_ICON_LINKS } from '../footer/footerLinks';
 import { Button } from '../ui/button';
+
+import {
+  TooltipProvider,
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from '@/src/components/ui/tooltip';
 
 const HeroPortfolio = () => {
   return (
@@ -20,14 +28,25 @@ const HeroPortfolio = () => {
             src='/profile/portfolio.jpg'
             width={256}
           />
-          <div className='flex flex-col items-center py-2'>
-            <h3 className='font-cal text-xl'>Michael Li</h3>
-            <h4 className='font-cal text-muted-foreground'>
-              Software Engineer
-            </h4>
-            <h4 className='font-cal text-muted-foreground'>
-              Student: (2021 ~ 2026)
-            </h4>
+          <div className='flex gap-4 mt-6'>
+            {FOOTER_ICON_LINKS.map(({ title, url, icon, className }) => (
+              <TooltipProvider key={title}>
+                <Tooltip>
+                  <TooltipTrigger>
+                    <Link
+                      className={`text-muted-foreground transition-colors duration-200 ease-out ${className}`}
+                      href={url}
+                      key={title}
+                      target='_blank'
+                      title={title}
+                    >
+                      {icon}
+                    </Link>
+                  </TooltipTrigger>
+                  <TooltipContent>{title}</TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+            ))}
           </div>
         </div>
 

@@ -31,7 +31,7 @@ const HighlightedProjects = ({ project }: Props) => {
     },
   };
   return (
-    <div className='mt-16'>
+    <div className='mt-28'>
       <motion.div
         animate={isInView ? 'animate' : 'initial'}
         className='will-change-[transform, opacity]'
