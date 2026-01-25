@@ -48,6 +48,7 @@ import {
   Numpy,
   ScikitLearn,
   RSpec,
+  CPlus,
 } from '@/src/components/icons/icons';
 import { cn } from '@/src/utils/cn';
 
@@ -104,4 +105,5 @@ export const STACKS: StackProps = {
   Numpy: <Numpy />,
   'Scikit-Learn': <ScikitLearn />,
   RSpec: <RSpec />,
+  'C++': <CPlus />,
 };

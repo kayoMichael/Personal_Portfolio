@@ -25,6 +25,14 @@ export const Projects: Project[] = [{
     date: '2024',
     image: '/projects/premier-league.avif',
 },{
+    title: "Light Weight Chess Engine",
+    description: "A Lightweight Chess engine written in C++ that utilizes the UCI protocol to integrate with any Chess GUIs.",
+    techStack: ["C++"],
+    github: "https://github.com/kayoMichael/chess",
+    date: '2026',
+    image: '/projects/chess.png'
+},
+{
     title: 'Full Stack AI CVE Analysis APP',
     description: 'An AI Powered CVE Analysis that allows users to bulk search and analyze CVEs without gettting rate limited.',
     techStack: ['JavaScript', 'Python', 'TailwindCSS', "HTML5"],
