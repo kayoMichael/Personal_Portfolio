@@ -2,6 +2,7 @@
 import React from 'react';
 
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 import ProjectCard from '@/src/components/projects/ProjectsCard';
 import PageHeader from '@/src/components/typography/header';
@@ -9,12 +10,12 @@ import Container from '@/src/components/ui/container';
 import { Projects } from '@/src/utils/projects';
 
 const ProjectsPage = () => {
+  const t = useTranslations('projects');
+  const tp = useTranslations('projectItems');
+
   return (
     <>
-      <PageHeader
-        description='A collection of Projects I have built.'
-        title='Projects'
-      />
+      <PageHeader description={t('pageDescription')} title={t('pageTitle')} />
       <Container>
         <motion.div
           animate={{ y: 0, opacity: 1 }}
@@ -26,10 +27,10 @@ const ProjectsPage = () => {
             <div className='flex justify-center' key={project.github}>
               <ProjectCard
                 date={project.date}
-                description={project.description}
+                description={tp(`${project.key}.description`)}
                 githubLink={project.github}
                 image={project.image}
-                name={project.title}
+                name={tp(`${project.key}.title`)}
                 techStack={project.techStack}
                 url={project.url}
               />

@@ -3,13 +3,14 @@ import React, { useRef } from 'react';
 
 import { useInView, motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import ProjectCard from '../projects/ProjectsCard';
 import { Button } from '../ui/button';
 
 import { CompanyCard } from './companyCard';
 
+import { Link } from '@/src/i18n/navigation';
 import { ExperienceList } from '@/src/utils/experiences';
 import { Projects } from '@/src/utils/projects';
 
@@ -17,6 +18,9 @@ interface Props {
   project: boolean;
 }
 const HighlightedProjects = ({ project }: Props) => {
+  const t = useTranslations('hero');
+  const tp = useTranslations('projectItems');
+
   /** Projects Card Animation */
   const projectsRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(projectsRef, { once: true, margin: '-100px' });
@@ -47,20 +51,20 @@ const HighlightedProjects = ({ project }: Props) => {
           transition={{ duration: 0.3 }}
         >
           <h2 className='font-cal font-bold text-primary md:text-2xl'>
-            {project ? 'Recent Projects' : 'Recent Work Experiences'}
+            {project ? t('recentProjects') : t('recentExperiences')}
           </h2>
         </motion.div>
         <div className='flex items-center justify-start mt-5'>
           {project ? (
             <Link href='/projects'>
               <Button variant='outline'>
-                All Projects {<ChevronRight className='h-4 w-4' />}
+                {t('allProjects')} {<ChevronRight className='h-4 w-4' />}
               </Button>
             </Link>
           ) : (
             <Link href='/experience'>
               <Button variant='outline'>
-                All Work Experiences {<ChevronRight className='h-4 w-4' />}
+                {t('allExperiences')} {<ChevronRight className='h-4 w-4' />}
               </Button>
             </Link>
           )}
@@ -72,16 +76,16 @@ const HighlightedProjects = ({ project }: Props) => {
             initial={{ y: 40, opacity: 0 }}
             transition={{ duration: 0.3 }}
           >
-            {Projects.slice(0, 2).map((project) => (
+            {Projects.slice(0, 2).map((proj) => (
               <ProjectCard
-                date={project.date}
-                description={project.description}
-                githubLink={project.github}
-                image={project.image}
-                key={project.github}
-                name={project.title}
-                techStack={project.techStack}
-                url={project.url}
+                date={proj.date}
+                description={tp(`${proj.key}.description`)}
+                githubLink={proj.github}
+                image={proj.image}
+                key={proj.github}
+                name={tp(`${proj.key}.title`)}
+                techStack={proj.techStack}
+                url={proj.url}
               />
             ))}
           </motion.div>
@@ -96,18 +100,15 @@ const HighlightedProjects = ({ project }: Props) => {
               .toReversed()
               .map((experience) => (
                 <CompanyCard
-                  accomplishments={experience.accomplishments}
+                  accomplishmentCount={experience.accomplishmentCount}
                   companyName={experience.company.name}
                   companyUrl={experience.company.url}
                   endDate={experience.endDate}
-                  jobType={experience.company.jobType}
                   key={experience.company.name}
-                  location={experience.company.location}
                   logoSrc={experience.company.logo}
-                  role={experience.role}
                   stacks={experience.stacks}
                   startDate={experience.startDate}
-                  workplaceType={experience.company.workplaceType}
+                  translationKey={experience.key}
                 />
               ))}
           </motion.div>

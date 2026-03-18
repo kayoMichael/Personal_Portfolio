@@ -1,0 +1,218 @@
+{
+  "metadata": {
+    "title": "Michael Li",
+    "description": "Personal Portfolio of Michael (Heyang) Li"
+  },
+  "nav": {
+    "brand": "Personal Portfolio",
+    "experience": "Experience",
+    "projects": "Projects",
+    "codingStats": "Coding Stats",
+    "home": "Home",
+    "workExperience": "Work Experience"
+  },
+  "hero": {
+    "bio1": "Hello, my name is Michael Li, a student at the <universityLink>University of Waterloo</universityLink> studying Mathematics with a Computing minor, focused on software engineering.",
+    "universityUrl": "https://en.wikipedia.org/wiki/University_of_Waterloo_Faculty_of_Mathematics",
+    "bio2": "My coursework includes algorithms, data structures, linear algebra, object-oriented programming, computer systems, distributed systems, statistics, numerical computation, and databases.",
+    "bio3": "I have completed 6 internships and nearly 2 years of part-time software development work across industries including computer vision, developer platforms, government, SaaS, payment systems, and infrastructure tooling.",
+    "resume": "Resume",
+    "coopEvaluations": "Co-op Employer Evaluations (UW)",
+    "techStackAndTools": "Tech Stack and Tools",
+    "recentProjects": "Recent Projects",
+    "recentExperiences": "Recent Work Experiences",
+    "allProjects": "All Projects",
+    "allExperiences": "All Work Experiences"
+  },
+  "experience": {
+    "pageTitle": "Work Experience",
+    "pageDescription": "A brief overview of my professional journey and career milestones.",
+    "present": "Present",
+    "lastUpdatedAt": "Last updated at",
+    "showDetails": "Show work details ({count})",
+    "hideDetails": "Hide work details ({count})",
+    "yr": "{count} yr",
+    "yrs": "{count} yrs",
+    "mo": "{count} mo",
+    "mos": "{count} mos"
+  },
+  "projects": {
+    "pageTitle": "Projects",
+    "pageDescription": "A collection of Projects I have built.",
+    "code": "Code \u2192",
+    "previewPage": "Preview Page"
+  },
+  "coding": {
+    "pageTitle": "My Coding Statistics",
+    "weeklyCodingActivities": "Weekly Coding Activities",
+    "allTimeCodingStats": "All Time Coding Stats ({range})",
+    "lastUpdated": "Last updated: 5 minutes ago",
+    "dailyCodingAverage": "Daily Coding Average",
+    "allTimeSinceToday": "All Time Since Today",
+    "charactersTyped": "Characters Typed",
+    "charactersDeleted": "Characters Deleted",
+    "languages": "Languages",
+    "editors": "Editors"
+  },
+  "github": {
+    "title": "GitHub Insights",
+    "description": "A Quick Look at Followers, Repositories, and Contributions Activity from last year.",
+    "publicRepositories": "Public Repositories",
+    "followers": "Followers",
+    "contributions": "Contributions",
+    "total": "Total",
+    "thisWeek": "This Week",
+    "bestDay": "Best Day",
+    "average": "Average",
+    "perDay": "per day",
+    "less": "Less",
+    "more": "More",
+    "contributionsOn": "{count} contributions on {date}"
+  },
+  "footer": {
+    "name": "Michael Li",
+    "location": "Waterloo, Canada"
+  },
+  "experiences": {
+    "weseek": {
+      "role": "Software Engineer Intern",
+      "location": "Tokyo, Japan",
+      "workplaceType": "On-Site",
+      "jobType": "Internship",
+      "accomplishment1": "Built and improved a user-facing portal for JPNAP, the largest Internet Exchange Service in Japan, enhancing usability and accessibility for end users.",
+      "accomplishment2": "Implemented and maintained database migrations and CRUD functionality using Ruby on Rails (ActiveRecord) and MySQL, ensuring reliable data integrity.",
+      "accomplishment3": "Designed backend features following MVC principles, improving code maintainability and supporting future feature expansion.",
+      "accomplishment4": "Developed responsive frontend components using AngularJS, TypeScript, and Bootstrap, delivering a smooth and intuitive user experience.",
+      "accomplishment5": "Improved application performance and responsiveness by contributing to a Single Page Application (SPA) architecture and frontend caching strategies."
+    },
+    "everforth": {
+      "role": "Part-Time Software Engineer",
+      "location": "Tokyo, Japan",
+      "workplaceType": "Remote",
+      "jobType": "Freelance",
+      "accomplishment1": "Contributed to a full-stack enterprise application for standardizing employee health workflows, using Nuxt.js, Vue.js, and TypeScript on the frontend and Java Spring Boot on the backend.",
+      "accomplishment2": "Developed serverless REST API endpoints using AWS Lambda, Python, and Node.js to handle data ingestion, transformation, and persistence.",
+      "accomplishment3": "Architected and implemented a serverless reporting pipeline using AWS Step Functions and Python, transforming user-submitted data into individualized PDF reports with dynamic charts and scoring logic.",
+      "accomplishment4": "Implemented dynamic PDF layout logic using ReportLab, calculating spacing and pagination to support variable-length sections, comments, and category counts across customers.",
+      "accomplishment5": "Contributed to backend infrastructure supporting real-time data processing, integrating with existing systems to improve reliability and performance.",
+      "accomplishment6": "Participated in peer code reviews, providing feedback to maintain code quality, consistency, and engineering best practices."
+    },
+    "kaima": {
+      "role": "Software Developer Intern",
+      "location": "Tokyo, Japan",
+      "workplaceType": "Remote",
+      "jobType": "Internship",
+      "accomplishment1": "Contributed to the development of a customer-facing payment portal using React.js, Node.js, and Express, supporting payment flows across Stripe, Alipay, WeChat Pay, Weibo Pay, and PayPay.",
+      "accomplishment2": "Implemented GraphQL schemas and queries to fetch and render data dynamically, enabling responsive UI updates across the application.",
+      "accomplishment3": "Collaborated with designers, product managers, and engineers to integrate and deploy new features within an agile development process.",
+      "accomplishment4": "Wrote and maintained end-to-end and component tests using Cypress and Storybook, identifying and resolving issues to improve reliability and user experience.",
+      "accomplishment5": "Improved interaction responsiveness by implementing optimistic UI updates using React Query, reducing perceived latency by 35%.",
+      "accomplishment6": "Reduced page load times by 20% introducing aggressive client-side caching with React Query, minimizing redundant network requests.",
+      "accomplishment7": "Participated in code reviews, sprint ceremonies, and knowledge-sharing sessions, contributing to team alignment and code quality."
+    },
+    "enju": {
+      "role": "Software Developer Intern",
+      "location": "Tokyo, Japan",
+      "workplaceType": "On-Site",
+      "jobType": "Internship",
+      "accomplishment1": "Developed a full-stack, AI website translation application using Next.js (App Router), React, TypeScript, Gemini API and Firebase.",
+      "accomplishment2": "Improved page load times by 25% by separating static and dynamic content, leveraging Static Site Generation alongside server-side rendering for faster initial loads.",
+      "accomplishment3": "Implemented user authentication and data storage using Firebase Authentication and Firestore, supporting secure access and reliable data persistence.",
+      "accomplishment4": "Designed strongly typed Firestore document models to enforce type safety and data consistency within a schema-less database.",
+      "accomplishment5": "Contributed to the development of an embeddable, CDN-hosted client script that scrapes page content, invokes AI-based translation services, and dynamically injects translated content back into customer websites.",
+      "accomplishment6": "Cached translated content in Firestore to reduce repeated AI translation calls, lowering API costs and improving content load times.",
+      "accomplishment7": "Integrated AI-driven translation using Google Gemini to support automated, on-demand website localization.",
+      "accomplishment8": "Architected the application using a layered approach to separate concerns across presentation, business logic, and data access, improving maintainability and scalability.",
+      "accomplishment9": "Collaborated with a senior engineer to design, build, and launch the MVP from scratch within a four-month term, rapidly shipping features using a single Next.js codebase with shared server and client logic.",
+      "accomplishment10": "Leveraged serverless tooling including Next.js App Router, NextAuth, Firebase, and Firestore to enable rapid development and deployment.",
+      "accomplishment11": "Maintained technical documentation using JSDoc to support onboarding, code clarity, and long-term maintainability."
+    },
+    "ontario": {
+      "companyName": "Ontario Ministry of Education",
+      "role": "Software Developer Intern",
+      "location": "Toronto, Canada",
+      "workplaceType": "Hybrid",
+      "jobType": "Internship",
+      "accomplishment1": "Developed a full-stack, AI-powered CVE analysis tool using Python, JavaScript, HTML, and Tailwind CSS to streamline vulnerability research, generating AI-assisted summaries and remediation suggestions using LLaMA 3.1\u201370B.",
+      "accomplishment2": "Implemented bulk CVE data ingestion by scraping and aggregating information from NIST NVD and CVE Mitre sources for faster retrieval and analysis.",
+      "accomplishment3": "Researched potential AI integrations and automation workflows for tools used by the Operations team, identifying opportunities to improve efficiency and reduce manual work.",
+      "accomplishment4": "Built serverless automation using Azure AD app registrations and Microsoft Graph API to provision role-based SharePoint document permissions via OAuth 2.0 client credentials, enabling automated onboarding and access management.",
+      "accomplishment5": "Performed manual testing from an end-user perspective to identify functional issues and potential cybersecurity vulnerabilities.",
+      "accomplishment6": "Designed and implemented unit tests using C# (.NET Core, NUnit) and E2E tests using Selenium to validate core workflows and improve reliability on important government websites."
+    },
+    "musashi": {
+      "role": "Full Stack Developer Intern",
+      "location": "Waterloo, Canada",
+      "workplaceType": "On-Site",
+      "jobType": "Internship",
+      "accomplishment1": "Contributed to the development of an AI-driven visual inspection system for vehicle components, supporting defect detection and quality assurance.",
+      "accomplishment2": "Implemented event-driven, real-time updates using WebSockets and MongoDB Change Streams, enabling instant defect notifications and live visual feedback during inspections.",
+      "accomplishment3": "Developed a full-stack analytics application using Vue.js, TypeScript, Python, FastAPI, and Docker to monitor inspection results, system performance, and historical accuracy metrics.",
+      "accomplishment4": "Processed and analyzed AI inspection outputs to surface predictions, confidence scores, acceptance thresholds, and relevant quality metrics.",
+      "accomplishment5": "Implemented reusable base CRUD routers to standardize API development and improve backend development efficiency.",
+      "accomplishment6": "Collaborated with cross-functional teams to integrate software components and meet project timelines.",
+      "accomplishment7": "Worked within an agile development process to manage tasks, iterate on features, and deliver milestones on schedule.",
+      "accomplishment8": "Implemented integration tests using Postman and integrated them into the CI/CD pipeline using Newman CLI to improve release reliability."
+    },
+    "opslevel": {
+      "role": "Software Developer Intern",
+      "location": "Toronto, Canada",
+      "workplaceType": "Hybrid",
+      "jobType": "Internship",
+      "accomplishment1": "Contributed to the development of OpsLevel, a internal developer portal that enables engineering teams to manage and streamline their service and infrastructures.",
+      "accomplishment2": "Built and maintained frontend features using Vue.js and JavaScript, improving usability and responsiveness across core product experiences.",
+      "accomplishment3": "Implemented backend functionality in Ruby on Rails, designing and consuming GraphQL APIs to support new product features.",
+      "accomplishment4": "Developed features for the flagship AI Maintenance Agent, enabling automated repository maintenance through AI-driven workflows.",
+      "accomplishment5": "Integrated with third-party platforms including GitHub, GitLab, and Bitbucket to support AI-powered repository maintenance and improve onboarding flows.",
+      "accomplishment6": "Investigated and hotfixed production issues reported by customers, prioritizing fixes to maintain platform stability and reliability.",
+      "accomplishment7": "Wrote unit tests using RSpec and Jest to validate backend and frontend functionality and prevent regressions.",
+      "accomplishment8": "Collaborated in an agile environment, participating in daily standups, code reviews, and sprint planning with cross-functional teams."
+    }
+  },
+  "projectItems": {
+    "aiJpgStore": {
+      "title": "Generative AI Image Store",
+      "description": "An Open Marketplace for AI Generated Images built with the MERN stack and Deployed on Google Cloud."
+    },
+    "premierLeague": {
+      "title": "Python Library for Analytical Soccer Data",
+      "description": "A Python Package that allows users to fetch advanced soccer statistics and data and expose it as an API or create Machine Learning Datasets."
+    },
+    "chess": {
+      "title": "Light Weight Chess Engine",
+      "description": "A Lightweight Chess engine written in C++ that utilizes the UCI protocol to integrate with any Chess GUIs."
+    },
+    "cve": {
+      "title": "Full Stack AI CVE Analysis APP",
+      "description": "An AI Powered CVE Analysis that allows users to bulk search and analyze CVEs without getting rate limited."
+    },
+    "baseballMcp": {
+      "title": "Baseball Card Classification MCP Server",
+      "description": "MCP Server to give Claude AI access to important tools to classify and find information about bowman prospect cards."
+    },
+    "neuralNetwork": {
+      "title": "Neural Network to predict outcomes of professional Soccer Matches",
+      "description": "A Neural Network built with Pytorch to classify professional soccer matches"
+    },
+    "linearRegression": {
+      "title": "Multiple Linear Regression Model",
+      "description": "A complete multiple linear regression analysis of teen gambling behavior in Britain, using the teengamb dataset"
+    },
+    "taskManagement": {
+      "title": "Task Management App",
+      "description": "A Full Stack Task Management App with CRUD operations, authentication, and authorization."
+    },
+    "portfolio": {
+      "title": "Portfolio Website",
+      "description": "A responsive portfolio website built with Next.js and TailwindCSS."
+    },
+    "gamePage": {
+      "title": "Game Display Website",
+      "description": "A Frontend Game Display Website built using the Rawg.IO API."
+    },
+    "gymLanding": {
+      "title": "Gym Landing Page",
+      "description": "A Gym Landing Page built with only vanilla CSS and HTML for educational purposes"
+    }
+  }
+}

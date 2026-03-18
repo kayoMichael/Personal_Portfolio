@@ -2,30 +2,34 @@
 import React, { useState } from 'react';
 
 import { Menu as MenuIcon } from 'lucide-react';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
+import LocaleSwitcher from '../locale-switcher';
 import { Button } from '../ui/button';
 import Container from '../ui/container';
 
 import { Sheet, SheetContent, SheetTrigger } from '@/src/components/ui/sheet';
-
-const items = [
-  {
-    label: 'Experience',
-    href: '/experience',
-  },
-  {
-    label: 'Projects',
-    href: '/projects',
-  },
-  {
-    label: 'Coding Stats',
-    href: '/coding',
-  },
-];
+import { Link } from '@/src/i18n/navigation';
 
 const NavigationBar = () => {
   const [open, setOpen] = useState(false);
+  const t = useTranslations('nav');
+
+  const items = [
+    {
+      label: t('experience'),
+      href: '/experience' as const,
+    },
+    {
+      label: t('projects'),
+      href: '/projects' as const,
+    },
+    {
+      label: t('codingStats'),
+      href: '/coding' as const,
+    },
+  ];
+
   return (
     <>
       <Sheet onOpenChange={setOpen} open={open}>
@@ -48,36 +52,38 @@ const NavigationBar = () => {
                 ))}
               </div>
             </SheetContent>
-            <div className='flex h-16 items-center md:justify-between'>
+            <div className='flex h-16 items-center justify-between'>
               <SheetTrigger asChild>
                 <Button className='md:hidden' size='icon' variant='ghost'>
                   <MenuIcon />
                 </Button>
               </SheetTrigger>
               <Link className='flex items-center gap-2' href='/'>
-                <span className='text-lg font-semibold'>
-                  Personal Portfolio
-                </span>
+                <span className='text-lg font-semibold'>{t('brand')}</span>
               </Link>
-              <nav className='hidden gap-6 text-sm font-medium md:flex'>
+              <div className='md:hidden'>
+                <LocaleSwitcher />
+              </div>
+              <nav className='hidden items-center gap-6 text-sm font-medium md:flex'>
                 <Link
                   className='relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:after:w-full dark:after:bg-gray-50'
                   href='/experience'
                 >
-                  Experience
+                  {t('experience')}
                 </Link>
                 <Link
                   className='relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:after:w-full dark:after:bg-gray-50'
                   href='/projects'
                 >
-                  Projects
+                  {t('projects')}
                 </Link>
                 <Link
                   className='relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:after:w-full dark:after:bg-gray-50'
                   href='/coding'
                 >
-                  Coding Stats
+                  {t('codingStats')}
                 </Link>
+                <LocaleSwitcher />
               </nav>
             </div>
           </Container>
