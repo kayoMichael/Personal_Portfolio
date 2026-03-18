@@ -45,7 +45,7 @@ export default function LocaleSwitcher() {
           setOpen(!open);
         }}
       >
-        <Globe className='h-4 w-4' />
+        <Globe className='h-4 w-4 text-sky-400' />
         <span className='font-medium'>{localeCodes[locale as Locale]}</span>
       </button>
       {open && (
