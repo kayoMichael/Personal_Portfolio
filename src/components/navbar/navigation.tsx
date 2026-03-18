@@ -53,38 +53,48 @@ const NavigationBar = () => {
               </div>
             </SheetContent>
             <div className='flex h-16 items-center justify-between'>
+              {/* Left: hamburger (mobile only) */}
               <SheetTrigger asChild>
                 <Button className='md:hidden' size='icon' variant='ghost'>
                   <MenuIcon />
                 </Button>
               </SheetTrigger>
+
+              {/* Center-left: brand */}
               <Link className='flex items-center gap-2' href='/'>
                 <span className='text-lg font-semibold'>{t('brand')}</span>
               </Link>
+
+              {/* Right side: nav links + separator + locale switcher (desktop) */}
+              <div className='hidden items-center md:flex'>
+                <nav className='flex items-center gap-6 text-sm font-medium'>
+                  <Link
+                    className='relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:after:w-full dark:after:bg-gray-50'
+                    href='/experience'
+                  >
+                    {t('experience')}
+                  </Link>
+                  <Link
+                    className='relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:after:w-full dark:after:bg-gray-50'
+                    href='/projects'
+                  >
+                    {t('projects')}
+                  </Link>
+                  <Link
+                    className='relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:after:w-full dark:after:bg-gray-50'
+                    href='/coding'
+                  >
+                    {t('codingStats')}
+                  </Link>
+                </nav>
+                <div className='mx-4 h-5 w-px bg-gray-200 dark:bg-gray-700' />
+                <LocaleSwitcher />
+              </div>
+
+              {/* Right side: locale switcher (mobile) */}
               <div className='md:hidden'>
                 <LocaleSwitcher />
               </div>
-              <nav className='hidden items-center gap-6 text-sm font-medium md:flex'>
-                <Link
-                  className='relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:after:w-full dark:after:bg-gray-50'
-                  href='/experience'
-                >
-                  {t('experience')}
-                </Link>
-                <Link
-                  className='relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:after:w-full dark:after:bg-gray-50'
-                  href='/projects'
-                >
-                  {t('projects')}
-                </Link>
-                <Link
-                  className='relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:after:w-full dark:after:bg-gray-50'
-                  href='/coding'
-                >
-                  {t('codingStats')}
-                </Link>
-                <LocaleSwitcher />
-              </nav>
             </div>
           </Container>
         </div>
