@@ -1,12 +1,18 @@
 import React from 'react';
 
 import { redirect } from 'next/navigation';
+import { unstable_setRequestLocale } from 'next-intl/server';
 
 import { getContributions, getGitHubUser } from './actions';
 import CodingStatistic from './codingStatistics';
 import GitHubInsights from './githubStatistics';
 
-const CodingPage = async () => {
+const CodingPage = async ({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) => {
+  unstable_setRequestLocale(locale);
   let currentStats, githubData;
   try {
     currentStats = await fetch(

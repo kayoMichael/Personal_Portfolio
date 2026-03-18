@@ -3,6 +3,7 @@
 import { useState } from 'react';
 
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 import type { ContributionCalendar } from '@/src/utils/github';
 
@@ -11,6 +12,7 @@ interface ContributionsProps {
 }
 
 const Contributions = ({ data }: ContributionsProps) => {
+  const t = useTranslations('github');
   const [selectedContribution, setSelectedContribution] = useState<{
     count: number | null;
     date: string | null;
@@ -96,7 +98,7 @@ const Contributions = ({ data }: ContributionsProps) => {
       </div>
       <div className='flex flex-wrap items-center justify-between gap-2'>
         <div className='flex items-center gap-2 text-xs'>
-          <span className='text-muted-foreground'>Less</span>
+          <span className='text-muted-foreground'>{t('less')}</span>
           <ul className='flex gap-1'>
             <motion.li className='h-3 w-3 rounded-sm bg-muted' />
             {contributionColors.map((color, index) => (
@@ -116,13 +118,15 @@ const Contributions = ({ data }: ContributionsProps) => {
               />
             ))}
           </ul>
-          <span>More</span>
+          <span>{t('more')}</span>
         </div>
         <div
           className={`${selectedContribution?.date ? 'opacity-100' : 'opacity-0'} rounded bg-card p-1.5 font-cal text-xs text-card-foreground`}
         >
-          {selectedContribution?.count} contributions on{' '}
-          {selectedContribution?.date}
+          {t('contributionsOn', {
+            count: selectedContribution?.count ?? 0,
+            date: selectedContribution?.date ?? '',
+          })}
         </div>
       </div>
     </div>

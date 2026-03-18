@@ -14,7 +14,7 @@ import {
 
 interface NavLink {
   path: string;
-  label: string;
+  labelKey: string;
   icon: JSX.Element;
   onlyShowOnDropdownMenu?: boolean;
 }
@@ -36,44 +36,44 @@ export const ROUTES = {
 export const NAV_LINKS: NavLink[] = [
   {
     path: ROUTES.projects,
-    label: 'Projects',
+    labelKey: 'projects',
     icon: <ShapesIcon className='size-5' />,
   },
   {
     path: ROUTES.dashboard,
-    label: 'Home',
+    labelKey: 'home',
     icon: <LayoutDashboardIcon className='size-5' />,
   },
   {
     path: ROUTES.experience,
-    label: 'Work Experience',
+    labelKey: 'workExperience',
     icon: <BookOpenText className='size-5' />,
   },
   {
     path: ROUTES.code,
-    label: 'Coding Stats',
+    labelKey: 'codingStats',
     icon: <AtSign className='size-5' />,
   },
 ];
 
-export const FOOTER_LINKS = [
+export const FOOTER_LINKS_KEYS = [
   [
     {
-      title: 'Coding Stats',
+      titleKey: 'codingStats',
       url: ROUTES.code,
     },
     {
-      title: 'Home',
+      titleKey: 'home',
       url: ROUTES.dashboard,
     },
   ],
   [
     {
-      title: 'Projects',
+      titleKey: 'projects',
       url: ROUTES.projects,
     },
     {
-      title: 'Experience',
+      titleKey: 'experience',
       url: ROUTES.experience,
     },
   ],

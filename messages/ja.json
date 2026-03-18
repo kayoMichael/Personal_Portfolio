@@ -1,0 +1,219 @@
+{
+  "metadata": {
+    "title": "李 賀陽",
+    "description": "李 賀陽のポートフォリオ"
+  },
+  "nav": {
+    "brand": "ポートフォリオ",
+    "experience": "職歴",
+    "projects": "プロジェクト",
+    "codingStats": "コーディング統計",
+    "home": "ホーム",
+    "workExperience": "職務経歴"
+  },
+  "hero": {
+    "bio1": "こんにちは、李 賀陽と申します。<universityLink>ウォータールー大学</universityLink>で数学を専攻し、コンピューティング副専攻でソフトウェアエンジニアリングに注力しています。",
+    "universityUrl": "https://ja.wikipedia.org/wiki/ウォータールー大学",
+    "bio2": "これまでにアルゴリズム、データ構造、線形代数、オブジェクト指向プログラミング、コンピュータシステム、分散システム、統計学、数値計算、データベースなどを履修しました。",
+    "bio3": "6回のインターンシップと約2年間のパートタイム開発経験があり、コンピュータビジョン、開発者プラットフォーム、政府機関、SaaS、決済システム、インフラツールなど幅広い業界に携わってきました。",
+    "resume": "履歴書",
+    "coopEvaluations": "Co-op雇用主評価（UW）",
+    "techStackAndTools": "技術スタックとツール",
+    "recentProjects": "最近のプロジェクト",
+    "recentExperiences": "最近の職務経歴",
+    "allProjects": "全プロジェクト",
+    "allExperiences": "全職務経歴"
+  },
+  "experience": {
+    "pageTitle": "職務経歴",
+    "pageDescription": "これまでの職務経歴の概要です。",
+    "present": "現在",
+    "lastUpdatedAt": "最終更新日",
+    "showDetails": "詳細を表示 ({count})",
+    "hideDetails": "詳細を非表示 ({count})",
+    "yr": "{count}年",
+    "yrs": "{count}年",
+    "mo": "{count}ヶ月",
+    "mos": "{count}ヶ月"
+  },
+  "projects": {
+    "pageTitle": "プロジェクト",
+    "pageDescription": "これまでに取り組んだプロジェクトの一覧です。",
+    "code": "コード →",
+    "previewPage": "プレビュー"
+  },
+  "coding": {
+    "pageTitle": "コーディング統計",
+    "weeklyCodingActivities": "週間コーディングアクティビティ",
+    "allTimeCodingStats": "累計コーディング統計 ({range})",
+    "lastUpdated": "最終更新：5分前",
+    "dailyCodingAverage": "1日の平均コーディング時間",
+    "allTimeSinceToday": "累計コーディング時間",
+    "charactersTyped": "入力文字数",
+    "charactersDeleted": "削除文字数",
+    "languages": "言語",
+    "editors": "エディタ"
+  },
+  "github": {
+    "title": "GitHub インサイト",
+    "description": "過去1年間のフォロワー、リポジトリ、コントリビューション活動の概要です。",
+    "publicRepositories": "公開リポジトリ",
+    "followers": "フォロワー",
+    "contributions": "コントリビューション",
+    "total": "合計",
+    "thisWeek": "今週",
+    "bestDay": "最多の日",
+    "average": "平均",
+    "perDay": "1日あたり",
+    "less": "少",
+    "more": "多",
+    "contributionsOn": "{date}に{count}件のコントリビューション"
+  },
+  "footer": {
+    "name": "李 賀陽",
+    "location": "ウォータールー、カナダ"
+  },
+  "experiences": {
+    "weseek": {
+      "role": "ソフトウェアエンジニアインターン",
+      "location": "東京、日本",
+      "workplaceType": "出社",
+      "jobType": "インターンシップ",
+      "accomplishment1": "日本最大のインターネットエクスチェンジサービスであるJPNAPのユーザー向けポータルを構築・改善し、エンドユーザーの使いやすさとアクセシビリティを向上させました。",
+      "accomplishment2": "Ruby on Rails（ActiveRecord）とMySQLを使用してデータベースマイグレーションとCRUD機能を実装・保守し、信頼性の高いデータ整合性を確保しました。",
+      "accomplishment3": "MVCの原則に従ってバックエンド機能を設計し、コードの保守性を改善し、将来の機能拡張をサポートしました。",
+      "accomplishment4": "AngularJS、TypeScript、Bootstrapを使用してレスポンシブなフロントエンドコンポーネントを開発し、スムーズで直感的なユーザー体験を提供しました。",
+      "accomplishment5": "シングルページアプリケーション（SPA）アーキテクチャとフロントエンドキャッシュ戦略に貢献し、アプリケーションのパフォーマンスと応答性を改善しました。"
+    },
+    "everforth": {
+      "role": "パートタイムソフトウェアエンジニア",
+      "location": "東京、日本",
+      "workplaceType": "リモート",
+      "jobType": "フリーランス",
+      "accomplishment1": "フロントエンドにNuxt.js、Vue.js、TypeScript、バックエンドにJava Spring Bootを使用して、従業員の健康管理ワークフローを標準化するフルスタックエンタープライズアプリケーションの開発に貢献しました。",
+      "accomplishment2": "AWS Lambda、Python、Node.jsを使用してサーバーレスREST APIエンドポイントを開発し、データの取り込み、変換、永続化を処理しました。",
+      "accomplishment3": "AWS Step FunctionsとPythonを使用してサーバーレスレポートパイプラインを設計・実装し、ユーザーが送信したデータを動的なチャートとスコアリングロジックを備えた個別のPDFレポートに変換しました。",
+      "accomplishment4": "ReportLabを使用して動的PDFレイアウトロジックを実装し、顧客間で可変長セクション、コメント、カテゴリ数をサポートするためのスペーシングとページネーションを計算しました。",
+      "accomplishment5": "リアルタイムデータ処理をサポートするバックエンドインフラに貢献し、既存システムとの統合により信頼性とパフォーマンスを改善しました。",
+      "accomplishment6": "ピアコードレビューに参加し、コード品質、一貫性、エンジニアリングのベストプラクティスを維持するためのフィードバックを提供しました。"
+    },
+    "kaima": {
+      "role": "ソフトウェアエンジニアインターン",
+      "location": "東京、日本",
+      "workplaceType": "リモート",
+      "jobType": "インターンシップ",
+      "accomplishment1": "React.js、Node.js、Expressを使用して顧客向け決済ポータルの開発に貢献し、Stripe、Alipay、WeChat Pay、Weibo Pay、PayPayの決済フローをサポートしました。",
+      "accomplishment2": "GraphQLスキーマとクエリを実装してデータを動的に取得・レンダリングし、アプリケーション全体でレスポンシブなUI更新を可能にしました。",
+      "accomplishment3": "デザイナー、プロダクトマネージャー、エンジニアと協力して、アジャイル開発プロセス内で新機能を統合・デプロイしました。",
+      "accomplishment4": "CypressとStorybookを使用してエンドツーエンドテストとコンポーネントテストを作成・保守し、問題を特定・解決して信頼性とユーザー体験を改善しました。",
+      "accomplishment5": "React Queryを使用してオプティミスティックUI更新を実装することで、インタラクションの応答性を改善し、体感遅延を35%削減しました。",
+      "accomplishment6": "React Queryによる積極的なクライアントサイドキャッシュを導入してページ読み込み時間を20%短縮し、冗長なネットワークリクエストを最小化しました。",
+      "accomplishment7": "コードレビュー、スプリントセレモニー、ナレッジ共有セッションに参加し、チームの連携とコード品質に貢献しました。"
+    },
+    "enju": {
+      "role": "ソフトウェアエンジニアインターン",
+      "location": "東京、日本",
+      "workplaceType": "出社",
+      "jobType": "インターンシップ",
+      "accomplishment1": "Next.js（App Router）、React、TypeScript、Gemini API、Firebaseを使用してフルスタックAIウェブサイト翻訳アプリケーションを開発しました。",
+      "accomplishment2": "静的コンテンツと動的コンテンツを分離し、Static Site Generationとサーバーサイドレンダリングを組み合わせることで、ページ読み込み時間を25%改善しました。",
+      "accomplishment3": "Firebase AuthenticationとFirestoreを使用してユーザー認証とデータストレージを実装し、安全なアクセスと信頼性の高いデータ永続性をサポートしました。",
+      "accomplishment4": "スキーマレスデータベース内で型安全性とデータの一貫性を確保するために、強く型付けされたFirestoreドキュメントモデルを設計しました。",
+      "accomplishment5": "CDNでホストされる埋め込み型クライアントスクリプトの開発に貢献しました。このスクリプトはページコンテンツをスクレイピングし、AIベースの翻訳サービスを呼び出して、翻訳結果を顧客のウェブサイトに動的に注入します。",
+      "accomplishment6": "翻訳済みコンテンツをFirestoreにキャッシュすることで、繰り返しのAI翻訳呼び出しを削減し、APIコストを低減しつつコンテンツの読み込み時間を改善しました。",
+      "accomplishment7": "Google Geminiを活用したAI翻訳を統合し、自動化されたオンデマンドのウェブサイトローカリゼーションをサポートしました。",
+      "accomplishment8": "プレゼンテーション層、ビジネスロジック層、データアクセス層を分離するレイヤードアーキテクチャを採用し、保守性とスケーラビリティを改善しました。",
+      "accomplishment9": "シニアエンジニアと協力して、4ヶ月の期間内にMVPをゼロから設計・構築・リリースし、サーバーとクライアントのロジックを共有する単一のNext.jsコードベースで迅速に機能を提供しました。",
+      "accomplishment10": "Next.js App Router、NextAuth、Firebase、Firestoreなどのサーバーレスツールを活用して、迅速な開発とデプロイを実現しました。",
+      "accomplishment11": "JSDocを使用して技術ドキュメントを作成・維持し、オンボーディング、コードの可読性、長期的な保守性をサポートしました。"
+    },
+    "ontario": {
+      "companyName": "オンタリオ州教育省",
+      "role": "ソフトウェアエンジニアインターン",
+      "location": "トロント、カナダ",
+      "workplaceType": "ハイブリッド",
+      "jobType": "インターンシップ",
+      "accomplishment1": "Python、JavaScript、HTML、Tailwind CSSを使用してフルスタックAI搭載CVE分析ツールを開発し、LLaMA 3.1-70Bを活用したAI支援の要約と修復提案により脆弱性調査を効率化しました。",
+      "accomplishment2": "NIST NVDとCVE Mitreソースからの情報をスクレイピング・集約することで、バルクCVEデータ取り込みを実装し、より高速な検索と分析を実現しました。",
+      "accomplishment3": "運用チームが使用するツールへのAI統合と自動化ワークフローの可能性を調査し、効率改善と手作業削減の機会を特定しました。",
+      "accomplishment4": "Azure ADアプリ登録とMicrosoft Graph APIを使用してサーバーレス自動化を構築し、OAuth 2.0クライアント資格情報を介してロールベースのSharePointドキュメント権限をプロビジョニングし、オンボーディングとアクセス管理を自動化しました。",
+      "accomplishment5": "エンドユーザーの視点から手動テストを実施し、機能上の問題と潜在的なサイバーセキュリティの脆弱性を特定しました。",
+      "accomplishment6": "C#（.NET Core、NUnit）を使用した単体テストとSeleniumを使用したE2Eテストを設計・実装し、重要な政府ウェブサイトのコアワークフローを検証し、信頼性を向上させました。"
+    },
+    "musashi": {
+      "companyName": "武蔵精密工業",
+      "role": "フルスタックエンジニアインターン",
+      "location": "ウォータールー、カナダ",
+      "workplaceType": "出社",
+      "jobType": "インターンシップ",
+      "accomplishment1": "車両部品のAIを活用した外観検査システムの開発に貢献し、欠陥検出と品質保証をサポートしました。",
+      "accomplishment2": "WebSocketsとMongoDB Change Streamsを使用してイベント駆動型のリアルタイム更新を実装し、検査中の即時欠陥通知とライブビジュアルフィードバックを実現しました。",
+      "accomplishment3": "Vue.js、TypeScript、Python、FastAPI、Dockerを使用してフルスタック分析アプリケーションを開発し、検査結果、システムパフォーマンス、履歴精度メトリクスを監視しました。",
+      "accomplishment4": "AI検査の出力を処理・分析し、予測結果、信頼度スコア、受入閾値、関連する品質メトリクスを可視化しました。",
+      "accomplishment5": "再利用可能なベースCRUDルーターを実装してAPI開発を標準化し、バックエンド開発の効率を改善しました。",
+      "accomplishment6": "クロスファンクショナルチームと協力してソフトウェアコンポーネントを統合し、プロジェクトのタイムラインを達成しました。",
+      "accomplishment7": "アジャイル開発プロセス内でタスクを管理し、機能を反復改善しながらスケジュール通りにマイルストーンを達成しました。",
+      "accomplishment8": "Postmanを使用した統合テストを実装し、Newman CLIでCI/CDパイプラインに統合することで、リリースの信頼性を向上させました。"
+    },
+    "opslevel": {
+      "role": "ソフトウェアエンジニアインターン",
+      "location": "トロント、カナダ",
+      "workplaceType": "ハイブリッド",
+      "jobType": "インターンシップ",
+      "accomplishment1": "エンジニアリングチームがサービスやインフラを一元管理できる内部開発者ポータルであるOpsLevelの開発に貢献しました。",
+      "accomplishment2": "Vue.jsとJavaScriptを使用してフロントエンド機能を構築・保守し、コア製品全体の使いやすさとレスポンシブ対応を改善しました。",
+      "accomplishment3": "Ruby on Railsでバックエンド機能を実装し、新しい製品機能をサポートするためのGraphQL APIを設計・利用しました。",
+      "accomplishment4": "フラッグシップAIメンテナンスエージェントの機能を開発し、AIによる自動リポジトリメンテナンスを実現しました。",
+      "accomplishment5": "GitHub、GitLab、Bitbucketなどのサードパーティプラットフォームと統合し、AIを活用したリポジトリメンテナンスとオンボーディングフローの改善をサポートしました。",
+      "accomplishment6": "顧客から報告されたプロダクション問題を調査・ホットフィックスし、プラットフォームの安定性と信頼性を維持するために修正を優先しました。",
+      "accomplishment7": "RSpecとJestを使用した単体テストを作成し、バックエンドとフロントエンドの機能を検証し、リグレッションを防止しました。",
+      "accomplishment8": "デイリースタンドアップ、コードレビュー、スプリントプランニングにクロスファンクショナルチームと共に参加し、アジャイル環境で協力しました。"
+    }
+  },
+  "projectItems": {
+    "aiJpgStore": {
+      "title": "生成AIイメージストア",
+      "description": "MERNスタックで構築し、Google Cloudにデプロイした、AI生成画像のオープンマーケットプレイス。"
+    },
+    "premierLeague": {
+      "title": "サッカー分析データPythonライブラリ",
+      "description": "高度なサッカー統計データを取得し、APIとして公開したり、機械学習データセットを作成できるPythonパッケージ。"
+    },
+    "chess": {
+      "title": "軽量チェスエンジン",
+      "description": "UCIプロトコルを使用してあらゆるチェスGUIと統合できる、C++で書かれた軽量チェスエンジン。"
+    },
+    "cve": {
+      "title": "フルスタックAI CVE分析アプリ",
+      "description": "レート制限なしでCVEを一括検索・分析できるAI搭載CVE分析ツール。"
+    },
+    "baseballMcp": {
+      "title": "野球カード分類MCPサーバー",
+      "description": "Claude AIにBowmanプロスペクトカードの分類と情報検索のための重要なツールへのアクセスを提供するMCPサーバー。"
+    },
+    "neuralNetwork": {
+      "title": "プロサッカー試合結果予測ニューラルネットワーク",
+      "description": "PyTorchで構築したプロサッカー試合を分類するニューラルネットワーク。"
+    },
+    "linearRegression": {
+      "title": "重回帰分析モデル",
+      "description": "teengambデータセットを使用した、イギリスの10代のギャンブル行動に関する完全な重回帰分析。"
+    },
+    "taskManagement": {
+      "title": "タスク管理アプリ",
+      "description": "CRUD操作、認証、認可を備えたフルスタックタスク管理アプリ。"
+    },
+    "portfolio": {
+      "title": "ポートフォリオウェブサイト",
+      "description": "Next.jsとTailwindCSSで構築したレスポンシブポートフォリオウェブサイト。"
+    },
+    "gamePage": {
+      "title": "ゲーム表示ウェブサイト",
+      "description": "Rawg.IO APIを使用して構築したフロントエンドゲーム表示ウェブサイト。"
+    },
+    "gymLanding": {
+      "title": "ジムランディングページ",
+      "description": "教育目的でバニラCSSとHTMLのみで構築したジムランディングページ。"
+    }
+  }
+}

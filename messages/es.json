@@ -1,0 +1,218 @@
+{
+  "metadata": {
+    "title": "Michael Li",
+    "description": "Portafolio Personal de Michael (Heyang) Li"
+  },
+  "nav": {
+    "brand": "Portafolio Personal",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "codingStats": "Estadísticas de Programación",
+    "home": "Inicio",
+    "workExperience": "Experiencia Laboral"
+  },
+  "hero": {
+    "bio1": "Hola, me llamo Michael Li. Soy estudiante de Matemáticas con especialización menor en Computación en la <universityLink>Universidad de Waterloo</universityLink>, enfocado en ingeniería de software.",
+    "universityUrl": "https://es.wikipedia.org/wiki/Universidad_de_Waterloo",
+    "bio2": "Entre mis cursos se incluyen algoritmos, estructuras de datos, álgebra lineal, programación orientada a objetos, sistemas informáticos, sistemas distribuidos, estadística, computación numérica y bases de datos.",
+    "bio3": "Cuento con 6 pasantías y casi 2 años de experiencia en desarrollo de software a tiempo parcial en sectores como visión por computadora, plataformas para desarrolladores, gobierno, SaaS, sistemas de pago e infraestructura.",
+    "resume": "Currículum",
+    "coopEvaluations": "Evaluaciones de Empleadores Co-op (UW)",
+    "techStackAndTools": "Tecnologías y Herramientas",
+    "recentProjects": "Proyectos Recientes",
+    "recentExperiences": "Experiencias Laborales Recientes",
+    "allProjects": "Todos los Proyectos",
+    "allExperiences": "Todas las Experiencias Laborales"
+  },
+  "experience": {
+    "pageTitle": "Experiencia Laboral",
+    "pageDescription": "Un breve resumen de mi trayectoria profesional.",
+    "present": "Presente",
+    "lastUpdatedAt": "Última actualización el",
+    "showDetails": "Mostrar detalles ({count})",
+    "hideDetails": "Ocultar detalles ({count})",
+    "yr": "{count} año",
+    "yrs": "{count} años",
+    "mo": "{count} mes",
+    "mos": "{count} meses"
+  },
+  "projects": {
+    "pageTitle": "Proyectos",
+    "pageDescription": "Una colección de proyectos que he desarrollado.",
+    "code": "Código →",
+    "previewPage": "Vista Previa"
+  },
+  "coding": {
+    "pageTitle": "Mis Estadísticas de Programación",
+    "weeklyCodingActivities": "Actividad de Programación Semanal",
+    "allTimeCodingStats": "Estadísticas Acumuladas de Programación ({range})",
+    "lastUpdated": "Última actualización: hace 5 minutos",
+    "dailyCodingAverage": "Promedio Diario de Programación",
+    "allTimeSinceToday": "Total Acumulado Hasta Hoy",
+    "charactersTyped": "Caracteres Escritos",
+    "charactersDeleted": "Caracteres Eliminados",
+    "languages": "Lenguajes",
+    "editors": "Editores"
+  },
+  "github": {
+    "title": "Estadísticas de GitHub",
+    "description": "Un vistazo rápido a seguidores, repositorios y actividad de contribuciones del último año.",
+    "publicRepositories": "Repositorios Públicos",
+    "followers": "Seguidores",
+    "contributions": "Contribuciones",
+    "total": "Total",
+    "thisWeek": "Esta Semana",
+    "bestDay": "Mejor Día",
+    "average": "Promedio",
+    "perDay": "por día",
+    "less": "Menos",
+    "more": "Más",
+    "contributionsOn": "{count} contribuciones el {date}"
+  },
+  "footer": {
+    "name": "Michael Li",
+    "location": "Waterloo, Canadá"
+  },
+  "experiences": {
+    "weseek": {
+      "role": "Pasante de Ingeniería de Software",
+      "location": "Tokio, Japón",
+      "workplaceType": "Presencial",
+      "jobType": "Pasantía",
+      "accomplishment1": "Construí y mejoré un portal orientado al usuario para JPNAP, el servicio de intercambio de Internet más grande de Japón, mejorando la usabilidad y accesibilidad para los usuarios finales.",
+      "accomplishment2": "Implementé y mantuve migraciones de bases de datos y funcionalidad CRUD con Ruby on Rails (ActiveRecord) y MySQL, asegurando la integridad de los datos.",
+      "accomplishment3": "Diseñé funcionalidades del backend siguiendo principios MVC, mejorando la mantenibilidad del código y facilitando la expansión futura de funcionalidades.",
+      "accomplishment4": "Desarrollé componentes frontend responsivos con AngularJS, TypeScript y Bootstrap, ofreciendo una experiencia de usuario fluida e intuitiva.",
+      "accomplishment5": "Mejoré el rendimiento y la capacidad de respuesta de la aplicación mediante una arquitectura de Aplicación de Página Única (SPA) y estrategias de caché en el frontend."
+    },
+    "everforth": {
+      "role": "Ingeniero de Software a Tiempo Parcial",
+      "location": "Tokio, Japón",
+      "workplaceType": "Remoto",
+      "jobType": "Freelance",
+      "accomplishment1": "Contribuí a una aplicación empresarial full-stack para estandarizar flujos de trabajo de salud de empleados, con Nuxt.js, Vue.js y TypeScript en el frontend y Java Spring Boot en el backend.",
+      "accomplishment2": "Desarrollé endpoints de API REST serverless con AWS Lambda, Python y Node.js para la ingesta, transformación y persistencia de datos.",
+      "accomplishment3": "Diseñé e implementé un pipeline de reportes serverless con AWS Step Functions y Python, transformando datos enviados por los usuarios en reportes PDF individualizados con gráficos dinámicos y lógica de puntuación.",
+      "accomplishment4": "Implementé lógica de diseño dinámico de PDF con ReportLab, calculando espaciado y paginación para secciones de longitud variable, comentarios y recuentos de categorías entre clientes.",
+      "accomplishment5": "Contribuí a la infraestructura del backend para el procesamiento de datos en tiempo real, integrándome con sistemas existentes para mejorar la confiabilidad y el rendimiento.",
+      "accomplishment6": "Participé en revisiones de código entre pares, brindando retroalimentación para mantener la calidad, consistencia y buenas prácticas de ingeniería."
+    },
+    "kaima": {
+      "role": "Pasante de Desarrollo de Software",
+      "location": "Tokio, Japón",
+      "workplaceType": "Remoto",
+      "jobType": "Pasantía",
+      "accomplishment1": "Contribuí al desarrollo de un portal de pagos orientado al cliente con React.js, Node.js y Express, soportando flujos de pago a través de Stripe, Alipay, WeChat Pay, Weibo Pay y PayPay.",
+      "accomplishment2": "Implementé esquemas y consultas GraphQL para obtener y renderizar datos de forma dinámica, permitiendo actualizaciones de interfaz responsivas en toda la aplicación.",
+      "accomplishment3": "Colaboré con diseñadores, gerentes de producto e ingenieros para integrar y desplegar nuevas funcionalidades dentro de un proceso de desarrollo ágil.",
+      "accomplishment4": "Escribí y mantuve pruebas end-to-end y de componentes con Cypress y Storybook, identificando y resolviendo problemas para mejorar la confiabilidad y la experiencia del usuario.",
+      "accomplishment5": "Mejoré la capacidad de respuesta implementando actualizaciones optimistas de la interfaz con React Query, reduciendo la latencia percibida en un 35%.",
+      "accomplishment6": "Reduje los tiempos de carga en un 20% mediante caché agresivo del lado del cliente con React Query, minimizando solicitudes de red redundantes.",
+      "accomplishment7": "Participé en revisiones de código, ceremonias de sprint y sesiones de intercambio de conocimiento, contribuyendo a la alineación del equipo y la calidad del código."
+    },
+    "enju": {
+      "role": "Pasante de Desarrollo de Software",
+      "location": "Tokio, Japón",
+      "workplaceType": "Presencial",
+      "jobType": "Pasantía",
+      "accomplishment1": "Desarrollé una aplicación full-stack de traducción de sitios web con IA usando Next.js (App Router), React, TypeScript, la API de Gemini y Firebase.",
+      "accomplishment2": "Mejoré los tiempos de carga en un 25% separando contenido estático y dinámico, combinando generación de sitios estáticos con renderizado del lado del servidor.",
+      "accomplishment3": "Implementé autenticación de usuarios y almacenamiento de datos con Firebase Authentication y Firestore, garantizando acceso seguro y persistencia confiable.",
+      "accomplishment4": "Diseñé modelos de documentos Firestore con tipado fuerte para garantizar la seguridad de tipos y la consistencia de datos en una base de datos sin esquema.",
+      "accomplishment5": "Contribuí al desarrollo de un script de cliente alojado en CDN e integrable en sitios externos, que extrae contenido de páginas, invoca servicios de traducción basados en IA e inyecta el contenido traducido de forma dinámica.",
+      "accomplishment6": "Almacené en caché el contenido traducido en Firestore para reducir llamadas repetidas de traducción, disminuyendo costos de API y mejorando los tiempos de carga.",
+      "accomplishment7": "Integré traducción basada en IA con Google Gemini para la localización automatizada y bajo demanda de sitios web.",
+      "accomplishment8": "Diseñé la arquitectura de la aplicación con un enfoque por capas, separando presentación, lógica de negocio y acceso a datos para mejorar la mantenibilidad y escalabilidad.",
+      "accomplishment9": "Colaboré con un ingeniero senior para diseñar, construir y lanzar el MVP desde cero en cuatro meses, iterando rápidamente con un único código base de Next.js con lógica compartida de servidor y cliente.",
+      "accomplishment10": "Aproveché herramientas serverless como Next.js App Router, NextAuth, Firebase y Firestore para agilizar el desarrollo y despliegue.",
+      "accomplishment11": "Mantuve documentación técnica con JSDoc para facilitar la incorporación de nuevos desarrolladores, la claridad del código y la mantenibilidad a largo plazo."
+    },
+    "ontario": {
+      "companyName": "Ministerio de Educación de Ontario",
+      "role": "Pasante de Desarrollo de Software",
+      "location": "Toronto, Canadá",
+      "workplaceType": "Híbrido",
+      "jobType": "Pasantía",
+      "accomplishment1": "Desarrollé una herramienta full-stack de análisis de CVE con IA usando Python, JavaScript, HTML y Tailwind CSS, generando resúmenes y sugerencias de remediación asistidos por IA mediante LLaMA 3.1–70B para agilizar la investigación de vulnerabilidades.",
+      "accomplishment2": "Implementé la ingesta masiva de datos CVE mediante scraping y agregación de fuentes NIST NVD y CVE Mitre para una recuperación y análisis más rápidos.",
+      "accomplishment3": "Investigué posibles integraciones de IA y flujos de automatización para herramientas del equipo de Operaciones, identificando oportunidades para mejorar la eficiencia y reducir el trabajo manual.",
+      "accomplishment4": "Construí automatización serverless con registros de aplicaciones de Azure AD y la API de Microsoft Graph para asignar permisos de documentos en SharePoint basados en roles mediante credenciales de cliente OAuth 2.0, automatizando la incorporación y la gestión de acceso.",
+      "accomplishment5": "Realicé pruebas manuales desde la perspectiva del usuario final para identificar problemas funcionales y posibles vulnerabilidades de ciberseguridad.",
+      "accomplishment6": "Diseñé e implementé pruebas unitarias con C# (.NET Core, NUnit) y pruebas E2E con Selenium para validar flujos de trabajo principales y mejorar la confiabilidad en sitios web gubernamentales importantes."
+    },
+    "musashi": {
+      "role": "Pasante de Desarrollo Full Stack",
+      "location": "Waterloo, Canadá",
+      "workplaceType": "Presencial",
+      "jobType": "Pasantía",
+      "accomplishment1": "Contribuí al desarrollo de un sistema de inspección visual basado en IA para componentes vehiculares, apoyando la detección de defectos y el aseguramiento de la calidad.",
+      "accomplishment2": "Implementé actualizaciones en tiempo real basadas en eventos con WebSockets y MongoDB Change Streams, habilitando notificaciones instantáneas de defectos y retroalimentación visual en vivo durante las inspecciones.",
+      "accomplishment3": "Desarrollé una aplicación de analítica full-stack con Vue.js, TypeScript, Python, FastAPI y Docker para monitorear resultados de inspección, rendimiento del sistema y métricas históricas de precisión.",
+      "accomplishment4": "Procesé y analicé resultados de inspección de IA para visualizar predicciones, puntuaciones de confianza, umbrales de aceptación y métricas de calidad relevantes.",
+      "accomplishment5": "Implementé routers CRUD base reutilizables para estandarizar el desarrollo de APIs y mejorar la eficiencia del backend.",
+      "accomplishment6": "Colaboré con equipos multifuncionales para integrar componentes de software y cumplir con los plazos del proyecto.",
+      "accomplishment7": "Trabajé en un entorno de desarrollo ágil para gestionar tareas, iterar sobre funcionalidades y entregar hitos a tiempo.",
+      "accomplishment8": "Implementé pruebas de integración con Postman y las integré en el pipeline de CI/CD mediante Newman CLI para mejorar la confiabilidad de los lanzamientos."
+    },
+    "opslevel": {
+      "role": "Pasante de Desarrollo de Software",
+      "location": "Toronto, Canadá",
+      "workplaceType": "Híbrido",
+      "jobType": "Pasantía",
+      "accomplishment1": "Contribuí al desarrollo de OpsLevel, un portal interno para desarrolladores que permite a los equipos de ingeniería gestionar de forma centralizada sus servicios e infraestructura.",
+      "accomplishment2": "Construí y mantuve funcionalidades del frontend con Vue.js y JavaScript, mejorando la usabilidad y el diseño responsivo en las experiencias principales del producto.",
+      "accomplishment3": "Implementé funcionalidades del backend en Ruby on Rails, diseñando y consumiendo APIs GraphQL para soportar nuevas funcionalidades del producto.",
+      "accomplishment4": "Desarrollé funcionalidades para el Agente de Mantenimiento de IA principal, habilitando el mantenimiento automatizado de repositorios mediante flujos de trabajo basados en IA.",
+      "accomplishment5": "Integré con plataformas de terceros como GitHub, GitLab y Bitbucket para soportar el mantenimiento de repositorios basado en IA y mejorar los flujos de incorporación.",
+      "accomplishment6": "Investigué y apliqué correcciones urgentes a problemas en producción reportados por clientes, priorizando la estabilidad y confiabilidad de la plataforma.",
+      "accomplishment7": "Escribí pruebas unitarias con RSpec y Jest para validar la funcionalidad del backend y frontend y prevenir regresiones.",
+      "accomplishment8": "Colaboré en un entorno ágil, participando en reuniones diarias, revisiones de código y planificación de sprints con equipos multifuncionales."
+    }
+  },
+  "projectItems": {
+    "aiJpgStore": {
+      "title": "Tienda de Imágenes Generativas con IA",
+      "description": "Un mercado abierto para imágenes generadas por IA, construido con el stack MERN y desplegado en Google Cloud."
+    },
+    "premierLeague": {
+      "title": "Biblioteca Python para Datos Analíticos de Fútbol",
+      "description": "Un paquete de Python que permite obtener estadísticas y datos avanzados de fútbol para exponerlos como API o crear conjuntos de datos de aprendizaje automático."
+    },
+    "chess": {
+      "title": "Motor de Ajedrez Ligero",
+      "description": "Un motor de ajedrez ligero escrito en C++ que utiliza el protocolo UCI para integrarse con cualquier interfaz gráfica de ajedrez."
+    },
+    "cve": {
+      "title": "Aplicación Full Stack de Análisis de CVE con IA",
+      "description": "Una herramienta de análisis de CVE basada en IA que permite buscar y analizar CVEs en masa sin limitaciones de tasa."
+    },
+    "baseballMcp": {
+      "title": "Servidor MCP de Clasificación de Tarjetas de Béisbol",
+      "description": "Servidor MCP que brinda a Claude AI acceso a herramientas para clasificar y consultar información sobre tarjetas de prospectos Bowman."
+    },
+    "neuralNetwork": {
+      "title": "Red Neuronal para Predecir Resultados de Fútbol Profesional",
+      "description": "Una red neuronal construida con PyTorch para clasificar resultados de partidos de fútbol profesional."
+    },
+    "linearRegression": {
+      "title": "Modelo de Regresión Lineal Múltiple",
+      "description": "Un análisis completo de regresión lineal múltiple sobre el comportamiento de apuestas en adolescentes en Gran Bretaña, utilizando el conjunto de datos teengamb."
+    },
+    "taskManagement": {
+      "title": "Aplicación de Gestión de Tareas",
+      "description": "Una aplicación full stack de gestión de tareas con operaciones CRUD, autenticación y autorización."
+    },
+    "portfolio": {
+      "title": "Sitio Web de Portafolio",
+      "description": "Un sitio web de portafolio responsivo construido con Next.js y TailwindCSS."
+    },
+    "gamePage": {
+      "title": "Sitio Web de Exhibición de Juegos",
+      "description": "Un sitio web frontend de exhibición de juegos construido con la API de Rawg.IO."
+    },
+    "gymLanding": {
+      "title": "Landing Page de Gimnasio",
+      "description": "Una landing page de gimnasio construida únicamente con CSS y HTML estándar con fines educativos."
+    }
+  }
+}

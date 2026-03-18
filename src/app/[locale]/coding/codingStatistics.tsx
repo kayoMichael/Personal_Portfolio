@@ -2,6 +2,7 @@
 import React from 'react';
 
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import OverviewCard from './overviewCard';
 import Section from './section';
@@ -34,6 +35,8 @@ interface Props {
   };
 }
 const CodingStatistic = ({ currentStats }: Props) => {
+  const t = useTranslations('coding');
+
   const dailyAverage =
     currentStats.data?.human_readable_daily_average_including_other_language ??
     'N/A';
@@ -42,19 +45,19 @@ const CodingStatistic = ({ currentStats }: Props) => {
   const editors = currentStats.data?.editors ?? [];
   const activities = [
     {
-      title: 'Languages',
+      title: t('languages'),
       data: languages,
       bg: 'bg-rainbow-gradient-inverse',
     },
     {
-      title: 'Editors',
+      title: t('editors'),
       data: editors,
       bg: 'bg-rainbow-gradient',
     },
   ];
   return (
     <>
-      <PageHeader title='My Coding Statistics' />
+      <PageHeader title={t('pageTitle')} />
       <Container className='mt-10'>
         <div className='mb-10'>
           <TechStack />
@@ -66,26 +69,31 @@ const CodingStatistic = ({ currentStats }: Props) => {
               href='https://wakatime.com/@ff7a628d-e3ce-4703-b2b1-90de73b20dca'
               passHref
             >
-              Last updated: 5 minutes ago
+              {t('lastUpdated')}
             </Link>
           }
-          description={`All Time Coding Stats (${currentStats.data?.human_readable_range})`}
+          description={t('allTimeCodingStats', {
+            range: currentStats.data?.human_readable_range,
+          })}
           icon={<WakaTime className='h-5 w-5' />}
-          title='Weekly Coding Activities'
+          title={t('weeklyCodingActivities')}
         >
           <>
             <div className='mb-1 grid gap-3 py-2 md:grid-cols-2'>
-              <OverviewCard label='Daily Coding Average' value={dailyAverage} />
               <OverviewCard
-                label='All Time Since Today'
+                label={t('dailyCodingAverage')}
+                value={dailyAverage}
+              />
+              <OverviewCard
+                label={t('allTimeSinceToday')}
                 value={allTimeSinceToday}
               />
               <OverviewCard
-                label='Characters Typed'
+                label={t('charactersTyped')}
                 value={String(currentStats.data?.human_additions)}
               />
               <OverviewCard
-                label='Characters Deleted'
+                label={t('charactersDeleted')}
                 value={String(currentStats.data?.human_deletions)}
               />
             </div>

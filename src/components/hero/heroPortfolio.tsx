@@ -4,6 +4,7 @@ import React from 'react';
 import { FileText } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { FOOTER_ICON_LINKS } from '../footer/footerLinks';
 import { Button } from '../ui/button';
@@ -16,6 +17,8 @@ import {
 } from '@/src/components/ui/tooltip';
 
 const HeroPortfolio = () => {
+  const t = useTranslations('hero');
+
   return (
     <div className='mt-24'>
       <div className='items-start space-y-2 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:space-y-0'>
@@ -54,28 +57,16 @@ const HeroPortfolio = () => {
           {/* Bio text with prose styling */}
           <div className='prose max-w-none dark:prose-dark'>
             <p>
-              Hello, my name is Michael Li, a student at the{' '}
-              <Link
-                href='https://en.wikipedia.org/wiki/University_of_Waterloo_Faculty_of_Mathematics'
-                target='_blank'
-              >
-                University of Waterloo
-              </Link>{' '}
-              studying Mathematics with a Computing minor, focused on software
-              engineering.
+              {t.rich('bio1', {
+                universityLink: (chunks) => (
+                  <Link href={t('universityUrl')} target='_blank'>
+                    {chunks}
+                  </Link>
+                ),
+              })}
             </p>
-            <p>
-              My coursework includes algorithms, data structures, linear
-              algebra, object-oriented programming, computer systems,
-              distributed systems, statistics, numerical computation, and
-              databases.
-            </p>
-            <p>
-              I have completed 6 internships and nearly 2 years of part-time
-              software development work across industries including computer
-              vision, developer platforms, government, SaaS, payment systems,
-              and infrastructure tooling.
-            </p>
+            <p>{t('bio2')}</p>
+            <p>{t('bio3')}</p>
           </div>
 
           {/* Buttons outside of prose */}
@@ -83,13 +74,13 @@ const HeroPortfolio = () => {
             <Button asChild className='gap-2' variant='outline'>
               <Link href='/resume/Michael-Li-Resume.pdf' target='_blank'>
                 <FileText className='h-4 w-4' />
-                Resume
+                {t('resume')}
               </Link>
             </Button>
             <Button asChild className='gap-2' variant='outline'>
               <Link href='/resume/co-op-work-term.pdf' target='_blank'>
                 <FileText className='h-4 w-4' />
-                Co-op Employer Evaluations (UW)
+                {t('coopEvaluations')}
               </Link>
             </Button>
           </div>

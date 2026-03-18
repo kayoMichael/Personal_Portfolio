@@ -1,16 +1,7 @@
-import HighlightedProjects from '../components/hero/highlightedProjects';
-import Container from '../components/ui/container';
+import { redirect } from 'next/navigation';
 
-import HeroPortfolio from '@/src/components/hero/heroPortfolio';
+import { defaultLocale } from '@/src/i18n/config';
 
-export default function Home() {
-  return (
-    <>
-      <Container>
-        <HeroPortfolio />
-        <HighlightedProjects project={false} />
-        <HighlightedProjects project={true} />
-      </Container>
-    </>
-  );
+export default function RootPage() {
+  redirect(`/${defaultLocale}`);
 }

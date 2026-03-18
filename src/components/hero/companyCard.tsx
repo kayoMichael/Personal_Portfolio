@@ -3,9 +3,11 @@
 import { useState } from 'react';
 
 import { differenceInMonths, differenceInYears, format } from 'date-fns';
+import { enUS, ja, fr, zhCN, es, ko } from 'date-fns/locale';
 import { ChevronDown } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useLocale, useTranslations } from 'next-intl';
 
 import { STACKS } from '@/src/components/icons/stacks';
 import { Card, CardContent } from '@/src/components/ui/card';
@@ -16,34 +18,33 @@ import {
   TooltipTrigger,
 } from '@/src/components/ui/tooltip';
 
+const dateLocales = { en: enUS, ja, fr, zh: zhCN, es, ko };
+
 interface CompanyCardProps {
+  translationKey: string;
   logoSrc?: string;
   companyName: string;
   companyUrl: string;
-  role: string;
-  jobType: string;
-  location: string;
-  workplaceType: string;
   startDate: string;
   endDate: string | null;
   stacks: Array<{ name: string }>;
-  accomplishments: string[];
+  accomplishmentCount: number;
 }
 
 export function CompanyCard({
+  translationKey,
   logoSrc = '/generic-company-logo.png',
   companyName,
   companyUrl,
-  role,
-  jobType,
-  location,
-  workplaceType,
   startDate,
   endDate,
   stacks,
-  accomplishments,
+  accomplishmentCount,
 }: CompanyCardProps) {
   const [expanded, setExpanded] = useState(false);
+  const t = useTranslations('experience');
+  const te = useTranslations('experiences');
+  const locale = useLocale();
 
   const start = new Date(startDate);
   const end = endDate ? new Date(endDate) : new Date();
@@ -53,11 +54,31 @@ export function CompanyCard({
 
   let durationText = '';
   if (durationInYears > 0) {
-    durationText += `${durationInYears} yr${durationInYears > 1 ? 's' : ''} `;
+    durationText +=
+      durationInYears > 1
+        ? t('yrs', { count: durationInYears })
+        : t('yr', { count: durationInYears });
+    durationText += ' ';
   }
   if (durationInMonths > 0 || durationInYears === 0) {
-    durationText += `${durationInMonths} mo${durationInMonths > 1 ? 's' : ''}`;
+    durationText +=
+      durationInMonths > 1
+        ? t('mos', { count: durationInMonths })
+        : t('mo', { count: durationInMonths });
   }
+
+  const dateLocale = dateLocales[locale as keyof typeof dateLocales] ?? enUS;
+
+  const role = te(`${translationKey}.role`);
+  const jobType = te(`${translationKey}.jobType`);
+  const location = te(`${translationKey}.location`);
+  const workplaceType = te(`${translationKey}.workplaceType`);
+  const displayName = te.has(`${translationKey}.companyName`)
+    ? te(`${translationKey}.companyName`)
+    : companyName;
+  const accomplishments = Array.from({ length: accomplishmentCount }, (_, i) =>
+    te(`${translationKey}.accomplishment${i + 1}`)
+  );
 
   return (
     <Card className='w-full hover:shadow-md transition-shadow'>
@@ -65,7 +86,7 @@ export function CompanyCard({
         {/* Logo */}
         <div className='relative h-16 w-16 shrink-0 overflow-hidden rounded-lg bg-white'>
           <Image
-            alt={`${companyName} logo`}
+            alt={`${displayName} logo`}
             className='object-contain p-1'
             fill
             src={logoSrc || '/placeholder.svg'}
@@ -84,7 +105,7 @@ export function CompanyCard({
                   href={companyUrl}
                   target='_blank'
                 >
-                  {companyName}
+                  {displayName}
                 </Link>
                 <span>·</span>
                 <span>{jobType}</span>
@@ -98,8 +119,10 @@ export function CompanyCard({
             {/* Date & duration */}
             <div className='text-sm text-muted-foreground text-right'>
               <div>
-                {format(start, 'MMM yyyy')} –{' '}
-                {endDate ? format(end, 'MMM yyyy') : 'Present'}
+                {format(start, 'MMM yyyy', { locale: dateLocale })} –{' '}
+                {endDate
+                  ? format(end, 'MMM yyyy', { locale: dateLocale })
+                  : t('present')}
               </div>
               <div className='text-xs'>{durationText}</div>
             </div>
@@ -136,8 +159,9 @@ export function CompanyCard({
                   }`}
                 />
                 <span>
-                  {expanded ? 'Hide' : 'Show'} work details (
-                  {accomplishments.length})
+                  {expanded
+                    ? t('hideDetails', { count: accomplishments.length })
+                    : t('showDetails', { count: accomplishments.length })}
                 </span>
               </button>
 

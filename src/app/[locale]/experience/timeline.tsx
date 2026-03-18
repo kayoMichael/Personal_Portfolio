@@ -2,8 +2,10 @@
 import React from 'react';
 
 import { differenceInMonths, differenceInYears, format } from 'date-fns';
+import { enUS, ja, fr, zhCN, es, ko } from 'date-fns/locale';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useLocale, useTranslations } from 'next-intl';
 
 import { STACKS } from '@/src/components/icons/stacks';
 import {
@@ -14,19 +16,26 @@ import {
 } from '@/src/components/ui/tooltip';
 import { ExperienceList } from '@/src/utils/experiences';
 
+const dateLocales = { en: enUS, ja, fr, zh: zhCN, es, ko };
+
 const TimeLine = () => {
+  const t = useTranslations('experience');
+  const te = useTranslations('experiences');
+  const locale = useLocale();
+  const dateLocale = dateLocales[locale as keyof typeof dateLocales] ?? enUS;
+
   return (
     <>
       <div className='prose max-w-none px-4 dark:prose-dark'>
         <ol className='list-none space-y-4 border-l border-border pl-10'>
           {ExperienceList.map(
             ({
+              key,
               company,
-              role,
               startDate,
               endDate,
               stacks,
-              accomplishments,
+              accomplishmentCount,
             }) => {
               const start = new Date(startDate);
               const end = endDate ? new Date(endDate) : new Date();
@@ -37,23 +46,34 @@ const TimeLine = () => {
 
               let durationText = '';
               if (durationInYears > 0) {
-                durationText += `${durationInYears} yr${
-                  durationInYears > 1 ? 's' : ''
-                } `;
+                durationText +=
+                  durationInYears > 1
+                    ? t('yrs', { count: durationInYears })
+                    : t('yr', { count: durationInYears });
+                durationText += ' ';
               }
 
               if (durationInMonths > 0 || durationInYears === 0) {
-                durationText += `${durationInMonths} mo${
-                  durationInMonths > 1 ? 's' : ''
-                }`;
+                durationText +=
+                  durationInMonths > 1
+                    ? t('mos', { count: durationInMonths })
+                    : t('mo', { count: durationInMonths });
               }
+
+              const accomplishments = Array.from(
+                { length: accomplishmentCount },
+                (_, i) => te(`${key}.accomplishment${i + 1}`)
+              );
+              const displayName = te.has(`${key}.companyName`)
+                ? te(`${key}.companyName`)
+                : company.name;
 
               return (
                 <li className='relative h-full' key={company.name}>
                   <div className='absolute -left-[68px] bottom-0 mt-0 h-full'>
                     <div className='sticky top-20 flex items-start'>
                       <Image
-                        alt={company.name}
+                        alt={displayName}
                         className='rounded-full ml-0 bg-white shadow-sm object-cover h-14 w-14"'
                         height={60}
                         src={company.logo}
@@ -64,32 +84,39 @@ const TimeLine = () => {
                   </div>
                   <div className='flex flex-col items-start gap-1 md:flex-row'>
                     <div className='flex flex-col space-y-1 leading-snug'>
-                      <h2 className='my-0 font-cal text-lg'>{role}</h2>
+                      <h2 className='my-0 font-cal text-lg'>
+                        {te(`${key}.role`)}
+                      </h2>
                       <div className='flex items-center gap-1 text-muted-foreground'>
                         <Link
                           className='text-muted-foreground underline hover:text-foreground'
                           href={company.url}
                           target='_blank'
                         >
-                          {company.name}
+                          {displayName}
                         </Link>
                         <span>&middot;</span>
-                        <span>{company.jobType}</span>
+                        <span>{te(`${key}.jobType`)}</span>
                       </div>
                       <div className='flex gap-1 text-muted-foreground'>
                         <div className='flex gap-1'>
-                          <span>{format(start, 'MMM yyyy')}</span> -{' '}
                           <span>
-                            {endDate ? format(end, 'MMM yyyy') : 'Present'}
+                            {format(start, 'MMM yyyy', { locale: dateLocale })}
+                          </span>{' '}
+                          -{' '}
+                          <span>
+                            {endDate
+                              ? format(end, 'MMM yyyy', { locale: dateLocale })
+                              : t('present')}
                           </span>
                         </div>
                         <span>&middot;</span>
                         <span>{durationText}</span>
                       </div>
                       <div className='flex items-center gap-1 text-muted-foreground'>
-                        <span>{company.location}</span>
+                        <span>{te(`${key}.location`)}</span>
                         <span>&middot;</span>
-                        <span>{company.workplaceType}</span>
+                        <span>{te(`${key}.workplaceType`)}</span>
                       </div>
                     </div>
                   </div>
@@ -123,7 +150,7 @@ const TimeLine = () => {
         </ol>
         <div className='mt-12'>
           <p className='text-muted-foreground'>
-            Last updated at{' '}
+            {t('lastUpdatedAt')}{' '}
             <time className='font-cal' dateTime='2026-01-05'>
               2026-01-05
             </time>
