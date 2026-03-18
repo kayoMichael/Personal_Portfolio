@@ -40,12 +40,12 @@ export default function LocaleSwitcher() {
   return (
     <div className='relative' ref={ref}>
       <button
-        className='flex items-center gap-1.5 rounded-md px-2 py-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground'
+        className='group flex items-center gap-1.5 rounded-md px-2 py-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground'
         onClick={() => {
           setOpen(!open);
         }}
       >
-        <Globe className='h-4 w-4 text-sky-400' />
+        <Globe className='h-4 w-4 text-sky-400 transition-colors group-hover:text-sky-600 dark:group-hover:text-sky-300' />
         <span className='font-medium'>{localeCodes[locale as Locale]}</span>
       </button>
       {open && (

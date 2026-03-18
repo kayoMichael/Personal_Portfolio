@@ -12,7 +12,7 @@
     "workExperience": "Expérience Professionnelle"
   },
   "hero": {
-    "bio1": "Bonjour, je m'appelle Michael Li. Je suis étudiant en mathématiques avec une mineure en informatique à l'<universityLink>Université de Waterloo</universityLink>, spécialisé en génie logiciel.",
+    "bio1": "Bonjour, je m''appelle Michael Li. Je suis étudiant en mathématiques avec une mineure en informatique à l''<universityLink>Université de Waterloo</universityLink>, spécialisé en génie logiciel.",
     "universityUrl": "https://fr.wikipedia.org/wiki/Université_de_Waterloo",
     "bio2": "Mon parcours académique comprend les algorithmes, les structures de données, l'algèbre linéaire, la programmation orientée objet, les systèmes informatiques, les systèmes distribués, les statistiques, le calcul numérique et les bases de données.",
     "bio3": "J'ai effectué 6 stages et cumulé près de 2 ans d'expérience en développement logiciel à temps partiel dans des secteurs tels que la vision par ordinateur, les plateformes pour développeurs, le gouvernement, le SaaS, les systèmes de paiement et l'outillage d'infrastructure.",
